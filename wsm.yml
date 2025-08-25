@@ -55,8 +55,6 @@ proxies:
     - {name: 埃及8, server: sg-iepl.com, port: 28656, type: socks5, username: 47353961-zone-custom-region-EG-sessid-b8GdxzaL-sessTime-15, password: dJIA8BM3}
     - {name: 埃及9, server: sg-iepl.com, port: 28656, type: socks5, username: 47353961-zone-custom-region-EG-sessid-vbPY6tQq-sessTime-15, password: dJIA8BM3}
     - {name: 埃及10, server: sg-iepl.com, port: 28656, type: socks5, username: 47353961-zone-custom-region-EG-sessid-9G8ScPkO-sessTime-15, password: dJIA8BM3}
-    - {name: 尼日20, server: 34.141.219.7, port: 9008, type: socks5, username: 349faf68-10200dd8-024ca5, password: mobile-ng---}
-    - {name: 尼日21, server: 34.141.219.7, port: 9009, type: socks5, username: 349faf68-10200dd8-3642fa, password: mobile-ng---}
     - {name: 缅甸1, server: sg-iepl.com, port: 28656, type: socks5, username: 47353961-zone-custom-region-MM-sessid-kmszjXc0-sessTime-15, password: dJIA8BM3}
     - {name: 缅甸2, server: sg-iepl.com, port: 28656, type: socks5, username: 47353961-zone-custom-region-MM-sessid-3uNCfzJE-sessTime-15, password: dJIA8BM3}
     - {name: 缅甸3, server: sg-iepl.com, port: 28656, type: socks5, username: 47353961-zone-custom-region-MM-sessid-lfMahCnS-sessTime-15, password: dJIA8BM3}
@@ -97,11 +95,6 @@ proxy-groups:
       - 埃及8
       - 埃及9
       - 埃及10
-      - 印尼1
-      - 印尼2
-      - 印尼3
-      - 印尼4
-      - 印尼5
       - 缅甸1
       - 缅甸2
       - 缅甸3
@@ -188,4 +181,5 @@ rules:
   - GEOIP,CN,DIRECT
 
   - MATCH,Proxies
+
 
