@@ -1,4 +1,4 @@
-    mixed-port: 7890
+mixed-port: 7890
 allow-lan: true
 bind-address: '*'
 mode: rule
@@ -242,4 +242,5 @@ rules:
   - DOMAIN-SUFFIX,ytoo.asia,Proxies
   - DOMAIN-SUFFIX,ytoo.co.uk,Proxies
   - GEOIP,CN,DIRECT
+
   - MATCH,Proxies
