@@ -30,16 +30,16 @@ proxies:
 
     # Original SOCKS5 proxies
 
-    - {name: 尼日1, server: va.25d2ee919a312501.abcproxy.vip, port: 4950, type: socks5, username: abc9539295_s3xf-zone-mob-region-NG-session-9Y1Q6W9s-sessTime-16, password: qweasdmm, udp: true, skip-cert-verify: true, underlying-proxy: 香港2}
-    - {name: 尼日2, server: va.25d2ee919a312501.abcproxy.vip, port: 4950, type: socks5, username: abc9539295_s3xf-zone-mob-region-NG-session-9Y1Q6W9s-sessTime-16, password: qweasdmm, udp: true, skip-cert-verify: true, underlying-proxy: 香港2}
-    - {name: 尼日3, server: va.25d2ee919a312501.abcproxy.vip, port: 4950, type: socks5, username: abc9539295_s3xf-zone-mob-region-NG-session-9Y1Q6W9s-sessTime-16, password: qweasdmm, udp: true, skip-cert-verify: true, underlying-proxy: 香港2}
-    - {name: 尼日4, server: va.25d2ee919a312501.abcproxy.vip, port: 4950, type: socks5, username: abc9539295_s3xf-zone-mob-region-NG-session-9Y1Q6W9s-sessTime-16, password: qweasdmm, udp: true, skip-cert-verify: true, underlying-proxy: 香港2}
-    - {name: 尼日5, server: va.25d2ee919a312501.abcproxy.vip, port: 4950, type: socks5, username: abc9539295_s3xf-zone-mob-region-NG-session-9Y1Q6W9s-sessTime-16, password: qweasdmm, udp: true, skip-cert-verify: true, underlying-proxy: 香港2}
-    - {name: 尼日6, server: va.25d2ee919a312501.abcproxy.vip, port: 4950, type: socks5, username: abc9539295_s3xf-zone-mob-region-NG-session-9Y1Q6W9s-sessTime-16, password: qweasdmm, udp: true, skip-cert-verify: true, underlying-proxy: 香港2}
-    - {name: 尼日7, server: va.25d2ee919a312501.abcproxy.vip, port: 4950, type: socks5, username: abc9539295_s3xf-zone-mob-region-NG-session-9Y1Q6W9s-sessTime-16, password: qweasdmm, udp: true, skip-cert-verify: true, underlying-proxy: 香港2}
-    - {name: 尼日8, server: va.25d2ee919a312501.abcproxy.vip, port: 4950, type: socks5, username: abc9539295_s3xf-zone-mob-region-NG-session-9Y1Q6W9s-sessTime-16, password: qweasdmm, udp: true, skip-cert-verify: true, underlying-proxy: 香港2}
-    - {name: 尼日9, server: va.25d2ee919a312501.abcproxy.vip, port: 4950, type: socks5, username: abc9539295_s3xf-zone-mob-region-NG-session-sGBpjYRJ-sessTime-16, password: qweasdmm, udp: true, skip-cert-verify: true, underlying-proxy: 香港2}
-    - {name: 尼日10, server: va.25d2ee919a312501.abcproxy.vip, port: 4950, type: socks5, username: abc9539295_s3xf-zone-mob-region-NG-session-t8DDRCEc-sessTime-16, password: qweasdmm, udp: true, skip-cert-verify: true, underlying-proxy: 香港2}
+    - {name: 尼日1, server: va.25d2ee919a312501.abcproxy.vip, port: 4950, type: socks5, username: abc9539295_s3xf-zone-mob-region-NG-session-9Y1Q6W9s-sessTime-16, password: qweasdmm, udp: true, skip-cert-verify: true, proxy: 香港2}
+    - {name: 尼日2, server: va.25d2ee919a312501.abcproxy.vip, port: 4950, type: socks5, username: abc9539295_s3xf-zone-mob-region-NG-session-9Y1Q6W9s-sessTime-16, password: qweasdmm, udp: true, skip-cert-verify: true, proxy: 香港2}
+    - {name: 尼日3, server: va.25d2ee919a312501.abcproxy.vip, port: 4950, type: socks5, username: abc9539295_s3xf-zone-mob-region-NG-session-9Y1Q6W9s-sessTime-16, password: qweasdmm, udp: true, skip-cert-verify: true, proxy: 香港2}
+    - {name: 尼日4, server: va.25d2ee919a312501.abcproxy.vip, port: 4950, type: socks5, username: abc9539295_s3xf-zone-mob-region-NG-session-9Y1Q6W9s-sessTime-16, password: qweasdmm, udp: true, skip-cert-verify: true, proxy: 香港2}
+    - {name: 尼日5, server: va.25d2ee919a312501.abcproxy.vip, port: 4950, type: socks5, username: abc9539295_s3xf-zone-mob-region-NG-session-9Y1Q6W9s-sessTime-16, password: qweasdmm, udp: true, skip-cert-verify: true, proxy: 香港2}
+    - {name: 尼日6, server: va.25d2ee919a312501.abcproxy.vip, port: 4950, type: socks5, username: abc9539295_s3xf-zone-mob-region-NG-session-9Y1Q6W9s-sessTime-16, password: qweasdmm, udp: true, skip-cert-verify: true, proxy: 香港2}
+    - {name: 尼日7, server: va.25d2ee919a312501.abcproxy.vip, port: 4950, type: socks5, username: abc9539295_s3xf-zone-mob-region-NG-session-9Y1Q6W9s-sessTime-16, password: qweasdmm, udp: true, skip-cert-verify: true, proxy: 香港2}
+    - {name: 尼日8, server: va.25d2ee919a312501.abcproxy.vip, port: 4950, type: socks5, username: abc9539295_s3xf-zone-mob-region-NG-session-9Y1Q6W9s-sessTime-16, password: qweasdmm, udp: true, skip-cert-verify: true, proxy: 香港2}
+    - {name: 尼日9, server: va.25d2ee919a312501.abcproxy.vip, port: 4950, type: socks5, username: abc9539295_s3xf-zone-mob-region-NG-session-sGBpjYRJ-sessTime-16, password: qweasdmm, udp: true, skip-cert-verify: true, proxy: 香港2}
+    - {name: 尼日10, server: va.25d2ee919a312501.abcproxy.vip, port: 4950, type: socks5, username: abc9539295_s3xf-zone-mob-region-NG-session-t8DDRCEc-sessTime-16, password: qweasdmm, udp: true, skip-cert-verify: true, proxy: 香港2}
     - {name: 尼日11, server: sg-iepl.com, port: 33055, type: socks5, username: poiu4717, password: 9gHUDSv8OK_country-ng_session-mDZf3XLJ}
     - {name: 尼日12, server: sg-iepl.com, port: 33055, type: socks5, username: poiu4717, password: 9gHUDSv8OK_country-ng_session-h6L0gVOR}
     - {name: 尼日13, server: sg-iepl.com, port: 33055, type: socks5, username: poiu4717, password: 9gHUDSv8OK_country-ng_session-ryRUlInE}
@@ -181,5 +181,6 @@ rules:
   - GEOIP,CN,DIRECT
 
   - MATCH,Proxies
+
 
 
