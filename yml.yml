@@ -149,6 +149,7 @@ rules:
   - DOMAIN-SUFFIX,ipinfo.io,Googleplay
   - DOMAIN-SUFFIX,ipip.net,Googleplay
   - DOMAIN-SUFFIX,skk.moe,Googleplay
+  - DOMAIN-SUFFIX,accounts.google.com,Googleplay
   - DOMAIN-KEYWORD,game,Proxies
   - DOMAIN-KEYWORD,gvt1,Proxies
   - DOMAIN-KEYWORD,googlevideo,Proxies
@@ -201,4 +202,5 @@ rules:
   - DOMAIN-SUFFIX,ytoo.asia,Proxies
   - DOMAIN-SUFFIX,ytoo.co.uk,Proxies
   - GEOIP,CN,DIRECT
+
   - MATCH,Proxies
