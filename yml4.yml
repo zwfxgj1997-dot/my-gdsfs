@@ -43,11 +43,11 @@
     proxies:
       - { name: '官网: landing.ouonetwork.com', type: ss, server: n1eubce2cbv.h5dg9l1jwpczvs91dekk.pw, port: 48778, cipher: aes-128-gcm, password: 5ff16eea-d8c6-4975-aca5-4b37bc4192fe, udp: true }
       - { name: '如您无法更新 请从官网拉取最新订阅', type: ss, server: n1eubce2cbv.h5dg9l1jwpczvs91dekk.pw, port: 48778, cipher: aes-128-gcm, password: 5ff16eea-d8c6-4975-aca5-4b37bc4192fe, udp: true }
-      - { name: '🇭🇰 Hong Kong 01', type: ss, server: n1eubce2cbv.h5dg9l1jwpczvs91dekk.pw, port: 48778, cipher: aes-128-gcm, password: 5ff16eea-d8c6-4975-aca5-4b37bc4192fe, udp: true }
-      - { name: '🇭🇰 Hong Kong 02', type: ss, server: n1eubce2cbv.h5dg9l1jwpczvs91dekk.pw, port: 48777, cipher: aes-128-gcm, password: 5ff16eea-d8c6-4975-aca5-4b37bc4192fe, udp: true }
-      - { name: '🇭🇰 Hong Kong 03', type: ss, server: n1eubce2cbv.h5dg9l1jwpczvs91dekk.pw, port: 48775, cipher: aes-128-gcm, password: 5ff16eea-d8c6-4975-aca5-4b37bc4192fe, udp: true }
-      - { name: '🇭🇰 Hong Kong 04', type: ss, server: n1eubce2cbv.h5dg9l1jwpczvs91dekk.pw, port: 48776, cipher: aes-128-gcm, password: 5ff16eea-d8c6-4975-aca5-4b37bc4192fe, udp: true }
-      - { name: '🇭🇰 Hong Kong 05', type: ss, server: n1eubce2cbv.h5dg9l1jwpczvs91dekk.pw, port: 48779, cipher: aes-128-gcm, password: 5ff16eea-d8c6-4975-aca5-4b37bc4192fe, udp: true }
+      - { name: '🇭🇰 Hong Kong 01', type: vless, server: qzhd.v6qq.cn, port: 45440, uuid: 1db4e043-bbe9-4e57-9125-35abc370a480, udp: true, tls: true, skip-cert-verify: false, flow: xtls-rprx-vision, client-fingerprint: edge, servername: www.bilibili.com, reality-opts: { public-key: 47dY_dY6SsrOdLE-x6Wk4TqXpeRD823lX413zKgAnlE, short-id: 1e6421d0 } }
+      - { name: '🇭🇰 Hong Kong 02', type: vless, server: qzhd.v6qq.cn, port: 45456, uuid: 1db4e043-bbe9-4e57-9125-35abc370a480, udp: true, tls: true, skip-cert-verify: false, flow: xtls-rprx-vision, client-fingerprint: edge, servername: www.bilibili.com, reality-opts: { public-key: 47dY_dY6SsrOdLE-x6Wk4TqXpeRD823lX413zKgAnlE, short-id: 1e6421d0 } }
+      - { name: '🇭🇰 Hong Kong 03', type: vless, server: qzhd.v6qq.cn, port: 45454, uuid: 1db4e043-bbe9-4e57-9125-35abc370a480, udp: true, tls: true, skip-cert-verify: false, flow: xtls-rprx-vision, client-fingerprint: edge, servername: www.bilibili.com, reality-opts: { public-key: 47dY_dY6SsrOdLE-x6Wk4TqXpeRD823lX413zKgAnlE, short-id: 1e6421d0 } }
+      - { name: '🇭🇰 Hong Kong 04', type: vless, server: qzhd.v6qq.cn, port: 47874, uuid: 1db4e043-bbe9-4e57-9125-35abc370a480, udp: true, tls: true, skip-cert-verify: false, flow: xtls-rprx-vision, client-fingerprint: edge, servername: www.bilibili.com, reality-opts: { public-key: 47dY_dY6SsrOdLE-x6Wk4TqXpeRD823lX413zKgAnlE, short-id: 1e6421d0 } }
+      - { name: '🇭🇰 Hong Kong 05', type: vless, server: qzhd.v6qq.cn, port: 26550, uuid: 1db4e043-bbe9-4e57-9125-35abc370a480, udp: true, tls: true, skip-cert-verify: false, flow: xtls-rprx-vision, client-fingerprint: edge, servername: www.bilibili.com, reality-opts: { public-key: 47dY_dY6SsrOdLE-x6Wk4TqXpeRD823lX413zKgAnlE, short-id: 1e6421d0 } }
       - { name: '🇹🇼 Taiwan 01', type: ss, server: n1eubce2cbv.h5dg9l1jwpczvs91dekk.pw, port: 48595, cipher: aes-128-gcm, password: 5ff16eea-d8c6-4975-aca5-4b37bc4192fe, udp: true }
       - { name: '🇹🇼 Taiwan 02', type: ss, server: n1eubce2cbv.h5dg9l1jwpczvs91dekk.pw, port: 48596, cipher: aes-128-gcm, password: 5ff16eea-d8c6-4975-aca5-4b37bc4192fe, udp: true }
       - { name: '🇹🇼 Taiwan 03', type: ss, server: n1eubce2cbv.h5dg9l1jwpczvs91dekk.pw, port: 48597, cipher: aes-128-gcm, password: 5ff16eea-d8c6-4975-aca5-4b37bc4192fe, udp: true }
@@ -235,4 +235,5 @@
       - DOMAIN-SUFFIX,ytoo.asia,Proxies
       - DOMAIN-SUFFIX,ytoo.co.uk,Proxies
       - GEOIP,CN,DIRECT
+
       - MATCH,Proxies
