@@ -98,11 +98,11 @@
       - {name: 土耳其8, server: sg-iepl.com, port: 33055, type: socks5, username: poiu4717, password: 9gHUDSv8OK_country-tr_session-EQq86W7A}
       - {name: 土耳其9, server: sg-iepl.com, port: 33055, type: socks5, username: poiu4717, password: 9gHUDSv8OK_country-tr_session-BKhJacZV}
       - {name: 土耳其10, server: sg-iepl.com, port: 33055, type: socks5, username: poiu4717, password: 9gHUDSv8OK_country-tr_session-9WytzQkN}
-      - {name: 菲律宾1, server: sg-iepl.com, port: 28656, type: socks5, username: 47353961-zone-custom-region-PH-sessid-bgtzLZD6-sessTime-30, password: dJIA8BM3}
-      - {name: 菲律宾2, server: sg-iepl.com, port: 28656, type: socks5, username: 47353961-zone-custom-region-PH-sessid-zMVBxeQY-sessTime-30, password: dJIA8BM3}
-      - {name: 菲律宾3, server: sg-iepl.com, port: 28656, type: socks5, username: 47353961-zone-custom-region-PH-sessid-bkwDZioT-sessTime-30, password: dJIA8BM3}
-      - {name: 菲律宾4, server: sg-iepl.com, port: 28656, type: socks5, username: 47353961-zone-custom-region-PH-sessid-yEriEbOO-sessTime-30, password: dJIA8BM3}
-      - {name: 菲律宾5, server: sg-iepl.com, port: 28656, type: socks5, username: 47353961-zone-custom-region-PH-sessid-VNCOReWe-sessTime-30, password: dJIA8BM3}
+      - {name: 菲律宾1, server: geo.iproyal.com, port: 12321, type: socks5, username: P7I2lwT2Oynjs7TB, password: T41qODqSPUPqxwr2_country-ph_session-87YGKFvE_lifetime-15m_streaming-1}
+      - {name: 菲律宾2, server: geo.iproyal.com, port: 12321, type: socks5, username: P7I2lwT2Oynjs7TB, password: T41qODqSPUPqxwr2_country-ph_session-87YGKFvE_lifetime-15m_streaming-1}
+      - {name: 菲律宾3, server: geo.iproyal.com, port: 12321, type: socks5, username: P7I2lwT2Oynjs7TB, password: T41qODqSPUPqxwr2_country-ph_session-VDjUiqtp_lifetime-15m_streaming-1}
+      - {name: 菲律宾4, server: geo.iproyal.com, port: 12321, type: socks5, username: P7I2lwT2Oynjs7TB, password: T41qODqSPUPqxwr2_country-ph_session-tw7h4qrI_lifetime-15m_streaming-1}
+      - {name: 菲律宾5, server: geo.iproyal.com, port: 12321, type: socks5, username: P7I2lwT2Oynjs7TB, password: T41qODqSPUPqxwr2_country-ph_session-2bfXhcAc_lifetime-15m_streaming-1}
 
     proxy-groups:
       - name: Googleplay
@@ -237,4 +237,5 @@
       - GEOIP,CN,DIRECT
 
       - MATCH,Proxies
+
 
