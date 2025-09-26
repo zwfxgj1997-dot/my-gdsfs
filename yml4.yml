@@ -68,16 +68,16 @@
       - {name: 尼日13, server: geo.iproyal.com, port: 12321, type: socks5, username: P7I2lwT2Oynjs7TB, password: T41qODqSPUPqxwr2_country-ng_session-LpBioNlB_lifetime-15m_streaming-1}
       - {name: 尼日14, server: geo.iproyal.com, port: 12321, type: socks5, username: P7I2lwT2Oynjs7TB, password: T41qODqSPUPqxwr2_country-ng_session-t17YjyAW_lifetime-15m_streaming-1}
       - {name: 尼日15, server: geo.iproyal.com, port: 12321, type: socks5, username: P7I2lwT2Oynjs7TB, password: T41qODqSPUPqxwr2_country-ng_session-vlacU6k3_lifetime-15m_streaming-1}
-      - {name: 埃及1, server: sg-iepl.com, port: 28656, type: socks5, username: 47353961-zone-custom-region-EG-sessid-zfMZZBQq-sessTime-15, password: dJIA8BM3}
-      - {name: 埃及2, server: sg-iepl.com, port: 28656, type: socks5, username: 47353961-zone-custom-region-EG-sessid-SmmPVJOy-sessTime-15, password: dJIA8BM3}
-      - {name: 埃及3, server: sg-iepl.com, port: 28656, type: socks5, username: 47353961-zone-custom-region-EG-sessid-Eyhoe4xZ-sessTime-15, password: dJIA8BM3}
-      - {name: 埃及4, server: sg-iepl.com, port: 28656, type: socks5, username: 47353961-zone-custom-region-EG-sessid-Ajd6PZzx-sessTime-15, password: dJIA8BM3}
-      - {name: 埃及5, server: sg-iepl.com, port: 28656, type: socks5, username: 47353961-zone-custom-region-EG-sessid-76NRA7QP-sessTime-15, password: dJIA8BM3}
-      - {name: 埃及6, server: sg-iepl.com, port: 28656, type: socks5, username: 47353961-zone-custom-region-EG-sessid-QF3S5XWq-sessTime-15, password: dJIA8BM3}
-      - {name: 埃及7, server: sg-iepl.com, port: 28656, type: socks5, username: 47353961-zone-custom-region-EG-sessid-b56mswAN-sessTime-15, password: dJIA8BM3}
-      - {name: 埃及8, server: sg-iepl.com, port: 28656, type: socks5, username: 47353961-zone-custom-region-EG-sessid-b8GdxzaL-sessTime-15, password: dJIA8BM3}
-      - {name: 埃及9, server: sg-iepl.com, port: 28656, type: socks5, username: 47353961-zone-custom-region-EG-sessid-vbPY6tQq-sessTime-15, password: dJIA8BM3}
-      - {name: 埃及10, server: sg-iepl.com, port: 28656, type: socks5, username: 47353961-zone-custom-region-EG-sessid-9G8ScPkO-sessTime-15, password: dJIA8BM3}
+      - {name: 埃及1, server: geo.iproyal.com, port: 12321, type: socks5, username: P7I2lwT2Oynjs7TB, password: T41qODqSPUPqxwr2_country-eg_session-87YGKFvE_lifetime-15m_streaming-1}
+      - {name: 埃及2, server: geo.iproyal.com, port: 12321, type: socks5, username: P7I2lwT2Oynjs7TB, password: T41qODqSPUPqxwr2_country-eg_session-Xrhs05em_lifetime-15m_streaming-1}
+      - {name: 埃及3, server: geo.iproyal.com, port: 12321, type: socks5, username: P7I2lwT2Oynjs7TB, password: T41qODqSPUPqxwr2_country-eg_session-VDjUiqtp_lifetime-15m_streaming-1}
+      - {name: 埃及4, server: geo.iproyal.com, port: 12321, type: socks5, username: P7I2lwT2Oynjs7TB, password: T41qODqSPUPqxwr2_country-eg_session-tw7h4qrI_lifetime-15m_streaming-1}
+      - {name: 埃及5, server: geo.iproyal.com, port: 12321, type: socks5, username: P7I2lwT2Oynjs7TB, password: T41qODqSPUPqxwr2_country-eg_session-2bfXhcAc_lifetime-15m_streaming-1}
+      - {name: 埃及6, server: geo.iproyal.com, port: 12321, type: socks5, username: P7I2lwT2Oynjs7TB, password: T41qODqSPUPqxwr2_country-eg_session-LUoAM7Ou_lifetime-15m_streaming-1}
+      - {name: 埃及7, server: geo.iproyal.com, port: 12321, type: socks5, username: P7I2lwT2Oynjs7TB, password: T41qODqSPUPqxwr2_country-eg_session-J81D8EJ5_lifetime-15m_streaming-1}
+      - {name: 埃及8, server: geo.iproyal.com, port: 12321, type: socks5, username: P7I2lwT2Oynjs7TB, password: T41qODqSPUPqxwr2_country-eg_session-bv0n5RKB_lifetime-15m_streaming-1}
+      - {name: 埃及9, server: geo.iproyal.com, port: 12321, type: socks5, username: P7I2lwT2Oynjs7TB, password: T41qODqSPUPqxwr2_country-eg_session-gBgrNfLY_lifetime-15m_streaming-1}
+      - {name: 埃及10, server: geo.iproyal.com, port: 12321, type: socks5, username: P7I2lwT2Oynjs7TB, password: T41qODqSPUPqxwr2_country-eg_session-1Y3KJWfx_lifetime-15m_streaming-1}
       - {name: 缅甸1, server: sg-iepl.com, port: 28656, type: socks5, username: 47353961-zone-custom-region-MM-sessid-kmszjXc0-sessTime-15, password: dJIA8BM3}
       - {name: 缅甸2, server: sg-iepl.com, port: 28656, type: socks5, username: 47353961-zone-custom-region-MM-sessid-3uNCfzJE-sessTime-15, password: dJIA8BM3}
       - {name: 缅甸3, server: sg-iepl.com, port: 28656, type: socks5, username: 47353961-zone-custom-region-MM-sessid-lfMahCnS-sessTime-15, password: dJIA8BM3}
@@ -237,3 +237,4 @@
       - GEOIP,CN,DIRECT
 
       - MATCH,Proxies
+
