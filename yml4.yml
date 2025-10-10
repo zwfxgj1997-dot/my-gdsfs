@@ -60,9 +60,9 @@
       - {name: 尼日5, server: 34.141.219.7, port: 9004, type: socks5, username: e5265d18-149a832e-e920ae, password: wifi-ng--lagos-}
       - {name: 尼日6, server: 34.141.219.7, port: 9005, type: socks5, username: e5265d18-149a832e-3bb6dd, password: wifi-ng--lagos-}
       - {name: 尼日7, server: 34.141.219.7, port: 9006, type: socks5, username: e5265d18-149a832e-7ceac5, password: wifi-ng--lagos-}
-      - {name: 尼日8, server: 34.141.219.7, port: 9007, type: socks5, username: e5265d18-149a832e-d7b463, password: wifi-ng--lagos-}
-      - {name: 尼日9, server: 34.141.219.7, port: 9008, type: socks5, username: e5265d18-149a832e-6f0b16, password: wifi-ng--lagos-}
-      - {name: 尼日10, server: 34.141.219.7, port: 9009, type: socks5, username: e5265d18-149a832e-cc28e8, password: wifi-ng--lagos-}
+      - {name: 尼日8, server:  geo.iproyal.com, port: 11200, type: socks5, username: P7I2lwT2Oynjs7TB, password: T41qODqSPUPqxwr2_country-ng_city-lagos_session-mKb7kg4d_lifetime-15m_streaming-1}
+      - {name: 尼日9, server:  geo.iproyal.com, port: 11200, type: socks5, username: P7I2lwT2Oynjs7TB, password: T41qODqSPUPqxwr2_country-ng_city-lagos_session-Emt9u6ct_lifetime-15m_streaming-1}
+      - {name: 尼日10, server: geo.iproyal.com, port: 11200, type: socks5, username: P7I2lwT2Oynjs7TB, password: T41qODqSPUPqxwr2_country-ng_city-lagos_session-SFkLXRkR_lifetime-15m_streaming-1}
       - {name: 尼日11, server: geo.iproyal.com, port: 12321, type: socks5, username: P7I2lwT2Oynjs7TB, password: T41qODqSPUPqxwr2_country-ng_session-NZXQvVAJ_lifetime-15m_streaming-1}
       - {name: 尼日12, server: geo.iproyal.com, port: 12321, type: socks5, username: P7I2lwT2Oynjs7TB, password: T41qODqSPUPqxwr2_country-ng_session-CtcDkuFL_lifetime-15m_streaming-1}
       - {name: 尼日13, server: geo.iproyal.com, port: 12321, type: socks5, username: P7I2lwT2Oynjs7TB, password: T41qODqSPUPqxwr2_country-ng_session-LpBioNlB_lifetime-15m_streaming-1}
@@ -237,5 +237,6 @@
       - GEOIP,CN,DIRECT
 
       - MATCH,Proxies
+
 
 
