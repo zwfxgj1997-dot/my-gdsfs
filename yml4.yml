@@ -17,11 +17,11 @@ dns:
     fallback: [1.1.1.1, 8.8.8.8]
     fallback-filter: { geoip: true, geoip-code: CN, geosite: [gfw], ipcidr: [240.0.0.0/4], domain: [+.google.com, +.facebook.com, +.youtube.com] }
 proxies:
-      - { name: ��香港01, type: vless, server: bgp.iepl.v6qq.cn, port: 45440, uuid: 1db4e043-bbe9-4e57-9125-35abc370a480, udp: true, tls: true, skip-cert-verify: false, flow: xtls-rprx-vision, client-fingerprint: edge, servername: www.bilibili.com, reality-opts: { public-key: 47dY_dY6SsrOdLE-x6Wk4TqXpeRD823lX413zKgAnlE, short-id: 1e6421d0 } }
-      - { name: ��香港02, type: vless, server: bgp.iepl.v6qq.cn, port: 45456, uuid: 1db4e043-bbe9-4e57-9125-35abc370a480, udp: true, tls: true, skip-cert-verify: false, flow: xtls-rprx-vision, client-fingerprint: edge, servername: www.bilibili.com, reality-opts: { public-key: 47dY_dY6SsrOdLE-x6Wk4TqXpeRD823lX413zKgAnlE, short-id: 1e6421d0 } }
-      - { name: ��香港03, type: vless, server: bgp.iepl.v6qq.cn, port: 45454, uuid: 1db4e043-bbe9-4e57-9125-35abc370a480, udp: true, tls: true, skip-cert-verify: false, flow: xtls-rprx-vision, client-fingerprint: edge, servername: www.bilibili.com, reality-opts: { public-key: 47dY_dY6SsrOdLE-x6Wk4TqXpeRD823lX413zKgAnlE, short-id: 1e6421d0 } }
-      - { name: ��香港04, type: vless, server: bgp.iepl.v6qq.cn, port: 47874, uuid: 1db4e043-bbe9-4e57-9125-35abc370a480, udp: true, tls: true, skip-cert-verify: false, flow: xtls-rprx-vision, client-fingerprint: edge, servername: www.bilibili.com, reality-opts: { public-key: 47dY_dY6SsrOdLE-x6Wk4TqXpeRD823lX413zKgAnlE, short-id: 1e6421d0 } }
-      - { name: ��香港05, type: vless, server: bgp.iepl.v6qq.cn, port: 26550, uuid: 1db4e043-bbe9-4e57-9125-35abc370a480, udp: true, tls: true, skip-cert-verify: false, flow: xtls-rprx-vision, client-fingerprint: edge, servername: www.bilibili.com, reality-opts: { public-key: 47dY_dY6SsrOdLE-x6Wk4TqXpeRD823lX413zKgAnlE, short-id: 1e6421d0 } }
+      - { name: 🇭🇰 Hong Kong 01, type: vless, server: bgp.iepl.v6qq.cn, port: 45440, uuid: 1db4e043-bbe9-4e57-9125-35abc370a480, udp: true, tls: true, skip-cert-verify: false, flow: xtls-rprx-vision, client-fingerprint: edge, servername: www.bilibili.com, reality-opts: { public-key: 47dY_dY6SsrOdLE-x6Wk4TqXpeRD823lX413zKgAnlE, short-id: 1e6421d0 } }
+      - { name: 🇭🇰 Hong Kong 02, type: vless, server: bgp.iepl.v6qq.cn, port: 45456, uuid: 1db4e043-bbe9-4e57-9125-35abc370a480, udp: true, tls: true, skip-cert-verify: false, flow: xtls-rprx-vision, client-fingerprint: edge, servername: www.bilibili.com, reality-opts: { public-key: 47dY_dY6SsrOdLE-x6Wk4TqXpeRD823lX413zKgAnlE, short-id: 1e6421d0 } }
+      - { name: 🇭🇰 Hong Kong 03, type: vless, server: bgp.iepl.v6qq.cn, port: 45454, uuid: 1db4e043-bbe9-4e57-9125-35abc370a480, udp: true, tls: true, skip-cert-verify: false, flow: xtls-rprx-vision, client-fingerprint: edge, servername: www.bilibili.com, reality-opts: { public-key: 47dY_dY6SsrOdLE-x6Wk4TqXpeRD823lX413zKgAnlE, short-id: 1e6421d0 } }
+      - { name: 🇭🇰 Hong Kong 04, type: vless, server: bgp.iepl.v6qq.cn, port: 47874, uuid: 1db4e043-bbe9-4e57-9125-35abc370a480, udp: true, tls: true, skip-cert-verify: false, flow: xtls-rprx-vision, client-fingerprint: edge, servername: www.bilibili.com, reality-opts: { public-key: 47dY_dY6SsrOdLE-x6Wk4TqXpeRD823lX413zKgAnlE, short-id: 1e6421d0 } }
+      - { name: 🇭🇰 Hong Kong 05, type: vless, server: bgp.iepl.v6qq.cn, port: 26550, uuid: 1db4e043-bbe9-4e57-9125-35abc370a480, udp: true, tls: true, skip-cert-verify: false, flow: xtls-rprx-vision, client-fingerprint: edge, servername: www.bilibili.com, reality-opts: { public-key: 47dY_dY6SsrOdLE-x6Wk4TqXpeRD823lX413zKgAnlE, short-id: 1e6421d0 } }
       - {name: 尼日1, server:  34.141.129.232, port: 9000, type: socks5, username: e5265d18-149a832e-8fcffc, password: wifi-ng--lagos-}
       - {name: 尼日2, server:  34.141.129.232, port: 9001, type: socks5, username: e5265d18-149a832e-783ae4, password: wifi-ng--lagos-}
       - {name: 尼日3, server:  34.141.129.232, port: 9002, type: socks5, username: e5265d18-149a832e-9340aa, password: wifi-ng--lagos-}
@@ -201,6 +201,7 @@ proxies:
       - GEOIP,CN,DIRECT
 
       - MATCH,Proxies
+
 
 
 
