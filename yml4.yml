@@ -17,20 +17,11 @@ dns:
     fallback: [1.1.1.1, 8.8.8.8]
     fallback-filter: { geoip: true, geoip-code: CN, geosite: [gfw], ipcidr: [240.0.0.0/4], domain: [+.google.com, +.facebook.com, +.youtube.com] }
 proxies:
-    - { name: ��香港01, type: vless, server: bgp.iepl.v6qq.cn, port: 45440, uuid: 1db4e043-bbe9-4e57-9125-35abc370a480, udp: true, tls: true, skip-cert-verify: false, flow: xtls-rprx-vision, client-fingerprint: edge, servername: www.bilibili.com, reality-opts: { public-key: 47dY_dY6SsrOdLE-x6Wk4TqXpeRD823lX413zKgAnlE, short-id: 1e6421d0 } }
-    - { name: ��香港02, type: vless, server: bgp.iepl.v6qq.cn, port: 45456, uuid: 1db4e043-bbe9-4e57-9125-35abc370a480, udp: true, tls: true, skip-cert-verify: false, flow: xtls-rprx-vision, client-fingerprint: edge, servername: www.bilibili.com, reality-opts: { public-key: 47dY_dY6SsrOdLE-x6Wk4TqXpeRD823lX413zKgAnlE, short-id: 1e6421d0 } }
-    - { name: ��香港03, type: vless, server: bgp.iepl.v6qq.cn, port: 45454, uuid: 1db4e043-bbe9-4e57-9125-35abc370a480, udp: true, tls: true, skip-cert-verify: false, flow: xtls-rprx-vision, client-fingerprint: edge, servername: www.bilibili.com, reality-opts: { public-key: 47dY_dY6SsrOdLE-x6Wk4TqXpeRD823lX413zKgAnlE, short-id: 1e6421d0 } }
-    - { name: ��香港04, type: vless, server: bgp.iepl.v6qq.cn, port: 47874, uuid: 1db4e043-bbe9-4e57-9125-35abc370a480, udp: true, tls: true, skip-cert-verify: false, flow: xtls-rprx-vision, client-fingerprint: edge, servername: www.bilibili.com, reality-opts: { public-key: 47dY_dY6SsrOdLE-x6Wk4TqXpeRD823lX413zKgAnlE, short-id: 1e6421d0 } }
-    - { name: ��香港05, type: vless, server: bgp.iepl.v6qq.cn, port: 26550, uuid: 1db4e043-bbe9-4e57-9125-35abc370a480, udp: true, tls: true, skip-cert-verify: false, flow: xtls-rprx-vision, client-fingerprint: edge, servername: www.bilibili.com, reality-opts: { public-key: 47dY_dY6SsrOdLE-x6Wk4TqXpeRD823lX413zKgAnlE, short-id: 1e6421d0 } }
-    - { name: '��香港06 [直连]', type: anytls, server: 23.249.18.167, port: 443, password: 1db4e043-bbe9-4e57-9125-35abc370a480, client-fingerprint: chrome, udp: true, alpn: [h2, http/1.1], sni: www.bilibili.com, skip-cert-verify: true }
-    - { name: '��香港07 [低倍率] [0.2x]', type: vless, server: low.v6qq.cn, port: 30494, uuid: 1db4e043-bbe9-4e57-9125-35abc370a480, udp: true, tls: true, skip-cert-verify: false, flow: xtls-rprx-vision, client-fingerprint: edge, servername: www.bilibili.com, reality-opts: { public-key: 47dY_dY6SsrOdLE-x6Wk4TqXpeRD823lX413zKgAnlE, short-id: 1e6421d0 } }
-    - { name: '��香港08 [HKT家宽] [2x]', type: vless, server: bgp.iepl.v6qq.cn, port: 29069, uuid: 1db4e043-bbe9-4e57-9125-35abc370a480, udp: true, tls: true, skip-cert-verify: false, flow: xtls-rprx-vision, client-fingerprint: edge, servername: www.bilibili.com, reality-opts: { public-key: 47dY_dY6SsrOdLE-x6Wk4TqXpeRD823lX413zKgAnlE, short-id: 1e6421d0 } }
-    - { name: '��香港09 [HGC家宽] [2x]', type: vless, server: bgp.iepl.v6qq.cn, port: 44555, uuid: 1db4e043-bbe9-4e57-9125-35abc370a480, udp: true, tls: true, skip-cert-verify: false, flow: xtls-rprx-vision, client-fingerprint: edge, servername: www.bilibili.com, reality-opts: { public-key: 47dY_dY6SsrOdLE-x6Wk4TqXpeRD823lX413zKgAnlE, short-id: 1e6421d0 } }
-    - { name: '��香港10 [HKBN家宽] [2x]', type: vless, server: bgp.iepl.v6qq.cn, port: 38675, uuid: 1db4e043-bbe9-4e57-9125-35abc370a480, udp: true, tls: true, skip-cert-verify: false, flow: xtls-rprx-vision, client-fingerprint: edge, servername: www.bilibili.com, reality-opts: { public-key: 47dY_dY6SsrOdLE-x6Wk4TqXpeRD823lX413zKgAnlE, short-id: 1e6421d0 } }
-    - { name: '��香港11 [i-Cable家宽] [2x]', type: vless, server: bgp.iepl.v6qq.cn, port: 21141, uuid: 1db4e043-bbe9-4e57-9125-35abc370a480, udp: true, tls: true, skip-cert-verify: false, flow: xtls-rprx-vision, client-fingerprint: edge, servername: www.bilibili.com, reality-opts: { public-key: 47dY_dY6SsrOdLE-x6Wk4TqXpeRD823lX413zKgAnlE, short-id: 1e6421d0 } }
-    - { name: '��澳门01 [CTM家宽] [2x]', type: vless, server: bgp.iepl.v6qq.cn, port: 43062, uuid: 1db4e043-bbe9-4e57-9125-35abc370a480, udp: true, tls: true, skip-cert-verify: false, flow: xtls-rprx-vision, client-fingerprint: edge, servername: www.bilibili.com, reality-opts: { public-key: 47dY_dY6SsrOdLE-x6Wk4TqXpeRD823lX413zKgAnlE, short-id: 1e6421d0 } }
-    - { name: '��澳门02 [CTM家宽] [2x]', type: vless, server: bgp.iepl.v6qq.cn, port: 28069, uuid: 1db4e043-bbe9-4e57-9125-35abc370a480, udp: true, tls: true, skip-cert-verify: false, flow: xtls-rprx-vision, client-fingerprint: edge, servername: www.bilibili.com, reality-opts: { public-key: 47dY_dY6SsrOdLE-x6Wk4TqXpeRD823lX413zKgAnlE, short-id: 1e6421d0 } }
-    - { name: '��澳门03 [MTEL家宽] [2x]', type: vless, server: bgp.iepl.v6qq.cn, port: 55113, uuid: 1db4e043-bbe9-4e57-9125-35abc370a480, udp: true, tls: true, skip-cert-verify: false, flow: xtls-rprx-vision, client-fingerprint: edge, servername: www.bilibili.com, reality-opts: { public-key: 47dY_dY6SsrOdLE-x6Wk4TqXpeRD823lX413zKgAnlE, short-id: 1e6421d0 } }
+      - { name: ��香港01, type: vless, server: bgp.iepl.v6qq.cn, port: 45440, uuid: 1db4e043-bbe9-4e57-9125-35abc370a480, udp: true, tls: true, skip-cert-verify: false, flow: xtls-rprx-vision, client-fingerprint: edge, servername: www.bilibili.com, reality-opts: { public-key: 47dY_dY6SsrOdLE-x6Wk4TqXpeRD823lX413zKgAnlE, short-id: 1e6421d0 } }
+      - { name: ��香港02, type: vless, server: bgp.iepl.v6qq.cn, port: 45456, uuid: 1db4e043-bbe9-4e57-9125-35abc370a480, udp: true, tls: true, skip-cert-verify: false, flow: xtls-rprx-vision, client-fingerprint: edge, servername: www.bilibili.com, reality-opts: { public-key: 47dY_dY6SsrOdLE-x6Wk4TqXpeRD823lX413zKgAnlE, short-id: 1e6421d0 } }
+      - { name: ��香港03, type: vless, server: bgp.iepl.v6qq.cn, port: 45454, uuid: 1db4e043-bbe9-4e57-9125-35abc370a480, udp: true, tls: true, skip-cert-verify: false, flow: xtls-rprx-vision, client-fingerprint: edge, servername: www.bilibili.com, reality-opts: { public-key: 47dY_dY6SsrOdLE-x6Wk4TqXpeRD823lX413zKgAnlE, short-id: 1e6421d0 } }
+      - { name: ��香港04, type: vless, server: bgp.iepl.v6qq.cn, port: 47874, uuid: 1db4e043-bbe9-4e57-9125-35abc370a480, udp: true, tls: true, skip-cert-verify: false, flow: xtls-rprx-vision, client-fingerprint: edge, servername: www.bilibili.com, reality-opts: { public-key: 47dY_dY6SsrOdLE-x6Wk4TqXpeRD823lX413zKgAnlE, short-id: 1e6421d0 } }
+      - { name: ��香港05, type: vless, server: bgp.iepl.v6qq.cn, port: 26550, uuid: 1db4e043-bbe9-4e57-9125-35abc370a480, udp: true, tls: true, skip-cert-verify: false, flow: xtls-rprx-vision, client-fingerprint: edge, servername: www.bilibili.com, reality-opts: { public-key: 47dY_dY6SsrOdLE-x6Wk4TqXpeRD823lX413zKgAnlE, short-id: 1e6421d0 } }
       - {name: 尼日1, server:  34.141.129.232, port: 9000, type: socks5, username: e5265d18-149a832e-8fcffc, password: wifi-ng--lagos-}
       - {name: 尼日2, server:  34.141.129.232, port: 9001, type: socks5, username: e5265d18-149a832e-783ae4, password: wifi-ng--lagos-}
       - {name: 尼日3, server:  34.141.129.232, port: 9002, type: socks5, username: e5265d18-149a832e-9340aa, password: wifi-ng--lagos-}
@@ -148,11 +139,6 @@ proxies:
           - 🇭🇰 Hong Kong 03
           - 🇭🇰 Hong Kong 04
           - 🇭🇰 Hong Kong 05
-          - 🇹🇼 Taiwan 01
-          - 🇹🇼 Taiwan 02
-          - 🇹🇼 Taiwan 03
-          - 🇹🇼 Taiwan 04
-          - 🇹🇼 Taiwan 05
 
     rules:
       - DOMAIN-SUFFIX,ipapi.co,Googleplay
@@ -215,6 +201,7 @@ proxies:
       - GEOIP,CN,DIRECT
 
       - MATCH,Proxies
+
 
 
 
