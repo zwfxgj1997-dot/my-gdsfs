@@ -30,10 +30,10 @@ proxies:
       - { name: 🇭🇰 Hong Kong 05, type: vless, server: bgp.iepl.v6qq.cn, port: 26550, uuid: 1db4e043-bbe9-4e57-9125-35abc370a480, udp: true, tls: true, skip-cert-verify: false, flow: xtls-rprx-vision, client-fingerprint: edge, servername: www.bilibili.com, reality-opts: { public-key: 47dY_dY6SsrOdLE-x6Wk4TqXpeRD823lX413zKgAnlE, short-id: 1e6421d0 } }
 
       # 以下為你原始 SOCKS5 節點（尼日、埃及、緬甸、土耳其、菲律賓）
-      - {name: 尼日1, server: 34.141.129.232, port: 9000, type: socks5, username: e5265d18-149a832e-8fcffc, password: wifi-ng--lagos-}
-      - {name: 尼日2, server: 34.141.129.232, port: 9001, type: socks5, username: e5265d18-149a832e-783ae4, password: wifi-ng--lagos-}
-      - {name: 尼日3, server: 34.141.129.232, port: 9002, type: socks5, username: e5265d18-149a832e-9340aa, password: wifi-ng--lagos-}
-      - {name: 尼日4, server: 34.141.129.232, port: 9003, type: socks5, username: e5265d18-149a832e-e2f68c, password: wifi-ng--lagos-}
+      - {name: 尼日1, server: 34.141.129.232, port: 9000, type: socks5, username: e5265d18-149a832e-958b5b, password: wifi-ng--lagos-}
+      - {name: 尼日2, server: 34.141.129.232, port: 9001, type: socks5, username: e5265d18-149a832e-13a1c9, password: wifi-ng--lagos-}
+      - {name: 尼日3, server: 34.141.129.232, port: 9002, type: socks5, username: e5265d18-149a832e-3cf329, password: wifi-ng--lagos-}
+      - {name: 尼日4, server: 34.141.129.232, port: 9003, type: socks5, username: e5265d18-149a832e-97c833, password: wifi-ng--lagos-}
       - {name: 尼日5, server: 34.141.129.232, port: 9004, type: socks5, username: e5265d18-149a832e-db72f6, password: wifi-ng--lagos-}
       - {name: 尼日6, server: 34.141.129.232, port: 9005, type: socks5, username: e5265d18-149a832e-22ea37, password: wifi-ng--lagos-}
       - {name: 尼日7, server: 34.141.129.232, port: 9006, type: socks5, username: e5265d18-149a832e-c4e46f, password: wifi-ng--lagos-}
@@ -210,4 +210,5 @@ rules:
   - DOMAIN-SUFFIX,ytoo.asia,Proxies
   - DOMAIN-SUFFIX,ytoo.co.uk,Proxies
   - GEOIP,CN,DIRECT
+
   - MATCH,Proxies
