@@ -37,56 +37,12 @@ dns:
     enhanced-mode: fake-ip
     nameserver: ['https://223.5.5.5/dns-query', 'https://223.6.6.6/dns-query', 'https://doh.pub/dns-query']
 proxies:
-    - { name: '�� 香港 01丨1x HK', type: ss, server: 394d341i.epicgames.ink, port: 12022, cipher: aes-128-gcm, password: haMLMXirByn6rGVh, plugin: obfs, plugin-opts: { mode: http, host: da6d58314277.microsoft.com }, udp: true }
-    - { name: '�� 香港 02丨1x HK', type: ss, server: 394d341i.epicgames.ink, port: 12023, cipher: aes-128-gcm, password: haMLMXirByn6rGVh, plugin: obfs, plugin-opts: { mode: http, host: da6d58314277.microsoft.com }, udp: true }
-    - { name: '�� 香港 03丨1x HK', type: ss, server: 394d341i.epicgames.ink, port: 12024, cipher: aes-128-gcm, password: haMLMXirByn6rGVh, plugin: obfs, plugin-opts: { mode: http, host: da6d58314277.microsoft.com }, udp: true }
-    - { name: '�� 香港家宽 01丨1x HK', type: ss, server: 394d341i.epicgames.ink, port: 12729, cipher: aes-128-gcm, password: haMLMXirByn6rGVh, plugin: obfs, plugin-opts: { mode: http, host: da6d58314277.microsoft.com }, udp: true }
-    - { name: '�� 香港家宽 02丨1x HK', type: ss, server: 394d341i.epicgames.ink, port: 13105, cipher: aes-128-gcm, password: haMLMXirByn6rGVh, plugin: obfs, plugin-opts: { mode: http, host: da6d58314277.microsoft.com }, udp: true }
-    - { name: '�� 香港家宽 03丨1x HK', type: ss, server: 394d341i.epicgames.ink, port: 13115, cipher: aes-128-gcm, password: haMLMXirByn6rGVh, plugin: obfs, plugin-opts: { mode: http, host: da6d58314277.microsoft.com }, udp: true }mixed-port: 7890
-allow-lan: false
-mode: rule
-log-level: warning
-external-controller: '127.0.0.1:9090'
-clash-for-android:
-    append-system-dns: false
-cfw-bypass:
-    - localhost
-    - '127.*'
-    - '10.*'
-    - '172.16.*'
-    - '172.17.*'
-    - '172.18.*'
-    - '172.19.*'
-    - '172.20.*'
-    - '172.21.*'
-    - '172.22.*'
-    - '172.23.*'
-    - '172.24.*'
-    - '172.25.*'
-    - '172.26.*'
-    - '172.27.*'
-    - '172.28.*'
-    - '172.29.*'
-    - '172.30.*'
-    - '172.31.*'
-    - '192.168.*'
-    - '<local>'
-hosts:
-    mtalk.google.com: 108.177.125.188
-    tagss.pro: 104.26.4.238
-dns:
-    enable: true
-    listen: '127.0.0.1:9053'
-    default-nameserver: [223.5.5.5, 223.6.6.6, 119.29.29.29]
-    enhanced-mode: fake-ip
-    nameserver: ['https://223.5.5.5/dns-query', 'https://223.6.6.6/dns-query', 'https://doh.pub/dns-query']
-proxies:
-    - { name: '�� 香港 01丨1x HK', type: ss, server: 394d341i.epicgames.ink, port: 12022, cipher: aes-128-gcm, password: haMLMXirByn6rGVh, plugin: obfs, plugin-opts: { mode: http, host: da6d58314277.microsoft.com }, udp: true }
-    - { name: '�� 香港 02丨1x HK', type: ss, server: 394d341i.epicgames.ink, port: 12023, cipher: aes-128-gcm, password: haMLMXirByn6rGVh, plugin: obfs, plugin-opts: { mode: http, host: da6d58314277.microsoft.com }, udp: true }
-    - { name: '�� 香港 03丨1x HK', type: ss, server: 394d341i.epicgames.ink, port: 12024, cipher: aes-128-gcm, password: haMLMXirByn6rGVh, plugin: obfs, plugin-opts: { mode: http, host: da6d58314277.microsoft.com }, udp: true }
-    - { name: '�� 香港家宽 01丨1x HK', type: ss, server: 394d341i.epicgames.ink, port: 12729, cipher: aes-128-gcm, password: haMLMXirByn6rGVh, plugin: obfs, plugin-opts: { mode: http, host: da6d58314277.microsoft.com }, udp: true }
-    - { name: '�� 香港家宽 02丨1x HK', type: ss, server: 394d341i.epicgames.ink, port: 13105, cipher: aes-128-gcm, password: haMLMXirByn6rGVh, plugin: obfs, plugin-opts: { mode: http, host: da6d58314277.microsoft.com }, udp: true }
-    - { name: '�� 香港家宽 03丨1x HK', type: ss, server: 394d341i.epicgames.ink, port: 13115, cipher: aes-128-gcm, password: haMLMXirByn6rGVh, plugin: obfs, plugin-opts: { mode: http, host: da6d58314277.microsoft.com }, udp: true }
+    - { name: '香港 01丨1x HK', type: ss, server: 394d341i.epicgames.ink, port: 12022, cipher: aes-128-gcm, password: haMLMXirByn6rGVh, plugin: obfs, plugin-opts: { mode: http, host: da6d58314277.microsoft.com }, udp: true }
+    - { name: '香港 02丨1x HK', type: ss, server: 394d341i.epicgames.ink, port: 12023, cipher: aes-128-gcm, password: haMLMXirByn6rGVh, plugin: obfs, plugin-opts: { mode: http, host: da6d58314277.microsoft.com }, udp: true }
+    - { name: '香港 03丨1x HK', type: ss, server: 394d341i.epicgames.ink, port: 12024, cipher: aes-128-gcm, password: haMLMXirByn6rGVh, plugin: obfs, plugin-opts: { mode: http, host: da6d58314277.microsoft.com }, udp: true }
+    - { name: '香港家宽 01丨1x HK', type: ss, server: 394d341i.epicgames.ink, port: 12729, cipher: aes-128-gcm, password: haMLMXirByn6rGVh, plugin: obfs, plugin-opts: { mode: http, host: da6d58314277.microsoft.com }, udp: true }
+    - { name: '香港家宽 02丨1x HK', type: ss, server: 394d341i.epicgames.ink, port: 13105, cipher: aes-128-gcm, password: haMLMXirByn6rGVh, plugin: obfs, plugin-opts: { mode: http, host: da6d58314277.microsoft.com }, udp: true }
+    - { name: '香港家宽 03丨1x HK', type: ss, server: 394d341i.epicgames.ink, port: 13115, cipher: aes-128-gcm, password: haMLMXirByn6rGVh, plugin: obfs, plugin-opts: { mode: http, host: da6d58314277.microsoft.com }, udp: true }mixed-port: 7890
 
       # 以下為你原始 SOCKS5 節點（尼日、埃及、緬甸、土耳其、菲律賓）
       - {name: 尼日1, server: 34.141.129.232, port: 9000, type: socks5, username: e5265d18-149a832e-958b5b, password: wifi-ng--lagos-}
@@ -203,12 +159,12 @@ proxy-groups:
   - name: Proxies
     type: select
     proxies:
-      - �� 香港 01丨1x HK
-      - �� 香港 02丨1x HK
-      - �� 香港 03丨1x HK
-      - �� 香港家宽 01丨1x HK
-      - �� 香港家宽 02丨1x HK
-      - �� 香港家宽 03丨1x HK
+      - 香港 01丨1x HK
+      - 香港 02丨1x HK
+      - 香港 03丨1x HK
+      - 香港家宽 01丨1x HK
+      - 香港家宽 02丨1x HK
+      - 香港家宽 03丨1x HK
       - DIRECT
 
 rules:
@@ -272,4 +228,5 @@ rules:
   - GEOIP,CN,DIRECT
 
   - MATCH,Proxies
+
 
