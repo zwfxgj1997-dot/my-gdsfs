@@ -1,0 +1,226 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: Rule
+log-level: info
+external-controller: 127.0.0.1:9090
+dns:
+  enable: true
+  ipv6: false
+  enhanced-mode: fake-ip
+  nameserver:
+    - 223.5.5.5
+    - 8.8.8.8
+    - 1.1.1.1
+    
+proxies:
+  - name: NG01
+    type: socks5
+    server: 106.75.152.119
+    port: "1000"
+    username: e5265d18-149a832e-4faae9
+    password: wifi-ng---
+    udp: true
+  - name: NG02
+    type: socks5
+    server: 106.75.152.119
+    port: "1001"
+    username: e5265d18-149a832e-7c2751
+    password: wifi-ng---
+    udp: true
+  - name: NG03
+    type: socks5
+    server: 106.75.152.119
+    port: "1002"
+    username: e5265d18-149a832e-d3aa1d
+    password: wifi-ng---
+    udp: true
+  - name: NG04
+    type: socks5
+    server: 106.75.152.119
+    port: "1003"
+    username: e5265d18-149a832e-7e1b0c
+    password: wifi-ng---
+    udp: true
+  - name: NG05
+    type: socks5
+    server: 106.75.152.119
+    port: "1004"
+    username: e5265d18-149a832e-7d9fc5
+    password: wifi-ng---
+    udp: true
+  - name: NG06
+    type: socks5
+    server: 106.75.152.119
+    port: "1005"
+    username: e5265d18-149a832e-42310b
+    password: mobile-ng---
+    udp: true
+  - name: NG07
+    type: socks5
+    server: geo.iproyal.com
+    port: "11201"
+    username: P7I2lwT2Oynjs7TB
+    password: T41qODqSPUPqxwr2_country-ng_session-Vtgk7dDe_lifetime-15m_streaming-1
+    udp: true
+  - name: NG08
+    type: socks5
+    server: geo.iproyal.com
+    port: "11201"
+    username: P7I2lwT2Oynjs7TB
+    password: T41qODqSPUPqxwr2_country-ng_session-X4YvsykO_lifetime-15m_streaming-1
+    udp: true
+  - name: NG09
+    type: socks5
+    server: geo.iproyal.com
+    port: "11201"
+    username: P7I2lwT2Oynjs7TB
+    password: T41qODqSPUPqxwr2_country-ng_session-qCk0ywIg_lifetime-15m_streaming-1
+    udp: true
+  - name: NG10
+    type: socks5
+    server: geo.iproyal.com
+    port: "11201"
+    username: P7I2lwT2Oynjs7TB
+    password: T41qODqSPUPqxwr2_country-ng_session-mYhyReha_lifetime-15m_streaming-1
+    udp: true
+  - name: PK01
+    type: socks5
+    server: 34.141.138.189
+    port: "9000"
+    username: e5265d18-149a832e-cf755b
+    password: wifi-pk---
+    udp: true
+  - name: PK02
+    type: socks5
+    server: 34.141.138.189
+    port: "9001"
+    username: e5265d18-149a832e-f64a10
+    password: wifi-pk---
+    udp: true
+  - name: PK03
+    type: socks5
+    server: 34.141.138.189
+    port: "9002"
+    username: e5265d18-149a832e-e4fc0a
+    password: wifi-pk---
+    udp: true
+  - name: PK04
+    type: socks5
+    server: 34.141.138.189
+    port: "9003"
+    username: e5265d18-149a832e-e9c8f4
+    password: wifi-pk---
+    udp: true
+  - name: PK05
+    type: socks5
+    server: 34.141.138.189
+    port: "9004"
+    username: e5265d18-149a832e-e7315f
+    password: wifi-pk---
+    udp: true
+  - name: PK06
+    type: socks5
+    server: 34.141.138.189
+    port: "9005"
+    username: e5265d18-149a832e-e97212
+    password: wifi-pk---
+    udp: true
+  - name: PK07
+    type: socks5
+    server: geo.iproyal.com
+    port: "11201"
+    username: P7I2lwT2Oynjs7TB
+    password: T41qODqSPUPqxwr2_country-pk_session-Vtgk7dDe_lifetime-15m_streaming-1
+    udp: true
+  - name: PK08
+    type: socks5
+    server: geo.iproyal.com
+    port: "11201"
+    username: P7I2lwT2Oynjs7TB
+    password: T41qODqSPUPqxwr2_country-pk_session-Vtgk7dDe_lifetime-15m_streaming-1
+    udp: true
+  - name: PK09
+    type: socks5
+    server: geo.iproyal.com
+    port: "11201"
+    username: P7I2lwT2Oynjs7TB
+    password: T41qODqSPUPqxwr2_country-pk_session-mYhyReha_lifetime-15m_streaming-1
+    udp: true
+  - name: PK10
+    type: socks5
+    server: geo.iproyal.com
+    port: "11201"
+    username: P7I2lwT2Oynjs7TB
+    password: T41qODqSPUPqxwr2_country-pk_session-6AAzIZfv_lifetime-15m_streaming-1
+    udp: true
+  - name: PK21
+    type: socks5
+    server: sg2.cliproxy.io
+    port: "443"
+    username: 5mji103678-region-PK
+    password: aas00123
+    udp: true
+proxy-providers:
+          机场:
+            type: http
+            url: https://sub.yztcloud.cc/getnodeinfo?token=ded3f154523b71edc1938ba4acf19a23
+            interval: 86400
+            path: ./proxy_provider/jc.yaml
+            udp: false
+            health-check:
+              enable: true
+              interval: 600
+              url: http://www.gstatic.com/generate_204
+proxy-groups:
+  - name: 主线路
+    proxies:
+      - DIRECT
+      - 谷歌分流
+    use:
+      - 机场
+    type: select
+    disable-udp: true
+    health-check:
+      enable: true
+      interval: 600
+      url: http://www.gstatic.com/generate_204
+  - name: 谷歌分流
+    proxies:
+      - NG01
+      - NG02
+      - NG03
+      - NG04
+      - NG05
+      - NG06
+      - NG07
+      - NG08
+      - NG09
+      - NG10
+      - PK01
+      - PK02
+      - PK03
+      - PK04
+      - PK05
+      - PK06
+      - PK07
+      - PK08
+      - PK09
+      - PK10
+      - PK21
+    type: select
+    disable-udp: false
+    health-check:
+      enable: false
+      interval: 600
+      url: http://www.gstatic.com/generate_204
+rules:
+  - DOMAIN,play.googleapis.com,谷歌分流
+  - DOMAIN,myaccount.google.com,谷歌分流
+  - DOMAIN-KEYWORD,accounts.google.com,谷歌分流
+  - DOMAIN,play-fe.googleapis.com,谷歌分流
+  - DOMAIN,sspanel.net,谷歌分流
+  - DOMAIN,payments-pa.googleapis.com,谷歌分流
+  - DOMAIN,ip.ping0.cc,谷歌分流
+  - DOMAIN,x.la,谷歌分流
+  - MATCH,主线路
