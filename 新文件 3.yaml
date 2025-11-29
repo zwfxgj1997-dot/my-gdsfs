@@ -45,14 +45,14 @@ proxies:
     - { name: '香港家宽 03丨1x HK', type: ss, server: 1bqp2bhd.epicgames.ink, port: 12306, cipher: aes-128-gcm, password: haMLMXirByn6rGVh, plugin: obfs, plugin-opts: { mode: http, host: 10ea86e8ff16.microsoft.com }, udp: true }
 
     # 以下為你原始 SOCKS5 節點（尼日、埃及、緬甸、土耳其、菲律賓）
-    - { name: '尼日1', server: 34.141.129.232, port: 9000, type: socks5, username: e5265d18-149a832e-958b5b, password: wifi-ng--lagos- }
-    - { name: '尼日2', server: 34.141.129.232, port: 9001, type: socks5, username: e5265d18-149a832e-13a1c9, password: wifi-ng--lagos- }
-    - { name: '尼日3', server: 34.141.129.232, port: 9002, type: socks5, username: e5265d18-149a832e-3cf329, password: wifi-ng--lagos- }
-    - { name: '尼日4', server: 34.141.129.232, port: 9003, type: socks5, username: e5265d18-149a832e-97c833, password: wifi-ng--lagos- }
-    - { name: '尼日5', server: 34.141.129.232, port: 9004, type: socks5, username: e5265d18-149a832e-db72f6, password: wifi-ng--lagos- }
-    - { name: '尼日6', server: 34.141.129.232, port: 9005, type: socks5, username: e5265d18-149a832e-22ea37, password: wifi-ng--lagos- }
-    - { name: '尼日7', server: 34.141.129.232, port: 9006, type: socks5, username: e5265d18-149a832e-c4e46f, password: wifi-ng--lagos- }
-    - { name: '尼日8', server: 34.141.129.232, port: 9007, type: socks5, username: e5265d18-149a832e-c8bc18, password: wifi-ng--lagos- }
+    - { name: '尼日1', server: 34.141.219.7, port: 9000, type: socks5, username: e5265d18-149a832e-fedeaa, password: wifi-ng--lagos- }
+    - { name: '尼日2', server: 34.141.219.7, port: 9001, type: socks5, username: e5265d18-149a832e-cdde09, password: wifi-ng--lagos- }
+    - { name: '尼日3', server: 34.141.219.7, port: 9002, type: socks5, username: e5265d18-149a832e-5b7f0a, password: wifi-ng--lagos- }
+    - { name: '尼日4', server: 34.141.219.7, port: 9003, type: socks5, username: e5265d18-149a832e-40dfef, password: wifi-ng--lagos- }
+    - { name: '尼日5', server: 34.141.219.7, port: 9004, type: socks5, username: e5265d18-149a832e-eeddb9, password: wifi-ng--lagos- }
+    - { name: '尼日6', server: 34.141.219.7, port: 9005, type: socks5, username: e5265d18-149a832e-71272a, password: wifi-ng--lagos- }
+    - { name: '尼日7', server: 34.141.219.7, port: 9006, type: socks5, username: e5265d18-149a832e-8cc3b9, password: wifi-ng--lagos- }
+    - { name: '尼日8', server: 34.141.219.7, port: 9007, type: socks5, username: e5265d18-149a832e-997bf2, password: wifi-ng--lagos- }
     - { name: '尼日9', server: geo.iproyal.com, port: 11200, type: socks5, username: P7I2lwT2Oynjs7TB, password: T41qODqSPUPqxwr2_country-ng_session-6qxCbAKU_lifetime-15m_streaming-1 }
     - { name: '尼日10', server: geo.iproyal.com, port: 11200, type: socks5, username: P7I2lwT2Oynjs7TB, password: T41qODqSPUPqxwr2_country-ng_session-VSu1C9kl_lifetime-15m_streaming-1 }
     - { name: '尼日11', server: geo.iproyal.com, port: 12321, type: socks5, username: P7I2lwT2Oynjs7TB, password: T41qODqSPUPqxwr2_country-ng_session-NZXQvVAJ_lifetime-15m_streaming-1 }
@@ -227,5 +227,6 @@ rules:
   - DOMAIN-SUFFIX,ytoo.co.uk,Proxies
   - GEOIP,CN,DIRECT
   - MATCH,Proxies
+
 
 
