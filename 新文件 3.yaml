@@ -61,16 +61,16 @@ proxies:
     - { name: '尼日14', server: geo.iproyal.com, port: 12321, type: socks5, username: P7I2lwT2Oynjs7TB, password: T41qODqSPUPqxwr2_country-ng_session-WChwXE4N_lifetime-15m_streaming-1 }
     - { name: '尼日15', server: geo.iproyal.com, port: 12321, type: socks5, username: P7I2lwT2Oynjs7TB, password: T41qODqSPUPqxwr2_country-ng_session-MvXbcPS2_lifetime-15m_streaming-1 }
 
-    - { name: '埃及1', server: geo.iproyal.com, port: 12321, type: socks5, username: P7I2lwT2Oynjs7TB, password: T41qODqSPUPqxwr2_country-eg_session-87YGKFvE_lifetime-15m_streaming-1 }
-    - { name: '埃及2', server: geo.iproyal.com, port: 12321, type: socks5, username: P7I2lwT2Oynjs7TB, password: T41qODqSPUPqxwr2_country-eg_session-Xrhs05em_lifetime-15m_streaming-1 }
-    - { name: '埃及3', server: geo.iproyal.com, port: 12321, type: socks5, username: P7I2lwT2Oynjs7TB, password: T41qODqSPUPqxwr2_country-eg_session-VDjUiqtp_lifetime-15m_streaming-1 }
-    - { name: '埃及4', server: geo.iproyal.com, port: 12321, type: socks5, username: P7I2lwT2Oynjs7TB, password: T41qODqSPUPqxwr2_country-eg_session-tw7h4qrI_lifetime-15m_streaming-1 }
-    - { name: '埃及5', server: geo.iproyal.com, port: 12321, type: socks5, username: P7I2lwT2Oynjs7TB, password: T41qODqSPUPqxwr2_country-eg_session-2bfXhcAc_lifetime-15m_streaming-1 }
-    - { name: '埃及6', server: geo.iproyal.com, port: 12321, type: socks5, username: P7I2lwT2Oynjs7TB, password: T41qODqSPUPqxwr2_country-eg_session-LUoAM7Ou_lifetime-15m_streaming-1 }
-    - { name: '埃及7', server: geo.iproyal.com, port: 12321, type: socks5, username: P7I2lwT2Oynjs7TB, password: T41qODqSPUPqxwr2_country-eg_session-J81D8EJ5_lifetime-15m_streaming-1 }
-    - { name: '埃及8', server: geo.iproyal.com, port: 12321, type: socks5, username: P7I2lwT2Oynjs7TB, password: T41qODqSPUPqxwr2_country-eg_session-bv0n5RKB_lifetime-15m_streaming-1 }
-    - { name: '埃及9', server: geo.iproyal.com, port: 12321, type: socks5, username: P7I2lwT2Oynjs7TB, password: T41qODqSPUPqxwr2_country-eg_session-gBgrNfLY_lifetime-15m_streaming-1 }
-    - { name: '埃及10', server: geo.iproyal.com, port: 12321, type: socks5, username: P7I2lwT2Oynjs7TB, password: T41qODqSPUPqxwr2_country-eg_session-1Y3KJWfx_lifetime-15m_streaming-1 }
+    - { name: '埃及1', server: prem.country.iprocket.io, port: 9595, type: socks5, username: com14049369-res-PK-Lsid-948284001, password: Htp9xuwt28o95A5 }
+    - { name: '埃及2', server: prem.country.iprocket.io, port: 9595, type: socks5, username: com14049369-res-PK-Lsid-906052103, password: Htp9xuwt28o95A5 }
+    - { name: '埃及3', server: prem.country.iprocket.io, port: 9595, type: socks5, username: com14049369-res-PK-Lsid-890358478, password: Htp9xuwt28o95A5 }
+    - { name: '埃及4', server: prem.country.iprocket.io, port: 9595, type: socks5, username: com14049369-res-PK-Lsid-926379417, password: Htp9xuwt28o95A5 }
+    - { name: '埃及5', server: prem.country.iprocket.io, port: 9595, type: socks5, username: com14049369-res-PK-Lsid-850743188, password: Htp9xuwt28o95A5 }
+    - { name: '埃及6', server: prem.country.iprocket.io, port: 9595, type: socks5, username: com14049369-res-PK-Lsid-927755326, password: Htp9xuwt28o95A5 }
+    - { name: '埃及7', server: prem.country.iprocket.io, port: 9595, type: socks5, username: com14049369-res-PK-Lsid-883946538, password: Htp9xuwt28o95A5 }
+    - { name: '埃及8', server: prem.country.iprocket.io, port: 9595, type: socks5, username: com14049369-res-PK-Lsid-993522059, password: Htp9xuwt28o95A5 }
+    - { name: '埃及9', server: prem.country.iprocket.io, port: 9595, type: socks5, username: com14049369-res-PK-Lsid-860386794, password: Htp9xuwt28o95A5 }
+    - { name: '埃及10', server: prem.country.iprocket.io, port: 9595, type: socks5, username: com14049369-res-PK-Lsid-828346007, password: Htp9xuwt28o95A5 }
 
     - { name: '缅甸1', server: sg-iepl.com, port: 28656, type: socks5, username: 47353961-zone-custom-region-MM-sessid-kmszjXc0-sessTime-15, password: dJIA8BM3 }
     - { name: '缅甸2', server: sg-iepl.com, port: 28656, type: socks5, username: 47353961-zone-custom-region-MM-sessid-3uNCfzJE-sessTime-15, password: dJIA8BM3 }
@@ -227,6 +227,7 @@ rules:
   - DOMAIN-SUFFIX,ytoo.co.uk,Proxies
   - GEOIP,CN,DIRECT
   - MATCH,Proxies
+
 
 
 
