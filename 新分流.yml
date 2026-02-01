@@ -86,80 +86,80 @@ proxies:
     udp: true
   - name: PK01
     type: socks5
-    server: 34.141.138.189
-    port: "9000"
-    username: e5265d18-149a832e-cf755b
-    password: wifi-pk---
+    server: prem.country.iprocket.io
+    port: "9595"
+    username: com14049369-res-PK-Lsid-917785863
+    password: Htp9xuwt28o95A5
     udp: true
   - name: PK02
     type: socks5
-    server: 34.141.138.189
-    port: "9001"
-    username: e5265d18-149a832e-f64a10
-    password: wifi-pk---
+    server: prem.country.iprocket.io
+    port: "9595"
+    username: com14049369-res-PK-Lsid-930524220
+    password: Htp9xuwt28o95A5
     udp: true
   - name: PK03
     type: socks5
-    server: 34.141.138.189
-    port: "9002"
-    username: e5265d18-149a832e-e4fc0a
-    password: wifi-pk---
+    server: prem.country.iprocket.io
+    port: "9595"
+    username: com14049369-res-PK-Lsid-930973263
+    password: Htp9xuwt28o95A5
     udp: true
   - name: PK04
     type: socks5
-    server: 34.141.138.189
-    port: "9003"
-    username: e5265d18-149a832e-e9c8f4
-    password: wifi-pk---
+    server: prem.country.iprocket.io
+    port: "9595"
+    username: com14049369-res-PK-Lsid-980927614
+    password: Htp9xuwt28o95A5
     udp: true
   - name: PK05
     type: socks5
-    server: 34.141.138.189
-    port: "9004"
-    username: e5265d18-149a832e-e7315f
-    password: wifi-pk---
+    server: prem.country.iprocket.io
+    port: "9595"
+    username: com14049369-res-PK-Lsid-831310576
+    password: Htp9xuwt28o95A5
     udp: true
   - name: PK06
     type: socks5
-    server: 34.141.138.189
-    port: "9005"
-    username: e5265d18-149a832e-e97212
-    password: wifi-pk---
+    server: prem.country.iprocket.io
+    port: "9595"
+    username: com14049369-res-PK-Lsid-982233353
+    password: Htp9xuwt28o95A5
     udp: true
   - name: PK07
     type: socks5
-    server: geo.iproyal.com
-    port: "11201"
-    username: P7I2lwT2Oynjs7TB
-    password: T41qODqSPUPqxwr2_country-pk_session-Vtgk7dDe_lifetime-15m_streaming-1
+    server: prem.country.iprocket.io
+    port: "9595"
+    username: com14049369-res-PK-Lsid-837034065
+    password: Htp9xuwt28o95A5
     udp: true
   - name: PK08
     type: socks5
-    server: geo.iproyal.com
-    port: "11201"
-    username: P7I2lwT2Oynjs7TB
-    password: T41qODqSPUPqxwr2_country-pk_session-Vtgk7dDe_lifetime-15m_streaming-1
+    server: prem.country.iprocket.io
+    port: "9595"
+    username: com14049369-res-PK-Lsid-923231085
+    password: Htp9xuwt28o95A5
     udp: true
   - name: PK09
     type: socks5
-    server: geo.iproyal.com
-    port: "11201"
-    username: P7I2lwT2Oynjs7TB
-    password: T41qODqSPUPqxwr2_country-pk_session-mYhyReha_lifetime-15m_streaming-1
+    server: prem.country.iprocket.io
+    port: "9595"
+    username: com14049369-res-PK-Lsid-839156429
+    password: Htp9xuwt28o95A5
     udp: true
   - name: PK10
     type: socks5
-    server: geo.iproyal.com
-    port: "11201"
-    username: P7I2lwT2Oynjs7TB
-    password: T41qODqSPUPqxwr2_country-pk_session-6AAzIZfv_lifetime-15m_streaming-1
+    server: prem.country.iprocket.io
+    port: "9595"
+    username: com14049369-res-PK-Lsid-895628442
+    password: Htp9xuwt28o95A5
     udp: true
   - name: PK21
     type: socks5
-    server: sg2.cliproxy.io
-    port: "443"
-    username: 5mji103678-region-PK
-    password: aas00123
+    server: prem.country.iprocket.io
+    port: "9595"
+    username: com14049369-res-PK-Lsid-805754923
+    password: Htp9xuwt28o95A5
     udp: true
 proxy-providers:
           机场:
@@ -224,3 +224,4 @@ rules:
   - DOMAIN,ip.ping0.cc,谷歌分流
   - DOMAIN,x.la,谷歌分流
   - MATCH,主线路
+
