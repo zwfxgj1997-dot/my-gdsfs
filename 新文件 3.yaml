@@ -42,7 +42,7 @@ proxies:
     - { name: '香港 03丨1x HK', type: ss, server: 1bqp2bhd.epicgames.ink, port: 12024, cipher: aes-128-gcm, password: haMLMXirByn6rGVh, plugin: obfs, plugin-opts: { mode: http, host: 10ea86e8ff16.microsoft.com }, udp: true }
     - { name: '香港家宽 01丨1x HK', type: ss, server: 1bqp2bhd.epicgames.ink, port: 12304, cipher: aes-128-gcm, password: haMLMXirByn6rGVh, plugin: obfs, plugin-opts: { mode: http, host: 10ea86e8ff16.microsoft.com }, udp: true }
     - { name: '香港家宽 02丨1x HK', type: ss, server: 1bqp2bhd.epicgames.ink, port: 12305, cipher: aes-128-gcm, password: haMLMXirByn6rGVh, plugin: obfs, plugin-opts: { mode: http, host: 10ea86e8ff16.microsoft.com }, udp: true }
-    - { name: '香港家宽 03丨1x HK', type: ss, server: 1bqp2bhd.epicgames.ink, port: 12306, cipher: aes-128-gcm, password: haMLMXirByn6rGVh, plugin: obfs, plugin-opts: { mode: http, host: 10ea86e8ff16.microsoft.com }, udp: true }
+    - { name: '香港家宽 03丨1x HK', type: ss, server: 39c0f851-0e9b-4afb-887e-4bb62f7b966d.drive-glicloudccp.com, port: 12304, cipher: aes-128-gcm, password: haMLMXirByn6rGVh, plugin: obfs, plugin-opts: { mode: http, host: 10ea86e8ff16.microsoft.com }, udp: true }
 
     # 以下為你原始 SOCKS5 節點（尼日、埃及、緬甸、土耳其、菲律賓）
     - { name: '尼日1', server: 34.141.129.232, port: 9000, type: socks5, username: e5265d18-149a832e-54265c, password: wifi-ng--lagos- }
@@ -227,6 +227,7 @@ rules:
   - DOMAIN-SUFFIX,ytoo.co.uk,Proxies
   - GEOIP,CN,DIRECT
   - MATCH,Proxies
+
 
 
 
