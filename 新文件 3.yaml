@@ -69,8 +69,8 @@ proxies:
     - { name: '埃及6', server: prem.country.iprocket.io, port: 9595, type: socks5, username: com14049369-res-PK-Lsid-927755326, password: Htp9xuwt28o95A5 }
     - { name: '埃及7', server: prem.country.iprocket.io, port: 9595, type: socks5, username: com14049369-res-PK-Lsid-883946538, password: Htp9xuwt28o95A5 }
     - { name: '埃及8', server: prem.country.iprocket.io, port: 9595, type: socks5, username: com14049369-res-PK-Lsid-993522059, password: Htp9xuwt28o95A5 }
-    - { name: '埃及9', server: prem.country.iprocket.io, port: 9595, type: socks5, username: com14049369-res-PK-Lsid-860386794, password: Htp9xuwt28o95A5 }
-    - { name: '埃及10', server: prem.country.iprocket.io, port: 9595, type: socks5, username: com14049369-res-PK-Lsid-828346007, password: Htp9xuwt28o95A5 }
+    - { name: '埃及9', server: 106.75.152.119, port: 881, type: socks5, username: e5265d18-149a832e-rand, password: wifi-pk--- }
+    - { name: '埃及10', server: 106.75.152.119, port: 880, type: socks5, username: e5265d18-149a832e-rand, password: wifi-pk--- }
 
     - { name: '缅甸1', server: sg-iepl.com, port: 28656, type: socks5, username: 47353961-zone-custom-region-MM-sessid-kmszjXc0-sessTime-15, password: dJIA8BM3 }
     - { name: '缅甸2', server: sg-iepl.com, port: 28656, type: socks5, username: 47353961-zone-custom-region-MM-sessid-3uNCfzJE-sessTime-15, password: dJIA8BM3 }
@@ -227,6 +227,7 @@ rules:
   - DOMAIN-SUFFIX,ytoo.co.uk,Proxies
   - GEOIP,CN,DIRECT
   - MATCH,Proxies
+
 
 
 
