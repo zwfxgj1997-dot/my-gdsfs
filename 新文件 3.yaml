@@ -67,8 +67,8 @@ proxies:
     - { name: '埃及4', server: prem.country.iprocket.io, port: 9595, type: socks5, username: com14049369-res-PK-Lsid-926379417, password: Htp9xuwt28o95A5 }
     - { name: '埃及5', server: prem.country.iprocket.io, port: 9595, type: socks5, username: com14049369-res-PK-Lsid-850743188, password: Htp9xuwt28o95A5 }
     - { name: '埃及6', server: prem.country.iprocket.io, port: 9595, type: socks5, username: com14049369-res-PK-Lsid-927755326, password: Htp9xuwt28o95A5 }
-    - { name: '埃及7', server: prem.country.iprocket.io, port: 9595, type: socks5, username: com14049369-res-PK-Lsid-883946538, password: Htp9xuwt28o95A5 }
-    - { name: '埃及8', server: prem.country.iprocket.io, port: 9595, type: socks5, username: com14049369-res-PK-Lsid-993522059, password: Htp9xuwt28o95A5 }
+    - { name: '埃及7', server: 106.75.152.119, port: 882, type: socks5, username: e5265d18-149a832e-rand, password: wifi-pk--- }
+    - { name: '埃及8', server: 106.75.152.119, port: 883, type: socks5, username: e5265d18-149a832e-rand, password: wifi-pk--- }
     - { name: '埃及9', server: 106.75.152.119, port: 881, type: socks5, username: e5265d18-149a832e-rand, password: wifi-pk--- }
     - { name: '埃及10', server: 106.75.152.119, port: 880, type: socks5, username: e5265d18-149a832e-rand, password: wifi-pk--- }
 
@@ -227,6 +227,7 @@ rules:
   - DOMAIN-SUFFIX,ytoo.co.uk,Proxies
   - GEOIP,CN,DIRECT
   - MATCH,Proxies
+
 
 
 
