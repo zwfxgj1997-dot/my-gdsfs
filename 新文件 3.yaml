@@ -93,11 +93,11 @@ proxies:
     - { name: '土耳其8', server: sg-iepl.com, port: 33055, type: socks5, username: poiu4717, password: 9gHUDSv8OK_country-tr_session-EQq86W7A }
     - { name: '土耳其9', server: sg-iepl.com, port: 33055, type: socks5, username: poiu4717, password: 9gHUDSv8OK_country-tr_session-BKhJacZV }
     - { name: '土耳其10', server: sg-iepl.com, port: 33055, type: socks5, username: poiu4717, password: 9gHUDSv8OK_country-tr_session-9WytzQkN }
-    - { name: '菲律宾1', server: geo.iproyal.com, port: 12321, type: socks5, username: P7I2lwT2Oynjs7TB, password: T41qODqSPUPqxwr2_country-ph_session-87YGKFvE_lifetime-15m_streaming-1 }
-    - { name: '菲律宾2', server: geo.iproyal.com, port: 12321, type: socks5, username: P7I2lwT2Oynjs7TB, password: T41qODqSPUPqxwr2_country-ph_session-Xrhs05em_lifetime-15m_streaming-1 }
-    - { name: '菲律宾3', server: geo.iproyal.com, port: 12321, type: socks5, username: P7I2lwT2Oynjs7TB, password: T41qODqSPUPqxwr2_country-ph_session-VDjUiqtp_lifetime-15m_streaming-1 }
-    - { name: '菲律宾4', server: geo.iproyal.com, port: 12321, type: socks5, username: P7I2lwT2Oynjs7TB, password: T41qODqSPUPqxwr2_country-ph_session-tw7h4qrI_lifetime-15m_streaming-1 }
-    - { name: '菲律宾5', server: geo.iproyal.com, port: 12321, type: socks5, username: P7I2lwT2Oynjs7TB, password: T41qODqSPUPqxwr2_country-ph_session-2bfXhcAc_lifetime-15m_streaming-1 }
+    - { name: '菲律宾1', server: 106.75.152.119, port: 880, type: socks5, username: e5265d18-149a832e-rand, password: wifi-in--- }
+    - { name: '菲律宾2', server: 106.75.152.119, port: 881, type: socks5, username: e5265d18-149a832e-rand, password: wifi-in--- }
+    - { name: '菲律宾3', server: 106.75.152.119, port: 882, type: socks5, username: e5265d18-149a832e-rand, password: wifi-in--- }
+    - { name: '菲律宾4', server: 106.75.152.119, port: 883, type: socks5, username: e5265d18-149a832e-rand, password: wifi-in--- }
+    - { name: '菲律宾5', server: 106.75.152.119, port: 884, type: socks5, username: e5265d18-149a832e-rand, password: wifi-in--- }
 
 proxy-groups:
   - name: Googleplay
@@ -227,6 +227,7 @@ rules:
   - DOMAIN-SUFFIX,ytoo.co.uk,Proxies
   - GEOIP,CN,DIRECT
   - MATCH,Proxies
+
 
 
 
