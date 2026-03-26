@@ -59,30 +59,30 @@ proxies:
   - name: NG07
     type: socks5
     server: geo.iproyal.com
-    port: "11201"
+    port: "12321"
     username: P7I2lwT2Oynjs7TB
-    password: T41qODqSPUPqxwr2_country-ng_session-Vtgk7dDe_lifetime-15m_streaming-1
+    password: T41qODqSPUPqxwr2_country-ng_session-afDrHR4C_lifetime-15m_streaming-1
     udp: true
   - name: NG08
     type: socks5
     server: geo.iproyal.com
-    port: "11201"
+    port: "12321"
     username: P7I2lwT2Oynjs7TB
-    password: T41qODqSPUPqxwr2_country-ng_session-X4YvsykO_lifetime-15m_streaming-1
+    password: T41qODqSPUPqxwr2_country-ng_session-LuyJU0iz_lifetime-15m_streaming-1
     udp: true
   - name: NG09
     type: socks5
     server: geo.iproyal.com
-    port: "11201"
+    port: "12321"
     username: P7I2lwT2Oynjs7TB
-    password: T41qODqSPUPqxwr2_country-ng_session-qCk0ywIg_lifetime-15m_streaming-1
+    password: T41qODqSPUPqxwr2_country-ng_session-BbQ4vjhG_lifetime-15m_streaming-1
     udp: true
   - name: NG10
     type: socks5
     server: geo.iproyal.com
-    port: "11201"
+    port: "12321"
     username: P7I2lwT2Oynjs7TB
-    password: T41qODqSPUPqxwr2_country-ng_session-mYhyReha_lifetime-15m_streaming-1
+    password: T41qODqSPUPqxwr2_country-ng_session-KCDZ4DQS_lifetime-15m_streaming-1
     udp: true
   - name: PK01
     type: socks5
