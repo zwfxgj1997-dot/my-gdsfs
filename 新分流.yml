@@ -17,43 +17,43 @@ proxies:
   - name: NG01
     type: socks5
     server: 106.75.152.119
-    port: "1000"
-    username: e5265d18-149a832e-4faae9
-    password: wifi-ng---
+    port: "880"
+    username: e5265d18-149a832e-f326a8
+    password: mobile-ng---
     udp: true
   - name: NG02
     type: socks5
     server: 106.75.152.119
-    port: "1001"
-    username: e5265d18-149a832e-7c2751
-    password: wifi-ng---
+    port: "881"
+    username: e5265d18-149a832e-0d32a5
+    password: mobile-ng---
     udp: true
   - name: NG03
     type: socks5
     server: 106.75.152.119
-    port: "1002"
-    username: e5265d18-149a832e-d3aa1d
-    password: wifi-ng---
+    port: "882"
+    username: e5265d18-149a832e-acf50b
+    password: mobile-ng---
     udp: true
   - name: NG04
     type: socks5
     server: 106.75.152.119
-    port: "1003"
-    username: e5265d18-149a832e-7e1b0c
-    password: wifi-ng---
+    port: "884"
+    username: e5265d18-149a832e-dc0ed0
+    password: mobile-ng---
     udp: true
   - name: NG05
     type: socks5
     server: 106.75.152.119
-    port: "1004"
-    username: e5265d18-149a832e-7d9fc5
-    password: wifi-ng---
+    port: "885"
+    username: e5265d18-149a832e-39e0c8
+    password: mobile-ng---
     udp: true
   - name: NG06
     type: socks5
     server: 106.75.152.119
-    port: "1005"
-    username: e5265d18-149a832e-42310b
+    port: "886"
+    username: e5265d18-149a832e-f7bebd
     password: mobile-ng---
     udp: true
   - name: NG07
