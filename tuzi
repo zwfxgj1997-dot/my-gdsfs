@@ -4,82 +4,91 @@ bind-address: '*'
 mode: rule
 log-level: info
 external-controller: '127.0.0.1:9090'
+
 dns:
-    enable: true
-    ipv6: false
-    default-nameserver: [223.5.5.5, 119.29.29.29, 114.114.114.114]
-    enhanced-mode: fake-ip
-    fake-ip-range: 198.18.0.1/16
-    use-hosts: true
-    respect-rules: true
-    proxy-server-nameserver: [223.5.5.5, 119.29.29.29, 114.114.114.114]
-    nameserver: [223.5.5.5, 119.29.29.29, 114.114.114.114]
-    fallback: [1.1.1.1, 8.8.8.8]
-    fallback-filter: { geoip: true, geoip-code: CN, geosite: [gfw], ipcidr: [240.0.0.0/4], domain: [+.google.com, +.facebook.com, +.youtube.com] }
+  enable: true
+  ipv6: false
+  default-nameserver: [223.5.5.5, 119.29.29.29]
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  use-hosts: true
+  respect-rules: true
+  proxy-server-nameserver: [223.5.5.5, 119.29.29.29]
+  nameserver: [223.5.5.5, 119.29.29.29, 'https://dns.alidns.com/dns-query']
+  fallback: [1.1.1.1, 8.8.8.8]
+  fallback-filter: { geoip: true, geoip-code: CN, geosite: [gfw], ipcidr: [240.0.0.0/4], domain: [+.google.com, +.facebook.com, +.youtube.com] }
+
 proxies:
-    - { name: 香港 01丨1x HK, type: vless, server: 25c1651d.bangchenou.top, port: 41101, uuid: 1db4e043-bbe9-4e57-9125-35abc370a480, udp: true, tls: true, skip-cert-verify: true, flow: xtls-rprx-vision, client-fingerprint: edge, servername: upos-tf-all-tx.bilivideo.com }
-    - { name: 香港 02丨1x HK, type: vless, server: 25c1651d.bangchenou.top, port: 41102, uuid: 1db4e043-bbe9-4e57-9125-35abc370a480, udp: true, tls: true, skip-cert-verify: true, flow: xtls-rprx-vision, client-fingerprint: edge, servername: cn-gddg-dx-bcache-18.bilivideo.com }
-    - { name: 香港 03丨1x HK, type: vless, server: 25c1651d.bangchenou.top, port: 41103, uuid: 1db4e043-bbe9-4e57-9125-35abc370a480, udp: true, tls: true, skip-cert-verify: true, flow: xtls-rprx-vision, client-fingerprint: edge, servername: cn-gddg-dx-bcache-18.bilivideo.com }
-    - { name: 香港家宽 01丨1x HK, type: vless, server: 25c1651d.bangchenou.top, port: 41104, uuid: 1db4e043-bbe9-4e57-9125-35abc370a480, udp: true, tls: true, skip-cert-verify: true, flow: xtls-rprx-vision, client-fingerprint: edge, servername: cn-gddg-dx-bcache-18.bilivideo.com }
-    - { name: 香港家宽 02丨1x HK, type: vless, server: 25c1651d.bangchenou.top, port: 41209, uuid: 1db4e043-bbe9-4e57-9125-35abc370a480, udp: true, tls: true, skip-cert-verify: true, flow: xtls-rprx-vision, client-fingerprint: edge, servername: jssz-live-studio-ws.bilivideo.com }
-    - { name: 香港家宽 03丨1x HK, type: vless, server: 25c1651d.bangchenou.top, port: 41401, uuid: 1db4e043-bbe9-4e57-9125-35abc370a480, udp: true, tls: true, skip-cert-verify: true, flow: xtls-rprx-vision, client-fingerprint: edge, servername: streamcenter.bilivideo.com }
+  # 香港 VLESS 节点
+  - { name: 香港 01丨1x HK, type: vless, server: 25c1651d.bangchenou.top, port: 41101, uuid: 1db4e043-bbe9-4e57-9125-35abc370a480, udp: true, tls: true, skip-cert-verify: true, flow: xtls-rprx-vision, client-fingerprint: edge, servername: upos-tf-all-tx.bilivideo.com }
+  - { name: 香港 02丨1x HK, type: vless, server: 25c1651d.bangchenou.top, port: 41102, uuid: 1db4e043-bbe9-4e57-9125-35abc370a480, udp: true, tls: true, skip-cert-verify: true, flow: xtls-rprx-vision, client-fingerprint: edge, servername: cn-gddg-dx-bcache-18.bilivideo.com }
+  - { name: 香港 03丨1x HK, type: vless, server: 25c1651d.bangchenou.top, port: 41103, uuid: 1db4e043-bbe9-4e57-9125-35abc370a480, udp: true, tls: true, skip-cert-verify: true, flow: xtls-rprx-vision, client-fingerprint: edge, servername: cn-gddg-dx-bcache-18.bilivideo.com }
+  - { name: 香港家宽 01丨1x HK, type: vless, server: 25c1651d.bangchenou.top, port: 41104, uuid: 1db4e043-bbe9-4e57-9125-35abc370a480, udp: true, tls: true, skip-cert-verify: true, flow: xtls-rprx-vision, client-fingerprint: edge, servername: cn-gddg-dx-bcache-18.bilivideo.com }
+  - { name: 香港家宽 02丨1x HK, type: vless, server: 25c1651d.bangchenou.top, port: 41209, uuid: 1db4e043-bbe9-4e57-9125-35abc370a480, udp: true, tls: true, skip-cert-verify: true, flow: xtls-rprx-vision, client-fingerprint: edge, servername: jssz-live-studio-ws.bilivideo.com }
+  - { name: 香港家宽 03丨1x HK, type: vless, server: 25c1651d.bangchenou.top, port: 41401, uuid: 1db4e043-bbe9-4e57-9125-35abc370a480, udp: true, tls: true, skip-cert-verify: true, flow: xtls-rprx-vision, client-fingerprint: edge, servername: streamcenter.bilivideo.com }
 
-    # 以下為你原始 SOCKS5 節點（尼日、埃及、緬甸、土耳其、菲律賓）
-    - { name: '尼日1', server: 34.141.129.232, port: 9000, type: socks5, username: e5265d18-149a832e-54265c, password: wifi-ng--lagos- }
-    - { name: '尼日2', server: 34.141.129.232, port: 9001, type: socks5, username: e5265d18-149a832e-f1df3f, password: wifi-ng--lagos- }
-    - { name: '尼日3', server: 34.141.129.232, port: 9002, type: socks5, username: e5265d18-149a832e-4d5a07, password: wifi-ng--lagos- }
-    - { name: '尼日4', server: 34.141.129.232, port: 9003, type: socks5, username: e5265d18-149a832e-6e3c02, password: wifi-ng--lagos- }
-    - { name: '尼日5', server: 34.141.129.232, port: 9004, type: socks5, username: e5265d18-149a832e-b5a557, password: wifi-ng--lagos- }
-    - { name: '尼日6', server: 34.141.129.232, port: 9005, type: socks5, username: e5265d18-149a832e-8cc260, password: wifi-ng--lagos- }
-    - { name: '尼日7', server: 34.141.129.232, port: 9006, type: socks5, username: e5265d18-149a832e-b24ab7, password: wifi-ng--lagos- }
-    - { name: '尼日8', server: 34.141.129.232, port: 9007, type: socks5, username: e5265d18-149a832e-79e79b, password: wifi-ng--lagos- }
-    - { name: '尼日9', server: geo.iproyal.com, port: 11200, type: socks5, username: P7I2lwT2Oynjs7TB, password: T41qODqSPUPqxwr2_country-ng_session-6qxCbAKU_lifetime-15m_streaming-1 }
-    - { name: '尼日10', server: geo.iproyal.com, port: 11200, type: socks5, username: P7I2lwT2Oynjs7TB, password: T41qODqSPUPqxwr2_country-ng_session-VSu1C9kl_lifetime-15m_streaming-1 }
-    - { name: '尼日11', server: geo.iproyal.com, port: 12321, type: socks5, username: P7I2lwT2Oynjs7TB, password: T41qODqSPUPqxwr2_country-ng_session-NZXQvVAJ_lifetime-15m_streaming-1 }
-    - { name: '尼日12', server: geo.iproyal.com, port: 12321, type: socks5, username: P7I2lwT2Oynjs7TB, password: T41qODqSPUPqxwr2_country-ng_session-HsuJpggL_lifetime-15m_streaming-1 }
-    - { name: '尼日13', server: geo.iproyal.com, port: 12321, type: socks5, username: P7I2lwT2Oynjs7TB, password: T41qODqSPUPqxwr2_country-ng_session-Ph91YlSd_lifetime-15m_streaming-1 }
-    - { name: '尼日14', server: geo.iproyal.com, port: 12321, type: socks5, username: P7I2lwT2Oynjs7TB, password: T41qODqSPUPqxwr2_country-ng_session-WChwXE4N_lifetime-15m_streaming-1 }
-    - { name: '尼日15', server: geo.iproyal.com, port: 12321, type: socks5, username: P7I2lwT2Oynjs7TB, password: T41qODqSPUPqxwr2_country-ng_session-MvXbcPS2_lifetime-15m_streaming-1 }
+  # 尼日利亚 SOCKS5
+  - { name: '尼日1', server: 34.141.129.232, port: 9000, type: socks5, username: e5265d18-149a832e-54265c, password: wifi-ng--lagos- }
+  - { name: '尼日2', server: 34.141.129.232, port: 9001, type: socks5, username: e5265d18-149a832e-f1df3f, password: wifi-ng--lagos- }
+  - { name: '尼日3', server: 34.141.129.232, port: 9002, type: socks5, username: e5265d18-149a832e-4d5a07, password: wifi-ng--lagos- }
+  - { name: '尼日4', server: 34.141.129.232, port: 9003, type: socks5, username: e5265d18-149a832e-6e3c02, password: wifi-ng--lagos- }
+  - { name: '尼日5', server: 34.141.129.232, port: 9004, type: socks5, username: e5265d18-149a832e-b5a557, password: wifi-ng--lagos- }
+  - { name: '尼日6', server: 34.141.129.232, port: 9005, type: socks5, username: e5265d18-149a832e-8cc260, password: wifi-ng--lagos- }
+  - { name: '尼日7', server: 34.141.129.232, port: 9006, type: socks5, username: e5265d18-149a832e-b24ab7, password: wifi-ng--lagos- }
+  - { name: '尼日8', server: 34.141.129.232, port: 9007, type: socks5, username: e5265d18-149a832e-79e79b, password: wifi-ng--lagos- }
+  - { name: '尼日9', server: geo.iproyal.com, port: 11200, type: socks5, username: P7I2lwT2Oynjs7TB, password: T41qODqSPUPqxwr2_country-ng_session-6qxCbAKU_lifetime-15m_streaming-1 }
+  - { name: '尼日10', server: geo.iproyal.com, port: 11200, type: socks5, username: P7I2lwT2Oynjs7TB, password: T41qODqSPUPqxwr2_country-ng_session-VSu1C9kl_lifetime-15m_streaming-1 }
+  - { name: '尼日11', server: geo.iproyal.com, port: 12321, type: socks5, username: P7I2lwT2Oynjs7TB, password: T41qODqSPUPqxwr2_country-ng_session-NZXQvVAJ_lifetime-15m_streaming-1 }
+  - { name: '尼日12', server: geo.iproyal.com, port: 12321, type: socks5, username: P7I2lwT2Oynjs7TB, password: T41qODqSPUPqxwr2_country-ng_session-HsuJpggL_lifetime-15m_streaming-1 }
+  - { name: '尼日13', server: geo.iproyal.com, port: 12321, type: socks5, username: P7I2lwT2Oynjs7TB, password: T41qODqSPUPqxwr2_country-ng_session-Ph91YlSd_lifetime-15m_streaming-1 }
+  - { name: '尼日14', server: geo.iproyal.com, port: 12321, type: socks5, username: P7I2lwT2Oynjs7TB, password: T41qODqSPUPqxwr2_country-ng_session-WChwXE4N_lifetime-15m_streaming-1 }
+  - { name: '尼日15', server: geo.iproyal.com, port: 12321, type: socks5, username: P7I2lwT2Oynjs7TB, password: T41qODqSPUPqxwr2_country-ng_session-MvXbcPS2_lifetime-15m_streaming-1 }
 
-    - { name: '埃及1', server: 106.75.152.119, port: 880, type: socks5, username: e5265d18-149a832e-16f296, password: mobile-pk--islamabad- }
-    - { name: '埃及2', server: 106.75.152.119, port: 881, type: socks5, username: e5265d18-149a832e-973aeb, password: mobile-pk--- }
-    - { name: '埃及3', server: prem.country.iprocket.io, port: 9595, type: socks5, username: com14049369-res-PK-Lsid-890358478, password: Htp9xuwt28o95A5 }
-    - { name: '埃及4', server: prem.country.iprocket.io, port: 9595, type: socks5, username: com14049369-res-PK-Lsid-926379417, password: Htp9xuwt28o95A5 }
-    - { name: '埃及5', server: prem.country.iprocket.io, port: 9595, type: socks5, username: com14049369-res-PK-Lsid-850743188, password: Htp9xuwt28o95A5 }
-    - { name: '埃及6', server: prem.country.iprocket.io, port: 9595, type: socks5, username: com14049369-res-PK-Lsid-927755326, password: Htp9xuwt28o95A5 }
-    - { name: '埃及7', server: 106.75.152.119, port: 882, type: socks5, username: e5265d18-149a832e-rand, password: wifi-pk--- }
-    - { name: '埃及8', server: 106.75.152.119, port: 883, type: socks5, username: e5265d18-149a832e-rand, password: wifi-pk--- }
-    - { name: '埃及9', server: 106.75.152.119, port: 881, type: socks5, username: e5265d18-149a832e-rand, password: wifi-pk--- }
-    - { name: '埃及10', server: 106.75.152.119, port: 880, type: socks5, username: e5265d18-149a832e-rand, password: wifi-pk--- }
+  # 埃及 SOCKS5
+  - { name: '埃及1', server: 106.75.152.119, port: 880, type: socks5, username: e5265d18-149a832e-16f296, password: mobile-pk--islamabad- }
+  - { name: '埃及2', server: 106.75.152.119, port: 881, type: socks5, username: e5265d18-149a832e-973aeb, password: mobile-pk--- }
+  - { name: '埃及3', server: prem.country.iprocket.io, port: 9595, type: socks5, username: com14049369-res-PK-Lsid-890358478, password: Htp9xuwt28o95A5 }
+  - { name: '埃及4', server: prem.country.iprocket.io, port: 9595, type: socks5, username: com14049369-res-PK-Lsid-926379417, password: Htp9xuwt28o95A5 }
+  - { name: '埃及5', server: prem.country.iprocket.io, port: 9595, type: socks5, username: com14049369-res-PK-Lsid-850743188, password: Htp9xuwt28o95A5 }
+  - { name: '埃及6', server: prem.country.iprocket.io, port: 9595, type: socks5, username: com14049369-res-PK-Lsid-927755326, password: Htp9xuwt28o95A5 }
+  - { name: '埃及7', server: 106.75.152.119, port: 882, type: socks5, username: e5265d18-149a832e-rand, password: wifi-pk--- }
+  - { name: '埃及8', server: 106.75.152.119, port: 883, type: socks5, username: e5265d18-149a832e-rand, password: wifi-pk--- }
+  - { name: '埃及9', server: 106.75.152.119, port: 881, type: socks5, username: e5265d18-149a832e-rand, password: wifi-pk--- }
+  - { name: '埃及10', server: 106.75.152.119, port: 880, type: socks5, username: e5265d18-149a832e-rand, password: wifi-pk--- }
 
-    - { name: '缅甸1', server: sg-iepl.com, port: 28656, type: socks5, username: 47353961-zone-custom-region-MM-sessid-kmszjXc0-sessTime-15, password: dJIA8BM3 }
-    - { name: '缅甸2', server: sg-iepl.com, port: 28656, type: socks5, username: 47353961-zone-custom-region-MM-sessid-3uNCfzJE-sessTime-15, password: dJIA8BM3 }
-    - { name: '缅甸3', server: sg-iepl.com, port: 28656, type: socks5, username: 47353961-zone-custom-region-MM-sessid-lfMahCnS-sessTime-15, password: dJIA8BM3 }
-    - { name: '缅甸4', server: sg-iepl.com, port: 28656, type: socks5, username: 47353961-zone-custom-region-MM-sessid-cEGwQAjc-sessTime-15, password: dJIA8BM3 }
-    - { name: '缅甸5', server: sg-iepl.com, port: 28656, type: socks5, username: 47353961-zone-custom-region-MM-sessid-Wbh9u2rQ-sessTime-15, password: dJIA8BM3 }
-    - { name: '缅甸6', server: sg-iepl.com, port: 28656, type: socks5, username: 47353961-zone-custom-region-MM-sessid-kkUmAw1U-sessTime-15, password: dJIA8BM3 }
-    - { name: '缅甸7', server: sg-iepl.com, port: 28656, type: socks5, username: 47353961-zone-custom-region-MM-sessid-61Eqwe1c-sessTime-15, password: dJIA8BM3 }
-    - { name: '缅甸8', server: sg-iepl.com, port: 28656, type: socks5, username: 47353961-zone-custom-region-MM-sessid-pldGAIdp-sessTime-15, password: dJIA8BM3 }
-    - { name: '缅甸9', server: sg-iepl.com, port: 28656, type: socks5, username: 47353961-zone-custom-region-MM-sessid-86N7SMnE-sessTime-15, password: dJIA8BM3 }
-    - { name: '缅甸10', server: sg-iepl.com, port: 28656, type: socks5, username: 47353961-zone-custom-region-MM-sessid-0cOzuZkG-sessTime-15, password: dJIA8BM3 }
+  # 缅甸 SOCKS5
+  - { name: '缅甸1', server: sg-iepl.com, port: 28656, type: socks5, username: 47353961-zone-custom-region-MM-sessid-kmszjXc0-sessTime-15, password: dJIA8BM3 }
+  - { name: '缅甸2', server: sg-iepl.com, port: 28656, type: socks5, username: 47353961-zone-custom-region-MM-sessid-3uNCfzJE-sessTime-15, password: dJIA8BM3 }
+  - { name: '缅甸3', server: sg-iepl.com, port: 28656, type: socks5, username: 47353961-zone-custom-region-MM-sessid-lfMahCnS-sessTime-15, password: dJIA8BM3 }
+  - { name: '缅甸4', server: sg-iepl.com, port: 28656, type: socks5, username: 47353961-zone-custom-region-MM-sessid-cEGwQAjc-sessTime-15, password: dJIA8BM3 }
+  - { name: '缅甸5', server: sg-iepl.com, port: 28656, type: socks5, username: 47353961-zone-custom-region-MM-sessid-Wbh9u2rQ-sessTime-15, password: dJIA8BM3 }
+  - { name: '缅甸6', server: sg-iepl.com, port: 28656, type: socks5, username: 47353961-zone-custom-region-MM-sessid-kkUmAw1U-sessTime-15, password: dJIA8BM3 }
+  - { name: '缅甸7', server: sg-iepl.com, port: 28656, type: socks5, username: 47353961-zone-custom-region-MM-sessid-61Eqwe1c-sessTime-15, password: dJIA8BM3 }
+  - { name: '缅甸8', server: sg-iepl.com, port: 28656, type: socks5, username: 47353961-zone-custom-region-MM-sessid-pldGAIdp-sessTime-15, password: dJIA8BM3 }
+  - { name: '缅甸9', server: sg-iepl.com, port: 28656, type: socks5, username: 47353961-zone-custom-region-MM-sessid-86N7SMnE-sessTime-15, password: dJIA8BM3 }
+  - { name: '缅甸10', server: sg-iepl.com, port: 28656, type: socks5, username: 47353961-zone-custom-region-MM-sessid-0cOzuZkG-sessTime-15, password: dJIA8BM3 }
 
-    - { name: '土耳其1', server: sg-iepl.com, port: 28656, type: socks5, username: 47353961-zone-custom-region-TR-sessid-iGZoZ2y7-sessTime-15, password: dJIA8BM3 }
-    - { name: '土耳其2', server: sg-iepl.com, port: 28656, type: socks5, username: 47353961-zone-custom-region-TR-sessid-BZ4gLZLU-sessTime-15, password: dJIA8BM3 }
-    - { name: '土耳其3', server: sg-iepl.com, port: 28656, type: socks5, username: 47353961-zone-custom-region-TR-sessid-ecz15ucd-sessTime-15, password: dJIA8BM3 }
-    - { name: '土耳其4', server: sg-iepl.com, port: 28656, type: socks5, username: 47353961-zone-custom-region-TR-sessid-706EHOSq-sessTime-15, password: dJIA8BM3 }
-    - { name: '土耳其5', server: sg-iepl.com, port: 28656, type: socks5, username: 47353961-zone-custom-region-TR-sessid-CrAcKL7u-sessTime-15, password: dJIA8BM3 }
-    - { name: '土耳其6', server: sg-iepl.com, port: 33055, type: socks5, username: poiu4717, password: 9gHUDSv8OK_country-tr_session-nbKCLM9k }
-    - { name: '土耳其7', server: sg-iepl.com, port: 33055, type: socks5, username: poiu4717, password: 9gHUDSv8OK_country-tr_session-hpvID9LA }
-    - { name: '土耳其8', server: sg-iepl.com, port: 33055, type: socks5, username: poiu4717, password: 9gHUDSv8OK_country-tr_session-EQq86W7A }
-    - { name: '土耳其9', server: sg-iepl.com, port: 33055, type: socks5, username: poiu4717, password: 9gHUDSv8OK_country-tr_session-BKhJacZV }
-    - { name: '土耳其10', server: sg-iepl.com, port: 33055, type: socks5, username: poiu4717, password: 9gHUDSv8OK_country-tr_session-9WytzQkN }
-    - { name: '菲律宾1', server: 106.75.152.119, port: 880, type: socks5, username: e5265d18-149a832e-rand, password: wifi-in--- }
-    - { name: '菲律宾2', server: 106.75.152.119, port: 881, type: socks5, username: e5265d18-149a832e-rand, password: wifi-in--- }
-    - { name: '菲律宾3', server: 106.75.152.119, port: 882, type: socks5, username: e5265d18-149a832e-rand, password: wifi-in--- }
-    - { name: '菲律宾4', server: 106.75.152.119, port: 883, type: socks5, username: e5265d18-149a832e-rand, password: wifi-in--- }
-    - { name: '菲律宾5', server: 106.75.152.119, port: 884, type: socks5, username: e5265d18-149a832e-rand, password: wifi-in--- }
+  # 土耳其 SOCKS5
+  - { name: '土耳其1', server: sg-iepl.com, port: 28656, type: socks5, username: 47353961-zone-custom-region-TR-sessid-iGZoZ2y7-sessTime-15, password: dJIA8BM3 }
+  - { name: '土耳其2', server: sg-iepl.com, port: 28656, type: socks5, username: 47353961-zone-custom-region-TR-sessid-BZ4gLZLU-sessTime-15, password: dJIA8BM3 }
+  - { name: '土耳其3', server: sg-iepl.com, port: 28656, type: socks5, username: 47353961-zone-custom-region-TR-sessid-ecz15ucd-sessTime-15, password: dJIA8BM3 }
+  - { name: '土耳其4', server: sg-iepl.com, port: 28656, type: socks5, username: 47353961-zone-custom-region-TR-sessid-706EHOSq-sessTime-15, password: dJIA8BM3 }
+  - { name: '土耳其5', server: sg-iepl.com, port: 28656, type: socks5, username: 47353961-zone-custom-region-TR-sessid-CrAcKL7u-sessTime-15, password: dJIA8BM3 }
+  - { name: '土耳其6', server: sg-iepl.com, port: 33055, type: socks5, username: poiu4717, password: 9gHUDSv8OK_country-tr_session-nbKCLM9k }
+  - { name: '土耳其7', server: sg-iepl.com, port: 33055, type: socks5, username: poiu4717, password: 9gHUDSv8OK_country-tr_session-hpvID9LA }
+  - { name: '土耳其8', server: sg-iepl.com, port: 33055, type: socks5, username: poiu4717, password: 9gHUDSv8OK_country-tr_session-EQq86W7A }
+  - { name: '土耳其9', server: sg-iepl.com, port: 33055, type: socks5, username: poiu4717, password: 9gHUDSv8OK_country-tr_session-BKhJacZV }
+  - { name: '土耳其10', server: sg-iepl.com, port: 33055, type: socks5, username: poiu4717, password: 9gHUDSv8OK_country-tr_session-9WytzQkN }
+
+  # 菲律宾 SOCKS5
+  - { name: '菲律宾1', server: 106.75.152.119, port: 880, type: socks5, username: e5265d18-149a832e-rand, password: wifi-in--- }
+  - { name: '菲律宾2', server: 106.75.152.119, port: 881, type: socks5, username: e5265d18-149a832e-rand, password: wifi-in--- }
+  - { name: '菲律宾3', server: 106.75.152.119, port: 882, type: socks5, username: e5265d18-149a832e-rand, password: wifi-in--- }
+  - { name: '菲律宾4', server: 106.75.152.119, port: 883, type: socks5, username: e5265d18-149a832e-rand, password: wifi-in--- }
+  - { name: '菲律宾5', server: 106.75.152.119, port: 884, type: socks5, username: e5265d18-149a832e-rand, password: wifi-in--- }
 
 proxy-groups:
+  # 此组用于 Google Play 低价内购，务必手动选择节点
   - name: Googleplay
     type: select
     proxies:
@@ -133,8 +142,7 @@ proxy-groups:
       - 菲律宾3
       - 菲律宾4
       - 菲律宾5
-    url: http://www.gstatic.com/generate_204
-    interval: 600
+      - Proxies # 如果不想走低价区也可以跳回普通代理
 
   - name: Proxies
     type: select
@@ -148,267 +156,29 @@ proxy-groups:
       - DIRECT
 
 rules:
+  # 强制 Google Play 相关域名走 Googleplay 代理组
+  - DOMAIN-SUFFIX,play.google.com,Googleplay
+  - DOMAIN,play-fe.googleapis.com,Googleplay
+  - DOMAIN-SUFFIX,googleapis.com,Googleplay
+  - DOMAIN-SUFFIX,googleusercontent.com,Googleplay
+  - DOMAIN-SUFFIX,gstatic.com,Googleplay
+  
+  # IP 检测工具，方便确认当前 IP 归属地
   - DOMAIN-SUFFIX,ipapi.co,Googleplay
   - DOMAIN-SUFFIX,ip-api.com,Googleplay
   - DOMAIN-SUFFIX,api.ip.sb,Googleplay
   - DOMAIN-SUFFIX,ipinfo.io,Googleplay
-  - DOMAIN-SUFFIX,ipip.net,Googleplay
-  - DOMAIN-SUFFIX,skk.moe,Googleplay
+
+  # 普通代理分流
   - DOMAIN-KEYWORD,game,Proxies
-  - DOMAIN-KEYWORD,gvt1,Proxies
   - DOMAIN-KEYWORD,googlevideo,Proxies
-  - DOMAIN-KEYWORD,lra8j.com,DIRECT
-  - DOMAIN-KEYWORD,cn,DIRECT
-  - DOMAIN,play-fe.googleapis.com,Googleplay
-  - IP-CIDR,172.217.160.110/32,Googleplay
-  - IP-CIDR,172.217.163.46/32,Googleplay
-  - IP-CIDR,172.217.160.78/32,Googleplay
-  - IP-CIDR,142.251.42.238/32,Googleplay
-  - IP-CIDR,142.251.43.14/32,Googleplay
-  - IP-CIDR,142.251.220.77/32,Googleplay
-  - IP-CIDR,142.251.42.237/32,Googleplay
-  - IP-CIDR,172.217.163.45/32,Googleplay
-  - IP-CIDR,142.250.204.78/32,Googleplay
-  - IP-CIDR,142.250.66.142/32,Googleplay
-  - DOMAIN-SUFFIX,1password.com,DIRECT
-  - DOMAIN-SUFFIX,vultr.com,DIRECT
-  - DOMAIN-SUFFIX,mb3admin.com,DIRECT
-  - DOMAIN-SUFFIX,rixcloud.io,DIRECT
-  - DOMAIN-SUFFIX,tempestapp.io,DIRECT
-  - DOMAIN-SUFFIX,baidu.com,DIRECT
-  - DOMAIN-SUFFIX,baidu-int.com,DIRECT
-  - DOMAIN-SUFFIX,erebor.douban.com,DIRECT
-  - DOMAIN,mtalk.google.com,DIRECT
-  - DOMAIN,alt1-mtalk.google.com,DIRECT
-  - DOMAIN,alt2-mtalk.google.com,DIRECT
-  - DOMAIN,alt3-mtalk.google.com,DIRECT
-  - DOMAIN,alt4-mtalk.google.com,DIRECT
-  - DOMAIN,alt5-mtalk.google.com,DIRECT
-  - DOMAIN,alt6-mtalk.google.com,DIRECT
-  - DOMAIN,alt7-mtalk.google.com,DIRECT
-  - DOMAIN,alt8-mtalk.google.com,DIRECT
-  - DOMAIN,alt9-mtalk.google.com,DIRECT
-  - DOMAIN,captive.apple.com,DIRECT
-  - DOMAIN,time-ios.apple.com,DIRECT
-  - DOMAIN-SUFFIX,gateway.push-apple.com.akadns.net,DIRECT
-  - DOMAIN-SUFFIX,push.apple.com,DIRECT
   - DOMAIN-KEYWORD,github,Proxies
   - DOMAIN-SUFFIX,github.com,Proxies
-  - DOMAIN-SUFFIX,github.io,Proxies
-  - DOMAIN-SUFFIX,githubapp.com,Proxies
-  - DOMAIN-SUFFIX,githubassets.com,Proxies
-  - DOMAIN-SUFFIX,githubusercontent.com,Proxies
-  - DOMAIN-SUFFIX,home-intl.console.aliyun.com,Proxies
-  - DOMAIN-SUFFIX,googleapis.cn,Proxies
-  - DOMAIN-SUFFIX,maying.co,Proxies
-  - DOMAIN-SUFFIX,flowercloud.net,Proxies
-  - DOMAIN-SUFFIX,socloud.me,Proxies
-  - DOMAIN-SUFFIX,ytoo.asia,Proxies
-  - DOMAIN-SUFFIX,ytoo.co.uk,Proxies
-  - GEOIP,CN,DIRECT
-  - MATCH,Proxies
-
-
-
-
-
-
-
-
-
-
-
-
-    # 以下為你原始 SOCKS5 節點（尼日、埃及、緬甸、土耳其、菲律賓）
-    - { name: '尼日1', server: 34.141.129.232, port: 9000, type: socks5, username: e5265d18-149a832e-54265c, password: wifi-ng--lagos- }
-    - { name: '尼日2', server: 34.141.129.232, port: 9001, type: socks5, username: e5265d18-149a832e-f1df3f, password: wifi-ng--lagos- }
-    - { name: '尼日3', server: 34.141.129.232, port: 9002, type: socks5, username: e5265d18-149a832e-4d5a07, password: wifi-ng--lagos- }
-    - { name: '尼日4', server: 34.141.129.232, port: 9003, type: socks5, username: e5265d18-149a832e-6e3c02, password: wifi-ng--lagos- }
-    - { name: '尼日5', server: 34.141.129.232, port: 9004, type: socks5, username: e5265d18-149a832e-b5a557, password: wifi-ng--lagos- }
-    - { name: '尼日6', server: 34.141.129.232, port: 9005, type: socks5, username: e5265d18-149a832e-8cc260, password: wifi-ng--lagos- }
-    - { name: '尼日7', server: 34.141.129.232, port: 9006, type: socks5, username: e5265d18-149a832e-b24ab7, password: wifi-ng--lagos- }
-    - { name: '尼日8', server: 34.141.129.232, port: 9007, type: socks5, username: e5265d18-149a832e-79e79b, password: wifi-ng--lagos- }
-    - { name: '尼日9', server: geo.iproyal.com, port: 11200, type: socks5, username: P7I2lwT2Oynjs7TB, password: T41qODqSPUPqxwr2_country-ng_session-6qxCbAKU_lifetime-15m_streaming-1 }
-    - { name: '尼日10', server: geo.iproyal.com, port: 11200, type: socks5, username: P7I2lwT2Oynjs7TB, password: T41qODqSPUPqxwr2_country-ng_session-VSu1C9kl_lifetime-15m_streaming-1 }
-    - { name: '尼日11', server: geo.iproyal.com, port: 12321, type: socks5, username: P7I2lwT2Oynjs7TB, password: T41qODqSPUPqxwr2_country-ng_session-NZXQvVAJ_lifetime-15m_streaming-1 }
-    - { name: '尼日12', server: geo.iproyal.com, port: 12321, type: socks5, username: P7I2lwT2Oynjs7TB, password: T41qODqSPUPqxwr2_country-ng_session-HsuJpggL_lifetime-15m_streaming-1 }
-    - { name: '尼日13', server: geo.iproyal.com, port: 12321, type: socks5, username: P7I2lwT2Oynjs7TB, password: T41qODqSPUPqxwr2_country-ng_session-Ph91YlSd_lifetime-15m_streaming-1 }
-    - { name: '尼日14', server: geo.iproyal.com, port: 12321, type: socks5, username: P7I2lwT2Oynjs7TB, password: T41qODqSPUPqxwr2_country-ng_session-WChwXE4N_lifetime-15m_streaming-1 }
-    - { name: '尼日15', server: geo.iproyal.com, port: 12321, type: socks5, username: P7I2lwT2Oynjs7TB, password: T41qODqSPUPqxwr2_country-ng_session-MvXbcPS2_lifetime-15m_streaming-1 }
-
-    - { name: '埃及1', server: 106.75.152.119, port: 880, type: socks5, username: e5265d18-149a832e-16f296, password: mobile-pk--islamabad- }
-    - { name: '埃及2', server: 106.75.152.119, port: 881, type: socks5, username: e5265d18-149a832e-973aeb, password: mobile-pk--- }
-    - { name: '埃及3', server: prem.country.iprocket.io, port: 9595, type: socks5, username: com14049369-res-PK-Lsid-890358478, password: Htp9xuwt28o95A5 }
-    - { name: '埃及4', server: prem.country.iprocket.io, port: 9595, type: socks5, username: com14049369-res-PK-Lsid-926379417, password: Htp9xuwt28o95A5 }
-    - { name: '埃及5', server: prem.country.iprocket.io, port: 9595, type: socks5, username: com14049369-res-PK-Lsid-850743188, password: Htp9xuwt28o95A5 }
-    - { name: '埃及6', server: prem.country.iprocket.io, port: 9595, type: socks5, username: com14049369-res-PK-Lsid-927755326, password: Htp9xuwt28o95A5 }
-    - { name: '埃及7', server: 106.75.152.119, port: 882, type: socks5, username: e5265d18-149a832e-rand, password: wifi-pk--- }
-    - { name: '埃及8', server: 106.75.152.119, port: 883, type: socks5, username: e5265d18-149a832e-rand, password: wifi-pk--- }
-    - { name: '埃及9', server: 106.75.152.119, port: 881, type: socks5, username: e5265d18-149a832e-rand, password: wifi-pk--- }
-    - { name: '埃及10', server: 106.75.152.119, port: 880, type: socks5, username: e5265d18-149a832e-rand, password: wifi-pk--- }
-
-    - { name: '缅甸1', server: sg-iepl.com, port: 28656, type: socks5, username: 47353961-zone-custom-region-MM-sessid-kmszjXc0-sessTime-15, password: dJIA8BM3 }
-    - { name: '缅甸2', server: sg-iepl.com, port: 28656, type: socks5, username: 47353961-zone-custom-region-MM-sessid-3uNCfzJE-sessTime-15, password: dJIA8BM3 }
-    - { name: '缅甸3', server: sg-iepl.com, port: 28656, type: socks5, username: 47353961-zone-custom-region-MM-sessid-lfMahCnS-sessTime-15, password: dJIA8BM3 }
-    - { name: '缅甸4', server: sg-iepl.com, port: 28656, type: socks5, username: 47353961-zone-custom-region-MM-sessid-cEGwQAjc-sessTime-15, password: dJIA8BM3 }
-    - { name: '缅甸5', server: sg-iepl.com, port: 28656, type: socks5, username: 47353961-zone-custom-region-MM-sessid-Wbh9u2rQ-sessTime-15, password: dJIA8BM3 }
-    - { name: '缅甸6', server: sg-iepl.com, port: 28656, type: socks5, username: 47353961-zone-custom-region-MM-sessid-kkUmAw1U-sessTime-15, password: dJIA8BM3 }
-    - { name: '缅甸7', server: sg-iepl.com, port: 28656, type: socks5, username: 47353961-zone-custom-region-MM-sessid-61Eqwe1c-sessTime-15, password: dJIA8BM3 }
-    - { name: '缅甸8', server: sg-iepl.com, port: 28656, type: socks5, username: 47353961-zone-custom-region-MM-sessid-pldGAIdp-sessTime-15, password: dJIA8BM3 }
-    - { name: '缅甸9', server: sg-iepl.com, port: 28656, type: socks5, username: 47353961-zone-custom-region-MM-sessid-86N7SMnE-sessTime-15, password: dJIA8BM3 }
-    - { name: '缅甸10', server: sg-iepl.com, port: 28656, type: socks5, username: 47353961-zone-custom-region-MM-sessid-0cOzuZkG-sessTime-15, password: dJIA8BM3 }
-
-    - { name: '土耳其1', server: sg-iepl.com, port: 28656, type: socks5, username: 47353961-zone-custom-region-TR-sessid-iGZoZ2y7-sessTime-15, password: dJIA8BM3 }
-    - { name: '土耳其2', server: sg-iepl.com, port: 28656, type: socks5, username: 47353961-zone-custom-region-TR-sessid-BZ4gLZLU-sessTime-15, password: dJIA8BM3 }
-    - { name: '土耳其3', server: sg-iepl.com, port: 28656, type: socks5, username: 47353961-zone-custom-region-TR-sessid-ecz15ucd-sessTime-15, password: dJIA8BM3 }
-    - { name: '土耳其4', server: sg-iepl.com, port: 28656, type: socks5, username: 47353961-zone-custom-region-TR-sessid-706EHOSq-sessTime-15, password: dJIA8BM3 }
-    - { name: '土耳其5', server: sg-iepl.com, port: 28656, type: socks5, username: 47353961-zone-custom-region-TR-sessid-CrAcKL7u-sessTime-15, password: dJIA8BM3 }
-    - { name: '土耳其6', server: sg-iepl.com, port: 33055, type: socks5, username: poiu4717, password: 9gHUDSv8OK_country-tr_session-nbKCLM9k }
-    - { name: '土耳其7', server: sg-iepl.com, port: 33055, type: socks5, username: poiu4717, password: 9gHUDSv8OK_country-tr_session-hpvID9LA }
-    - { name: '土耳其8', server: sg-iepl.com, port: 33055, type: socks5, username: poiu4717, password: 9gHUDSv8OK_country-tr_session-EQq86W7A }
-    - { name: '土耳其9', server: sg-iepl.com, port: 33055, type: socks5, username: poiu4717, password: 9gHUDSv8OK_country-tr_session-BKhJacZV }
-    - { name: '土耳其10', server: sg-iepl.com, port: 33055, type: socks5, username: poiu4717, password: 9gHUDSv8OK_country-tr_session-9WytzQkN }
-    - { name: '菲律宾1', server: 106.75.152.119, port: 880, type: socks5, username: e5265d18-149a832e-rand, password: wifi-in--- }
-    - { name: '菲律宾2', server: 106.75.152.119, port: 881, type: socks5, username: e5265d18-149a832e-rand, password: wifi-in--- }
-    - { name: '菲律宾3', server: 106.75.152.119, port: 882, type: socks5, username: e5265d18-149a832e-rand, password: wifi-in--- }
-    - { name: '菲律宾4', server: 106.75.152.119, port: 883, type: socks5, username: e5265d18-149a832e-rand, password: wifi-in--- }
-    - { name: '菲律宾5', server: 106.75.152.119, port: 884, type: socks5, username: e5265d18-149a832e-rand, password: wifi-in--- }
-
-proxy-groups:
-  - name: Googleplay
-    type: select
-    proxies:
-      - 尼日1
-      - 尼日2
-      - 尼日3
-      - 尼日4
-      - 尼日5
-      - 尼日6
-      - 尼日7
-      - 尼日8
-      - 尼日9
-      - 尼日10
-      - 尼日11
-      - 尼日12
-      - 尼日13
-      - 尼日14
-      - 尼日15
-      - 埃及1
-      - 埃及2
-      - 埃及3
-      - 埃及4
-      - 埃及5
-      - 埃及6
-      - 埃及7
-      - 埃及8
-      - 埃及9
-      - 埃及10
-      - 缅甸1
-      - 缅甸2
-      - 缅甸3
-      - 缅甸4
-      - 缅甸5
-      - 缅甸6
-      - 缅甸7
-      - 缅甸8
-      - 缅甸9
-      - 缅甸10
-      - 土耳其1
-      - 土耳其2
-      - 土耳其3
-      - 土耳其4
-      - 土耳其5
-      - 土耳其6
-      - 土耳其7
-      - 土耳其8
-      - 土耳其9
-      - 土耳其10
-      - 菲律宾1
-      - 菲律宾2
-      - 菲律宾3
-      - 菲律宾4
-      - 菲律宾5
-    url: http://www.gstatic.com/generate_204
-    interval: 600
-
-  - name: Proxies
-    type: select
-    proxies:
-      - 香港 01丨1x HK
-      - 香港 02丨1x HK
-      - 香港 03丨1x HK
-      - 香港家宽 01丨1x HK
-      - 香港家宽 02丨1x HK
-      - 香港家宽 03丨1x HK
-      - DIRECT
-
-rules:
-  - DOMAIN-SUFFIX,ipapi.co,Googleplay
-  - DOMAIN-SUFFIX,ip-api.com,Googleplay
-  - DOMAIN-SUFFIX,api.ip.sb,Googleplay
-  - DOMAIN-SUFFIX,ipinfo.io,Googleplay
-  - DOMAIN-SUFFIX,ipip.net,Googleplay
-  - DOMAIN-SUFFIX,skk.moe,Googleplay
-  - DOMAIN-KEYWORD,game,Proxies
-  - DOMAIN-KEYWORD,gvt1,Proxies
-  - DOMAIN-KEYWORD,googlevideo,Proxies
-  - DOMAIN-KEYWORD,lra8j.com,DIRECT
+  
+  # 直连规则
   - DOMAIN-KEYWORD,cn,DIRECT
-  - DOMAIN,play-fe.googleapis.com,Googleplay
-  - IP-CIDR,172.217.160.110/32,Googleplay
-  - IP-CIDR,172.217.163.46/32,Googleplay
-  - IP-CIDR,172.217.160.78/32,Googleplay
-  - IP-CIDR,142.251.42.238/32,Googleplay
-  - IP-CIDR,142.251.43.14/32,Googleplay
-  - IP-CIDR,142.251.220.77/32,Googleplay
-  - IP-CIDR,142.251.42.237/32,Googleplay
-  - IP-CIDR,172.217.163.45/32,Googleplay
-  - IP-CIDR,142.250.204.78/32,Googleplay
-  - IP-CIDR,142.250.66.142/32,Googleplay
-  - DOMAIN-SUFFIX,1password.com,DIRECT
-  - DOMAIN-SUFFIX,vultr.com,DIRECT
-  - DOMAIN-SUFFIX,mb3admin.com,DIRECT
-  - DOMAIN-SUFFIX,rixcloud.io,DIRECT
-  - DOMAIN-SUFFIX,tempestapp.io,DIRECT
   - DOMAIN-SUFFIX,baidu.com,DIRECT
-  - DOMAIN-SUFFIX,baidu-int.com,DIRECT
-  - DOMAIN-SUFFIX,erebor.douban.com,DIRECT
-  - DOMAIN,mtalk.google.com,DIRECT
-  - DOMAIN,alt1-mtalk.google.com,DIRECT
-  - DOMAIN,alt2-mtalk.google.com,DIRECT
-  - DOMAIN,alt3-mtalk.google.com,DIRECT
-  - DOMAIN,alt4-mtalk.google.com,DIRECT
-  - DOMAIN,alt5-mtalk.google.com,DIRECT
-  - DOMAIN,alt6-mtalk.google.com,DIRECT
-  - DOMAIN,alt7-mtalk.google.com,DIRECT
-  - DOMAIN,alt8-mtalk.google.com,DIRECT
-  - DOMAIN,alt9-mtalk.google.com,DIRECT
-  - DOMAIN,captive.apple.com,DIRECT
-  - DOMAIN,time-ios.apple.com,DIRECT
-  - DOMAIN-SUFFIX,gateway.push-apple.com.akadns.net,DIRECT
-  - DOMAIN-SUFFIX,push.apple.com,DIRECT
-  - DOMAIN-KEYWORD,github,Proxies
-  - DOMAIN-SUFFIX,github.com,Proxies
-  - DOMAIN-SUFFIX,github.io,Proxies
-  - DOMAIN-SUFFIX,githubapp.com,Proxies
-  - DOMAIN-SUFFIX,githubassets.com,Proxies
-  - DOMAIN-SUFFIX,githubusercontent.com,Proxies
-  - DOMAIN-SUFFIX,home-intl.console.aliyun.com,Proxies
-  - DOMAIN-SUFFIX,googleapis.cn,Proxies
-  - DOMAIN-SUFFIX,maying.co,Proxies
-  - DOMAIN-SUFFIX,flowercloud.net,Proxies
-  - DOMAIN-SUFFIX,socloud.me,Proxies
-  - DOMAIN-SUFFIX,ytoo.asia,Proxies
-  - DOMAIN-SUFFIX,ytoo.co.uk,Proxies
   - GEOIP,CN,DIRECT
+  
+  # 兜底规则
   - MATCH,Proxies
-
-
-
-
-
-
-
-
-
-
