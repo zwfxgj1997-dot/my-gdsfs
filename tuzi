@@ -28,14 +28,14 @@ proxies:
   - { name: 香港家宽 03丨1x HK, type: vless, server: 25c1651d.bangchenou.top, port: 41401, uuid: 1db4e043-bbe9-4e57-9125-35abc370a480, udp: true, tls: true, skip-cert-verify: true, flow: xtls-rprx-vision, client-fingerprint: edge, servername: streamcenter.bilivideo.com }
 
   # 尼日利亚 SOCKS5
-  - { name: '尼日1', server: 34.141.129.232, port: 9000, type: socks5, username: e5265d18-149a832e-54265c, password: wifi-ng--lagos- }
-  - { name: '尼日2', server: 34.141.129.232, port: 9001, type: socks5, username: e5265d18-149a832e-f1df3f, password: wifi-ng--lagos- }
-  - { name: '尼日3', server: 34.141.129.232, port: 9002, type: socks5, username: e5265d18-149a832e-4d5a07, password: wifi-ng--lagos- }
-  - { name: '尼日4', server: 34.141.129.232, port: 9003, type: socks5, username: e5265d18-149a832e-6e3c02, password: wifi-ng--lagos- }
-  - { name: '尼日5', server: 34.141.129.232, port: 9004, type: socks5, username: e5265d18-149a832e-b5a557, password: wifi-ng--lagos- }
-  - { name: '尼日6', server: 34.141.129.232, port: 9005, type: socks5, username: e5265d18-149a832e-8cc260, password: wifi-ng--lagos- }
-  - { name: '尼日7', server: 34.141.129.232, port: 9006, type: socks5, username: e5265d18-149a832e-b24ab7, password: wifi-ng--lagos- }
-  - { name: '尼日8', server: 34.141.129.232, port: 9007, type: socks5, username: e5265d18-149a832e-79e79b, password: wifi-ng--lagos- }
+  - { name: '尼日1', server: 106.75.152.119, port: 880, type: socks5, username: e5265d18-149a832e-7462c4, password: mobile-ng--- }
+  - { name: '尼日2', server: 106.75.152.119, port: 881, type: socks5, username: e5265d18-149a832e-ea0a28, password: mobile-ng--- }
+  - { name: '尼日3', server: 106.75.152.119, port: 882, type: socks5, username: e5265d18-149a832e-7dd68d, password: mobile-ng--- }
+  - { name: '尼日4', server: 106.75.152.119, port: 883, type: socks5, username: e5265d18-149a832e-ae611a, password: mobile-ng--- }
+  - { name: '尼日5', server: 106.75.152.119, port: 884, type: socks5, username: e5265d18-149a832e-edf443, password: mobile-ng--- }
+  - { name: '尼日6', server: 106.75.152.119, port: 885, type: socks5, username: e5265d18-149a832e-97d791, password: mobile-ng--- }
+  - { name: '尼日7', server: 106.75.152.119, port: 886, type: socks5, username: e5265d18-149a832e-852bf2, password: mobile-ng--- }
+  - { name: '尼日8', server: 106.75.152.119, port: 887, type: socks5, username: e5265d18-149a832e-95b717, password: mobile-ng--- }
   - { name: '尼日9', server: geo.iproyal.com, port: 11200, type: socks5, username: P7I2lwT2Oynjs7TB, password: T41qODqSPUPqxwr2_country-ng_session-6qxCbAKU_lifetime-15m_streaming-1 }
   - { name: '尼日10', server: geo.iproyal.com, port: 11200, type: socks5, username: P7I2lwT2Oynjs7TB, password: T41qODqSPUPqxwr2_country-ng_session-VSu1C9kl_lifetime-15m_streaming-1 }
   - { name: '尼日11', server: geo.iproyal.com, port: 12321, type: socks5, username: P7I2lwT2Oynjs7TB, password: T41qODqSPUPqxwr2_country-ng_session-NZXQvVAJ_lifetime-15m_streaming-1 }
@@ -47,14 +47,14 @@ proxies:
   # 埃及 SOCKS5
   - { name: '埃及1', server: 106.75.152.119, port: 880, type: socks5, username: e5265d18-149a832e-16f296, password: mobile-pk--islamabad- }
   - { name: '埃及2', server: 106.75.152.119, port: 881, type: socks5, username: e5265d18-149a832e-973aeb, password: mobile-pk--- }
-  - { name: '埃及3', server: prem.country.iprocket.io, port: 9595, type: socks5, username: com14049369-res-PK-Lsid-890358478, password: Htp9xuwt28o95A5 }
-  - { name: '埃及4', server: prem.country.iprocket.io, port: 9595, type: socks5, username: com14049369-res-PK-Lsid-926379417, password: Htp9xuwt28o95A5 }
-  - { name: '埃及5', server: prem.country.iprocket.io, port: 9595, type: socks5, username: com14049369-res-PK-Lsid-850743188, password: Htp9xuwt28o95A5 }
-  - { name: '埃及6', server: prem.country.iprocket.io, port: 9595, type: socks5, username: com14049369-res-PK-Lsid-927755326, password: Htp9xuwt28o95A5 }
-  - { name: '埃及7', server: 106.75.152.119, port: 882, type: socks5, username: e5265d18-149a832e-rand, password: wifi-pk--- }
-  - { name: '埃及8', server: 106.75.152.119, port: 883, type: socks5, username: e5265d18-149a832e-rand, password: wifi-pk--- }
-  - { name: '埃及9', server: 106.75.152.119, port: 881, type: socks5, username: e5265d18-149a832e-rand, password: wifi-pk--- }
-  - { name: '埃及10', server: 106.75.152.119, port: 880, type: socks5, username: e5265d18-149a832e-rand, password: wifi-pk--- }
+  - { name: '埃及3', server: 106.75.152.119, port: 882, type: socks5, username: e5265d18-149a832e-2457fc, password: mobile-pk--- }
+  - { name: '埃及4', server: 106.75.152.119, port: 883, type: socks5, username: e5265d18-149a832e-61b8b3, password: mobile-pk--- }
+  - { name: '埃及5', server: 106.75.152.119, port: 884, type: socks5, username: e5265d18-149a832e-00c699, password: mobile-pk--- }
+  - { name: '埃及6', server: 106.75.152.119, port: 885, type: socks5, username: e5265d18-149a832e-423168, password: mobile-pk--- }
+  - { name: '埃及7', server: 106.75.152.119, port: 886, type: socks5, username: e5265d18-149a832e-rand, password: wifi-pk--- }
+  - { name: '埃及8', server: 106.75.152.119, port: 887, type: socks5, username: e5265d18-149a832e-rand, password: wifi-pk--- }
+  - { name: '埃及9', server: 106.75.152.119, port: 888, type: socks5, username: e5265d18-149a832e-rand, password: wifi-pk--- }
+  - { name: '埃及10', server: 106.75.152.119, port: 889, type: socks5, username: e5265d18-149a832e-rand, password: wifi-pk--- }
 
   # 缅甸 SOCKS5
   - { name: '缅甸1', server: sg-iepl.com, port: 28656, type: socks5, username: 47353961-zone-custom-region-MM-sessid-kmszjXc0-sessTime-15, password: dJIA8BM3 }
