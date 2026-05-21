@@ -80,11 +80,11 @@ proxies:
   - { name: '土耳其10', server: sg-iepl.com, port: 33055, type: socks5, username: poiu4717, password: 9gHUDSv8OK_country-tr_session-9WytzQkN }
 
   # 菲律宾 SOCKS5
-  - { name: '菲律宾1', server: 106.75.152.119, port: 880, type: socks5, username: e5265d18-149a832e-rand, password: wifi-in--- }
-  - { name: '菲律宾2', server: 106.75.152.119, port: 881, type: socks5, username: e5265d18-149a832e-rand, password: wifi-in--- }
-  - { name: '菲律宾3', server: 106.75.152.119, port: 882, type: socks5, username: e5265d18-149a832e-rand, password: wifi-in--- }
-  - { name: '菲律宾4', server: 106.75.152.119, port: 883, type: socks5, username: e5265d18-149a832e-rand, password: wifi-in--- }
-  - { name: '菲律宾5', server: 106.75.152.119, port: 884, type: socks5, username: e5265d18-149a832e-rand, password: wifi-in--- }
+  - { name: '菲律宾1', server: 106.75.152.119, port: 1000, type: socks5, username: e5265d18-149a832e-rand, password: wifi-ph-10-- }
+  - { name: '菲律宾2', server: 106.75.152.119, port: 1001, type: socks5, username: e5265d18-149a832e-rand, password: wifi-ph-10-- }
+  - { name: '菲律宾3', server: 106.75.152.119, port: 1002, type: socks5, username: e5265d18-149a832e-rand, password: wifi-ph-10-- }
+  - { name: '菲律宾4', server: 106.75.152.119, port: 1003, type: socks5, username: e5265d18-149a832e-rand, password: wifi-ph-10-- }
+  - { name: '菲律宾5', server: 106.75.152.119, port: 1004, type: socks5, username: e5265d18-149a832e-rand, password: wifi-ph-10-- }
 
 proxy-groups:
   # 此组用于 Google Play 低价内购，务必手动选择节点
