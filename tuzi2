@@ -94,8 +94,8 @@ proxies:
   - { name: '菲律宾1', server: 34.141.138.189, port: 9000, type: socks5, username: e5265d18-149a832e-ea4e42, password: mobile-ph--- }
   - { name: '菲律宾2', server: 34.141.138.189, port: 9001, type: socks5, username: e5265d18-149a832e-415f73, password: mobile-ph--- }
   - { name: '菲律宾3', server: 34.141.138.189, port: 9002, type: socks5, username: e5265d18-149a832e-0741cc, password: mobile-ph--- }
-  - { name: '菲律宾4', server: 34.141.138.189, port: 9003, type: socks5, username: e5265d18-149a832e-8ecc3c, password: mobile-ph--- }
-  - { name: '菲律宾5', server: 34.141.138.189, port: 9004, type: socks5, username: e5265d18-149a832e-fbf54a, password: mobile-ph--- }
+  - { name: '菲律宾4', server: 106.75.152.119, port: 880, type: socks5, username: e5265d18-149a832e-b33664, password: mobile-ph--- }
+  - { name: '菲律宾5', server: 106.75.152.119, port: 881, type: socks5, username: e5265d18-149a832e-18c699, password: mobile-ph--- }
 
 proxy-groups:
   # 此组用于 Google Play 低价内购，务必手动选择节点
