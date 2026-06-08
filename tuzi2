@@ -44,13 +44,13 @@ proxies:
   - { name: '尼日6', server: 106.75.152.119, port: 885, type: socks5, username: e5265d18-149a832e-97d791, password: mobile-ng--- }
   - { name: '尼日7', server: 106.75.152.119, port: 886, type: socks5, username: e5265d18-149a832e-852bf2, password: mobile-ng--- }
   - { name: '尼日8', server: 106.75.152.119, port: 887, type: socks5, username: e5265d18-149a832e-95b717, password: mobile-ng--- }
-  - { name: '尼日9', server: geo.iproyal.com, port: 11200, type: socks5, username: P7I2lwT2Oynjs7TB, password: T41qODqSPUPqxwr2_country-ng_session-6qxCbAKU_lifetime-15m_streaming-1 }
-  - { name: '尼日10', server: geo.iproyal.com, port: 11200, type: socks5, username: P7I2lwT2Oynjs7TB, password: T41qODqSPUPqxwr2_country-ng_session-VSu1C9kl_lifetime-15m_streaming-1 }
-  - { name: '尼日11', server: geo.iproyal.com, port: 12321, type: socks5, username: P7I2lwT2Oynjs7TB, password: T41qODqSPUPqxwr2_country-ng_session-NZXQvVAJ_lifetime-15m_streaming-1 }
-  - { name: '尼日12', server: geo.iproyal.com, port: 12321, type: socks5, username: P7I2lwT2Oynjs7TB, password: T41qODqSPUPqxwr2_country-ng_session-HsuJpggL_lifetime-15m_streaming-1 }
-  - { name: '尼日13', server: geo.iproyal.com, port: 12321, type: socks5, username: P7I2lwT2Oynjs7TB, password: T41qODqSPUPqxwr2_country-ng_session-Ph91YlSd_lifetime-15m_streaming-1 }
-  - { name: '尼日14', server: geo.iproyal.com, port: 12321, type: socks5, username: P7I2lwT2Oynjs7TB, password: T41qODqSPUPqxwr2_country-ng_session-WChwXE4N_lifetime-15m_streaming-1 }
-  - { name: '尼日15', server: geo.iproyal.com, port: 12321, type: socks5, username: P7I2lwT2Oynjs7TB, password: T41qODqSPUPqxwr2_country-ng_session-MvXbcPS2_lifetime-15m_streaming-1 }
+  - { name: '尼日9', server: 106.75.152.119, port: 1000, type: socks5, username: e5265d18-149a832e-rand, password: wifi-ng-10-- }
+  - { name: '尼日10', server: 106.75.152.119, port: 1001, type: socks5, username: e5265d18-149a832e-rand, password: wifi-ng-10-- }
+  - { name: '尼日11', server: 106.75.152.119, port: 1002, type: socks5, username: e5265d18-149a832e-rand, password: wifi-ng-10-- }
+  - { name: '尼日12', server: 106.75.152.119, port: 1003, type: socks5, username: e5265d18-149a832e-rand, password: wifi-ng-10-- }
+  - { name: '尼日13', server: geo.iproyal.com, port: 11200, type: socks5, username: P7I2lwT2Oynjs7TB, password: T41qODqSPUPqxwr2_country-ng_session-B17x9bYz_lifetime-15m_streaming-1 }
+  - { name: '尼日14', server: geo.iproyal.com, port: 11200, type: socks5, username: P7I2lwT2Oynjs7TB, password: T41qODqSPUPqxwr2_country-ng_session-JwixSphJ_lifetime-15m_streaming-1 }
+  - { name: '尼日15', server: geo.iproyal.com, port: 11200, type: socks5, username: P7I2lwT2Oynjs7TB, password: T41qODqSPUPqxwr2_country-ng_session-TNxwnjMw_lifetime-15m_streaming-1 }
 
   # 埃及 SOCKS5
   - { name: '埃及1', server: 106.75.152.119, port: 880, type: socks5, username: e5265d18-149a832e-16f296, password: mobile-pk--islamabad- }
