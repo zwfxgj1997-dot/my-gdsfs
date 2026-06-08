@@ -36,10 +36,10 @@ proxies:
   - { name: 香港家宽 03丨1x HK, type: ss, server: b19aeaf6-23d1-4f30-bddb-6720038b40b4.sankuaei.com, port: 12000, cipher: aes-128-gcm, password: haMLMXirByn6rGVh, plugin: obfs, plugin-opts: { mode: http, host: bcf67d6f37c2.microsoft.com }, udp: true }
 
   # 尼日利亚 SOCKS5
-  - { name: '尼日1', server: 106.75.152.119, port: 880, type: socks5, username: e5265d18-149a832e-7462c4, password: mobile-ng--- }
-  - { name: '尼日2', server: 106.75.152.119, port: 881, type: socks5, username: e5265d18-149a832e-ea0a28, password: mobile-ng--- }
-  - { name: '尼日3', server: 106.75.152.119, port: 882, type: socks5, username: e5265d18-149a832e-7dd68d, password: mobile-ng--- }
-  - { name: '尼日4', server: 106.75.152.119, port: 883, type: socks5, username: e5265d18-149a832e-ae611a, password: mobile-ng--- }
+  - { name: '尼日1', server: 34.141.138.189, port: 9000, type: socks5, username: e5265d18-149a832e-1924a5, password: mobile-ng--- }
+  - { name: '尼日2', server: 34.141.138.189, port: 9001, type: socks5, username: e5265d18-149a832e-ce2cce, password: mobile-ng--- }
+  - { name: '尼日3', server: 34.141.138.189, port: 9002, type: socks5, username: e5265d18-149a832e-dc6414, password: mobile-ng--- }
+  - { name: '尼日4', server: 34.141.138.189, port: 9003, type: socks5, username: e5265d18-149a832e-6c6f2e, password: mobile-ng--- }
   - { name: '尼日5', server: 106.75.152.119, port: 884, type: socks5, username: e5265d18-149a832e-edf443, password: mobile-ng--- }
   - { name: '尼日6', server: 106.75.152.119, port: 885, type: socks5, username: e5265d18-149a832e-97d791, password: mobile-ng--- }
   - { name: '尼日7', server: 106.75.152.119, port: 886, type: socks5, username: e5265d18-149a832e-852bf2, password: mobile-ng--- }
