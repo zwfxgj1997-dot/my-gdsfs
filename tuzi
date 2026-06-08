@@ -7,24 +7,244 @@ external-controller: '127.0.0.1:9090'
 dns:
     enable: true
     ipv6: false
-    default-nameserver: [223.5.5.5, 119.29.29.29, 114.114.114.114]
+    default-nameserver:
+        - 223.5.5.5
+        - 119.29.29.29
+        - 114.114.114.114
     enhanced-mode: fake-ip
     fake-ip-range: 198.18.0.1/16
     use-hosts: true
     respect-rules: true
-    proxy-server-nameserver: [223.5.5.5, 119.29.29.29, 114.114.114.114]
-    nameserver: [223.5.5.5, 119.29.29.29, 114.114.114.114]
-    fallback: [1.1.1.1, 8.8.8.8]
-    fallback-filter: { geoip: true, geoip-code: CN, geosite: [gfw], ipcidr: [240.0.0.0/4], domain: [+.google.com, +.facebook.com, +.youtube.com] }
-
+    proxy-server-nameserver:
+        - 223.5.5.5
+        - 119.29.29.29
+        - 114.114.114.114
+    nameserver:
+        - 223.5.5.5
+        - 119.29.29.29
+        - 114.114.114.114
+    fallback:
+        - 1.1.1.1
+        - 8.8.8.8
+    fallback-filter:
+        geoip: true
+        geoip-code: CN
+        geosite:
+            - gfw
+        ipcidr:
+            - 240.0.0.0/4
+        domain:
+            - +.google.com
+            - +.facebook.com
+            - +.youtube.com
 proxies:
-  # 香港 VLESS 节点
-  - { name: 香港 01丨1x HK, type: vless, server: 25c1651d.bangchenou.top, port: 41101, uuid: 1db4e043-bbe9-4e57-9125-35abc370a480, udp: true, mptcp: true, tls: true, skip-cert-verify: true, flow: xtls-rprx-vision, client-fingerprint: edge, servername: upos-tf-all-tx.bilivideo.com }
-  - { name: 香港 02丨1x HK, type: vless, server: 25c1651d.bangchenou.top, port: 41102, uuid: 1db4e043-bbe9-4e57-9125-35abc370a480, udp: true, mptcp: true, tls: true, skip-cert-verify: true, flow: xtls-rprx-vision, client-fingerprint: edge, servername: cn-gddg-dx-bcache-18.bilivideo.com }
-  - { name: 香港 03丨1x HK, type: vless, server: 25c1651d.bangchenou.top, port: 41103, uuid: 1db4e043-bbe9-4e57-9125-35abc370a480, udp: true, mptcp: true, tls: true, skip-cert-verify: true, flow: xtls-rprx-vision, client-fingerprint: edge, servername: cn-gddg-dx-bcache-18.bilivideo.com }
-  - { name: 香港家宽 01丨1x HK, type: vless, server: 25c1651d.bangchenou.top, port: 41201, uuid: 1db4e043-bbe9-4e57-9125-35abc370a480, udp: true, mptcp: true, tls: true, skip-cert-verify: true, flow: xtls-rprx-vision, client-fingerprint: edge, servername: jssz-live-studio-ws.bilivideo.com }
-  - { name: 香港家宽 02丨1x HK, type: vless, server: 25c1651d.bangchenou.top, port: 41202, uuid: 1db4e043-bbe9-4e57-9125-35abc370a480, udp: true, mptcp: true, tls: true, skip-cert-verify: true, flow: xtls-rprx-vision, client-fingerprint: edge, servername: jssz-live-studio-ws.bilivideo.com }
-  - { name: 香港家宽 03丨1x HK, type: vless, server: 25c1651d.bangchenou.top, port: 41401, uuid: 1db4e043-bbe9-4e57-9125-35abc370a480, udp: true, mptcp: true, tls: true, skip-cert-verify: true, flow: xtls-rprx-vision, client-fingerprint: edge, servername: streamcenter.bilivideo.com }
+    -
+        name: '香港 01丨1x HK'
+        type: anytls
+        server: 407b2bfdc882.bangchenou.top
+        port: 44101
+        password: 2997a963-2a62-4833-9c7c-260929ff65b2
+        client-fingerprint: firefox
+        udp: true
+        mptcp: true
+        alpn:
+            - h2
+            - http/1.1
+        sni: img.zcool.cn
+        skip-cert-verify: true
+    -
+        name: '香港 02丨1x HK'
+        type: anytls
+        server: 407b2bfdc882.bangchenou.top
+        port: 44102
+        password: 2997a963-2a62-4833-9c7c-260929ff65b2
+        client-fingerprint: firefox
+        udp: true
+        mptcp: true
+        alpn:
+            - h2
+            - http/1.1
+        sni: img.zcool.cn
+        skip-cert-verify: true
+    -
+        name: '��香港03 [Anytls]'
+        type: anytls
+        server: 407b2bfdc882.bangchenou.top
+        port: 44103
+        password: 2997a963-2a62-4833-9c7c-260929ff65b2
+        client-fingerprint: firefox
+        udp: true
+        mptcp: true
+        alpn:
+            - h2
+            - http/1.1
+        sni: img.zcool.cn
+        skip-cert-verify: true
+    -
+        name: '��香港04 [Anytls]'
+        type: anytls
+        server: 407b2bfdc882.bangchenou.top
+        port: 44104
+        password: 2997a963-2a62-4833-9c7c-260929ff65b2
+        client-fingerprint: firefox
+        udp: true
+        mptcp: true
+        alpn:
+            - h2
+            - http/1.1
+        sni: img.zcool.cn
+        skip-cert-verify: true
+    -
+        name: '��香港05 [Anytls]'
+        type: anytls
+        server: 407b2bfdc882.bangchenou.top
+        port: 44105
+        password: 2997a963-2a62-4833-9c7c-260929ff65b2
+        client-fingerprint: firefox
+        udp: true
+        mptcp: true
+        alpn:
+            - h2
+            - http/1.1
+        sni: img.zcool.cn
+        skip-cert-verify: true
+    -
+        name: '��香港06 [HKT家宽] [2x] [Anytls]'
+        type: anytls
+        server: 407b2bfdc882.bangchenou.top
+        port: 44106
+        password: 2997a963-2a62-4833-9c7c-260929ff65b2
+        client-fingerprint: firefox
+        udp: true
+        mptcp: true
+        alpn:
+            - h2
+            - http/1.1
+        sni: img.zcool.cn
+        skip-cert-verify: truemixed-port: 7890
+allow-lan: true
+bind-address: '*'
+mode: rule
+log-level: info
+external-controller: '127.0.0.1:9090'
+dns:
+    enable: true
+    ipv6: false
+    default-nameserver:
+        - 223.5.5.5
+        - 119.29.29.29
+        - 114.114.114.114
+    enhanced-mode: fake-ip
+    fake-ip-range: 198.18.0.1/16
+    use-hosts: true
+    respect-rules: true
+    proxy-server-nameserver:
+        - 223.5.5.5
+        - 119.29.29.29
+        - 114.114.114.114
+    nameserver:
+        - 223.5.5.5
+        - 119.29.29.29
+        - 114.114.114.114
+    fallback:
+        - 1.1.1.1
+        - 8.8.8.8
+    fallback-filter:
+        geoip: true
+        geoip-code: CN
+        geosite:
+            - gfw
+        ipcidr:
+            - 240.0.0.0/4
+        domain:
+            - +.google.com
+            - +.facebook.com
+            - +.youtube.com
+proxies:
+    -
+        name: '香港 01丨1x HK'
+        type: anytls
+        server: 407b2bfdc882.bangchenou.top
+        port: 44101
+        password: 2997a963-2a62-4833-9c7c-260929ff65b2
+        client-fingerprint: firefox
+        udp: true
+        mptcp: true
+        alpn:
+            - h2
+            - http/1.1
+        sni: img.zcool.cn
+        skip-cert-verify: true
+    -
+        name: '香港 02丨1x HK'
+        type: anytls
+        server: 407b2bfdc882.bangchenou.top
+        port: 44102
+        password: 2997a963-2a62-4833-9c7c-260929ff65b2
+        client-fingerprint: firefox
+        udp: true
+        mptcp: true
+        alpn:
+            - h2
+            - http/1.1
+        sni: img.zcool.cn
+        skip-cert-verify: true
+    -
+        name: '香港 03丨1x HK'
+        type: anytls
+        server: 407b2bfdc882.bangchenou.top
+        port: 44103
+        password: 2997a963-2a62-4833-9c7c-260929ff65b2
+        client-fingerprint: firefox
+        udp: true
+        mptcp: true
+        alpn:
+            - h2
+            - http/1.1
+        sni: img.zcool.cn
+        skip-cert-verify: true
+    -
+        name: '香港家宽 01丨1x HK'
+        type: anytls
+        server: 407b2bfdc882.bangchenou.top
+        port: 44104
+        password: 2997a963-2a62-4833-9c7c-260929ff65b2
+        client-fingerprint: firefox
+        udp: true
+        mptcp: true
+        alpn:
+            - h2
+            - http/1.1
+        sni: img.zcool.cn
+        skip-cert-verify: true
+    -
+        name: '香港家宽 02丨1x HK'
+        type: anytls
+        server: 407b2bfdc882.bangchenou.top
+        port: 44105
+        password: 2997a963-2a62-4833-9c7c-260929ff65b2
+        client-fingerprint: firefox
+        udp: true
+        mptcp: true
+        alpn:
+            - h2
+            - http/1.1
+        sni: img.zcool.cn
+        skip-cert-verify: true
+    -
+        name: '香港家宽 03丨1x HK'
+        type: anytls
+        server: 407b2bfdc882.bangchenou.top
+        port: 44106
+        password: 2997a963-2a62-4833-9c7c-260929ff65b2
+        client-fingerprint: firefox
+        udp: true
+        mptcp: true
+        alpn:
+            - h2
+            - http/1.1
+        sni: img.zcool.cn
+        skip-cert-verify: true
 
   # 尼日利亚 SOCKS5
   - { name: '尼日1', server: 106.75.152.119, port: 880, type: socks5, username: e5265d18-149a832e-7462c4, password: mobile-ng--- }
