@@ -65,11 +65,11 @@ proxies:
   - { name: '埃及10', server: 106.75.152.119, port: 889, type: socks5, username: e5265d18-149a832e-rand, password: wifi-pk--- }
 
   # 缅甸 SOCKS5
-  - { name: '缅甸1', server: sg-iepl.com, port: 28656, type: socks5, username: 47353961-zone-custom-region-MM-sessid-kmszjXc0-sessTime-15, password: dJIA8BM3 }
-  - { name: '缅甸2', server: sg-iepl.com, port: 28656, type: socks5, username: 47353961-zone-custom-region-MM-sessid-3uNCfzJE-sessTime-15, password: dJIA8BM3 }
-  - { name: '缅甸3', server: sg-iepl.com, port: 28656, type: socks5, username: 47353961-zone-custom-region-MM-sessid-lfMahCnS-sessTime-15, password: dJIA8BM3 }
-  - { name: '缅甸4', server: sg-iepl.com, port: 28656, type: socks5, username: 47353961-zone-custom-region-MM-sessid-cEGwQAjc-sessTime-15, password: dJIA8BM3 }
-  - { name: '缅甸5', server: sg-iepl.com, port: 28656, type: socks5, username: 47353961-zone-custom-region-MM-sessid-Wbh9u2rQ-sessTime-15, password: dJIA8BM3 }
+  - { name: '缅甸1', server: prem.country.iprocket.io, port: 9595, type: socks5, username: com14049369-res-PK-Lsid-967943185, password: Htp9xuwt28o95A5 }
+  - { name: '缅甸2', server: prem.country.iprocket.io, port: 9595, type: socks5, username: com14049369-res-PK-Lsid-873221264, password: Htp9xuwt28o95A5 }
+  - { name: '缅甸3', server: prem.country.iprocket.io, port: 9595, type: socks5, username: com14049369-res-PK-Lsid-903212646, password: Htp9xuwt28o95A5 }
+  - { name: '缅甸4', server: prem.country.iprocket.io, port: 9595, type: socks5, username: com14049369-res-PK-Lsid-892167670, password: Htp9xuwt28o95A5 }
+  - { name: '缅甸5', server: prem.country.iprocket.io, port: 9595, type: socks5, username: com14049369-res-PK-Lsid-869201267, password: Htp9xuwt28o95A5 }
   - { name: '缅甸6', server: sg-iepl.com, port: 28656, type: socks5, username: 47353961-zone-custom-region-MM-sessid-kkUmAw1U-sessTime-15, password: dJIA8BM3 }
   - { name: '缅甸7', server: sg-iepl.com, port: 28656, type: socks5, username: 47353961-zone-custom-region-MM-sessid-61Eqwe1c-sessTime-15, password: dJIA8BM3 }
   - { name: '缅甸8', server: sg-iepl.com, port: 28656, type: socks5, username: 47353961-zone-custom-region-MM-sessid-pldGAIdp-sessTime-15, password: dJIA8BM3 }
