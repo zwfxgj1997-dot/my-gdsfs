@@ -82,11 +82,11 @@ proxies:
   - { name: '土耳其3', server: sg-iepl.com, port: 28656, type: socks5, username: 47353961-zone-custom-region-TR-sessid-ecz15ucd-sessTime-15, password: dJIA8BM3 }
   - { name: '土耳其4', server: sg-iepl.com, port: 28656, type: socks5, username: 47353961-zone-custom-region-TR-sessid-706EHOSq-sessTime-15, password: dJIA8BM3 }
   - { name: '土耳其5', server: sg-iepl.com, port: 28656, type: socks5, username: 47353961-zone-custom-region-TR-sessid-CrAcKL7u-sessTime-15, password: dJIA8BM3 }
-  - { name: '土耳其6', server: sg-iepl.com, port: 33055, type: socks5, username: poiu4717, password: 9gHUDSv8OK_country-tr_session-nbKCLM9k }
-  - { name: '土耳其7', server: sg-iepl.com, port: 33055, type: socks5, username: poiu4717, password: 9gHUDSv8OK_country-tr_session-hpvID9LA }
-  - { name: '土耳其8', server: sg-iepl.com, port: 33055, type: socks5, username: poiu4717, password: 9gHUDSv8OK_country-tr_session-EQq86W7A }
-  - { name: '土耳其9', server: sg-iepl.com, port: 33055, type: socks5, username: poiu4717, password: 9gHUDSv8OK_country-tr_session-BKhJacZV }
-  - { name: '土耳其10', server: sg-iepl.com, port: 33055, type: socks5, username: poiu4717, password: 9gHUDSv8OK_country-tr_session-9WytzQkN }
+  - { name: '土耳其6', server: prem.country.iprocket.io, port: 9595, type: socks5, username: com14049369-res-PH-Lsid-886655323, password: Htp9xuwt28o95A5 }
+  - { name: '土耳其7', server: prem.country.iprocket.io, port: 9595, type: socks5, username: com14049369-res-PH-Lsid-801376710, password: Htp9xuwt28o95A5 }
+  - { name: '土耳其8', server: prem.country.iprocket.io, port: 9595, type: socks5, username: com14049369-res-PH-Lsid-887250391, password: Htp9xuwt28o95A5 }
+  - { name: '土耳其9', server: prem.country.iprocket.io, port: 9595, type: socks5, username: om14049369-res-PH-Lsid-997896972, password: Htp9xuwt28o95A5 }
+  - { name: '土耳其10', server: prem.country.iprocket.io, port: 9595, type: socks5, username: om14049369-res-PH-Lsid-862799458, password: Htp9xuwt28o95A5 }
 
   # 菲律宾 SOCKS5
   - { name: '菲律宾1', server: 34.141.219.7, port: 9000, type: socks5, username: e5265d18-149a832e-b81902, password: mobile-ph--- }
