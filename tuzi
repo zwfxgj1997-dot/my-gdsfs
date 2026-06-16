@@ -141,8 +141,8 @@ proxies:
   - { name: '尼日15', server: geo.iproyal.com, port: 12321, type: socks5, username: P7I2lwT2Oynjs7TB, password: T41qODqSPUPqxwr2_country-ng_session-MvXbcPS2_lifetime-15m_streaming-1 }
 
   # 埃及 SOCKS5
-  - { name: '埃及1', server: 106.75.152.119, port: 880, type: socks5, username: e5265d18-149a832e-16f296, password: mobile-pk--islamabad- }
-  - { name: '埃及2', server: 106.75.152.119, port: 881, type: socks5, username: e5265d18-149a832e-973aeb, password: mobile-pk--- }
+  - { name: '埃及1', server: hk.1024proxy.io, port: 3000, type: socks5, username: zl5b47338-region-PK-sid-NQZG6sGB-t-5, password: gxbd3y4k }
+  - { name: '埃及2', server: hk.1024proxy.io, port: 3000, type: socks5, username: zl5b47338-region-PK-sid-my643853-t-5, password: gxbd3y4k }
   - { name: '埃及3', server: 106.75.152.119, port: 882, type: socks5, username: e5265d18-149a832e-2457fc, password: mobile-pk--- }
   - { name: '埃及4', server: 106.75.152.119, port: 883, type: socks5, username: e5265d18-149a832e-61b8b3, password: mobile-pk--- }
   - { name: '埃及5', server: 106.75.152.119, port: 884, type: socks5, username: e5265d18-149a832e-00c699, password: mobile-pk--- }
