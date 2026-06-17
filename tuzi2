@@ -77,11 +77,11 @@ proxies:
   - { name: '缅甸10', server: sg-iepl.com, port: 28656, type: socks5, username: 47353961-zone-custom-region-MM-sessid-0cOzuZkG-sessTime-15, password: dJIA8BM3 }
 
   # 土耳其 SOCKS5
-  - { name: '土耳其1', server: sg-iepl.com, port: 28656, type: socks5, username: 47353961-zone-custom-region-TR-sessid-iGZoZ2y7-sessTime-15, password: dJIA8BM3 }
-  - { name: '土耳其2', server: sg-iepl.com, port: 28656, type: socks5, username: 47353961-zone-custom-region-TR-sessid-BZ4gLZLU-sessTime-15, password: dJIA8BM3 }
-  - { name: '土耳其3', server: sg-iepl.com, port: 28656, type: socks5, username: 47353961-zone-custom-region-TR-sessid-ecz15ucd-sessTime-15, password: dJIA8BM3 }
-  - { name: '土耳其4', server: sg-iepl.com, port: 28656, type: socks5, username: 47353961-zone-custom-region-TR-sessid-706EHOSq-sessTime-15, password: dJIA8BM3 }
-  - { name: '土耳其5', server: sg-iepl.com, port: 28656, type: socks5, username: 47353961-zone-custom-region-TR-sessid-CrAcKL7u-sessTime-15, password: dJIA8BM3 }
+  - { name: '土耳其1', server: hk.1024proxy.io, port: 3000, type: socks5, username: zl5b47338-region-PH-sid-SZKcWh4R-t-5, password: gxbd3y4k }
+  - { name: '土耳其2', server: hk.1024proxy.io, port: 3000, type: socks5, username: zl5b47338-region-PH-sid-UUgqtdPw-t-5, password: gxbd3y4k }
+  - { name: '土耳其3', server: hk.1024proxy.io, port: 3000, type: socks5, username: zl5b47338-region-PH-sid-kNwhQUeZ-t-5, password: gxbd3y4k }
+  - { name: '土耳其4', server: hk.1024proxy.io, port: 3000, type: socks5, username: zl5b47338-region-PH-sid-Lf6X6Vih-t-5, password: gxbd3y4k }
+  - { name: '土耳其5', server: hk.1024proxy.io, port: 3000, type: socks5, username: zl5b47338-region-PH-sid-mu4jW16f-t-5, password: gxbd3y4k }
   - { name: '土耳其6', server: prem.country.iprocket.io, port: 9595, type: socks5, username: com14049369-res-PH-Lsid-886655323, password: Htp9xuwt28o95A5 }
   - { name: '土耳其7', server: prem.country.iprocket.io, port: 9595, type: socks5, username: com14049369-res-PH-Lsid-801376710, password: Htp9xuwt28o95A5 }
   - { name: '土耳其8', server: prem.country.iprocket.io, port: 9595, type: socks5, username: com14049369-res-PH-Lsid-887250391, password: Htp9xuwt28o95A5 }
