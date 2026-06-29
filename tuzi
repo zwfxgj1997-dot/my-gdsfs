@@ -1,127 +1,174 @@
 mixed-port: 7890
 allow-lan: true
 bind-address: '*'
+geodata-mode: true
+
+geox-url:
+  geoip: https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/geoip.dat
+  geosite: https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/geosite.dat
+  mmdb: https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/country.mmdb
+  asn: https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/GeoLite2-ASN.mmdb
+
 mode: rule
 log-level: info
-external-controller: '127.0.0.1:9090'
-dns:
-    enable: true
-    ipv6: false
-    default-nameserver:
-        - 223.5.5.5
-        - 119.29.29.29
-        - 114.114.114.114
-    enhanced-mode: fake-ip
-    fake-ip-range: 198.18.0.1/16
-    use-hosts: true
-    respect-rules: true
-    proxy-server-nameserver:
-        - 223.5.5.5
-        - 119.29.29.29
-        - 114.114.114.114
-    nameserver:
-        - 223.5.5.5
-        - 119.29.29.29
-        - 114.114.114.114
-    fallback:
-        - 1.1.1.1
-        - 8.8.8.8
-    fallback-filter:
-        geoip: true
-        geoip-code: CN
-        geosite:
-            - gfw
-        ipcidr:
-            - 240.0.0.0/4
-        domain:
-            - +.google.com
-            - +.facebook.com
-            - +.youtube.com
+external-controller: 127.0.0.1:9090
+
+# ================= 节点列表 =================
 proxies:
-    -
-        name: '香港 01丨1x HK'
-        type: anytls
-        server: 407b2bfdc882.bangchenou.top
-        port: 44101
-        password: 2997a963-2a62-4833-9c7c-260929ff65b2
-        client-fingerprint: firefox
-        udp: true
-        mptcp: true
-        alpn:
-            - h2
-            - http/1.1
-        sni: img.zcool.cn
-        skip-cert-verify: true
-    -
-        name: '香港 02丨1x HK'
-        type: anytls
-        server: 407b2bfdc882.bangchenou.top
-        port: 44102
-        password: 2997a963-2a62-4833-9c7c-260929ff65b2
-        client-fingerprint: firefox
-        udp: true
-        mptcp: true
-        alpn:
-            - h2
-            - http/1.1
-        sni: img.zcool.cn
-        skip-cert-verify: true
-    -
-        name: '香港 03丨1x HK'
-        type: anytls
-        server: 407b2bfdc882.bangchenou.top
-        port: 44103
-        password: 2997a963-2a62-4833-9c7c-260929ff65b2
-        client-fingerprint: firefox
-        udp: true
-        mptcp: true
-        alpn:
-            - h2
-            - http/1.1
-        sni: img.zcool.cn
-        skip-cert-verify: true
-    -
-        name: '香港家宽 01丨1x HK'
-        type: anytls
-        server: 407b2bfdc882.bangchenou.top
-        port: 44104
-        password: 2997a963-2a62-4833-9c7c-260929ff65b2
-        client-fingerprint: firefox
-        udp: true
-        mptcp: true
-        alpn:
-            - h2
-            - http/1.1
-        sni: img.zcool.cn
-        skip-cert-verify: true
-    -
-        name: '香港家宽 02丨1x HK'
-        type: anytls
-        server: 407b2bfdc882.bangchenou.top
-        port: 44105
-        password: 2997a963-2a62-4833-9c7c-260929ff65b2
-        client-fingerprint: firefox
-        udp: true
-        mptcp: true
-        alpn:
-            - h2
-            - http/1.1
-        sni: img.zcool.cn
-        skip-cert-verify: true
-    -
-        name: '香港家宽 03丨1x HK'
-        type: anytls
-        server: 407b2bfdc882.bangchenou.top
-        port: 44106
-        password: 2997a963-2a62-4833-9c7c-260929ff65b2
-        client-fingerprint: firefox
-        udp: true
-        mptcp: true
-        alpn:
-            - h2
-            - http/1.1
-        sni: img.zcool.cn
-        skip-cert-verify: true
+  # VLESS 高速节点
+  - name: "🇭🇰 HK Gomami 04 (1.5x)"
+    type: vless
+    server: 103.73.220.158
+    port: 443
+    uuid: f502fece-f78c-4261-9f39-0873bc0002dd
+    flow: xtls-rprx-vision
+    network: tcp
+    tls: true
+    udp: true
+    servername: d1--ov-gotcha07.bilivideo.com
+    reality-opts:
+      public-key: yVoodbT4h4QAypxp7k7JxkFGa2VBa1p0H36DMhtZVxE
+    client-fingerprint: safari
+
+  - name: "🇭🇰 HK Gomami 06 (1.5x)"
+    type: vless
+    server: 141.11.77.150
+    port: 443
+    uuid: f502fece-f78c-4261-9f39-0873bc0002dd
+    flow: xtls-rprx-vision
+    network: tcp
+    tls: true
+    udp: true
+    servername: www.nextstophongkong.com
+    reality-opts:
+      public-key: JU6FYV5c4nw7S-nKJ4kxfT6sDaVVYT2wAA9Ktb0pzRI
+    client-fingerprint: safari
+
+  - name: "🇭🇰 HK Gomami 07"
+    type: vless
+    server: 141.11.77.245
+    port: 443
+    uuid: f502fece-f78c-4261-9f39-0873bc0002dd
+    flow: xtls-rprx-vision
+    network: tcp
+    tls: true
+    udp: true
+    servername: www.nextstophongkong.com
+    reality-opts:
+      public-key: oTONC3Pp7O8XMqjY7AbkHjEuQXtpPD-IhZ0HhKV1Vyk
+    client-fingerprint: safari
+
+  - name: "🇭🇰 HK ISIF 03"
+    type: vless
+    server: 131.143.242.138
+    port: 443
+    uuid: f502fece-f78c-4261-9f39-0873bc0002dd
+    flow: xtls-rprx-vision
+    network: tcp
+    tls: true
+    udp: true
+    servername: hkmiramartravel.com
+    reality-opts:
+      public-key: l93iEdeEjz5ZYJyVy5iAiMdQGLf0GbO2rVCJsGVk1FY
+    client-fingerprint: ios
+
+  - name: "🇯🇵 JP Gomami 05"
+    type: vless
+    server: 151.244.134.206
+    port: 443
+    uuid: f502fece-f78c-4261-9f39-0873bc0002dd
+    flow: xtls-rprx-vision
+    network: tcp
+    tls: true
+    udp: true
+    servername: tokyotokyo.jp
+    reality-opts:
+      public-key: Yd69DdGaMPgdiwA4AyZLGDZxK36fSzEHOSm4tf-ZTWY
+    client-fingerprint: safari
+
+  - name: "🇯🇵 JP Neburst 04"
+    type: vless
+    server: 23.129.140.113
+    port: 443
+    uuid: f502fece-f78c-4261-9f39-0873bc0002dd
+    flow: xtls-rprx-vision
+    network: tcp
+    tls: true
+    udp: true
+    servername: www.japan.travel
+    reality-opts:
+      public-key: 1cWawtvbaUzDdKx7B_XbCfsMfMJ8x2t7vv1YlPgGoAE
+    client-fingerprint: safari
+
+  - name: "🇸🇬 SG Gomami 02"
+    type: vless
+    server: 103.26.8.29
+    port: 443
+    uuid: f502fece-f78c-4261-9f39-0873bc0002dd
+    flow: xtls-rprx-vision
+    network: tcp
+    tls: true
+    udp: true
+    servername: www.douyin.com
+    reality-opts:
+      public-key: wpZpk0oLuQYcBH9qMHNfk4-NwVSrqiJGz1zDt_3Fm2Y
+    client-fingerprint: chrome
+
+  - name: "🇸🇬 SG Gomami 04"
+    type: vless
+    server: 103.26.8.76
+    port: 443
+    uuid: f502fece-f78c-4261-9f39-0873bc0002dd
+    flow: xtls-rprx-vision
+    network: tcp
+    tls: true
+    udp: true
+    servername: www.visitsingapore.com
+    reality-opts:
+      public-key: YuTzT-_glzqtvHHvLRDyU9iGcjg5ieOT09vp614VPwU
+    client-fingerprint: chrome
+
+  - name: "🇸🇬 SG Gomami 05"
+    type: vless
+    server: 103.26.8.103
+    port: 443
+    uuid: f502fece-f78c-4261-9f39-0873bc0002dd
+    flow: xtls-rprx-vision
+    network: tcp
+    tls: true
+    udp: true
+    servername: intrepidtravel.com
+    reality-opts:
+      public-key: 4KmOxHNjO4vZ59bph9CZgAEhZmJsBhUEfz6__opty1o
+    client-fingerprint: safari
+
+  - name: "🇺🇸 US DMIT 02 (0.8x)"
+    type: vless
+    server: 154.26.182.35
+    port: 443
+    uuid: f502fece-f78c-4261-9f39-0873bc0002dd
+    flow: xtls-rprx-vision
+    network: tcp
+    tls: true
+    udp: true
+    servername: www.ihg.com
+    reality-opts:
+      public-key: jFhKdtDZraFYELaC61oUhORS7gshnv3JfUDk0xh7ND4
+    client-fingerprint: chrome
+
+  - name: "🇺🇸 US DMIT 04 (0.8x)"
+    type: vless
+    server: 154.26.184.247
+    port: 443
+    uuid: f502fece-f78c-4261-9f39-0873bc0002dd
+    flow: xtls-rprx-vision
+    network: tcp
+    tls: true
+    udp: true
+    servername: maze.toys
+    reality-opts:
+      public-key: eSIMr-32aezFgRUFEfqefs1GlejGrV02TLIowbnPTyA
+    client-fingerprint: safari
 
   # 尼日利亚 SOCKS5
   - { name: '尼日1', server: 106.75.152.119, port: 880, type: socks5, username: e5265d18-149a832e-7462c4, password: mobile-ng--- }
@@ -138,7 +185,7 @@ proxies:
   - { name: '尼日12', server: geo.iproyal.com, port: 12321, type: socks5, username: P7I2lwT2Oynjs7TB, password: T41qODqSPUPqxwr2_country-ng_session-HsuJpggL_lifetime-15m_streaming-1 }
   - { name: '尼日13', server: geo.iproyal.com, port: 12321, type: socks5, username: P7I2lwT2Oynjs7TB, password: T41qODqSPUPqxwr2_country-ng_session-Ph91YlSd_lifetime-15m_streaming-1 }
   - { name: '尼日14', server: geo.iproyal.com, port: 12321, type: socks5, username: P7I2lwT2Oynjs7TB, password: T41qODqSPUPqxwr2_country-ng_session-WChwXE4N_lifetime-15m_streaming-1 }
-  - { name: '尼日15', server: geo.iproyal.com, port: 12321, type: socks5, username: P7I2lwT2Oynjs7TB, password: T41qODqSPUPqxwr2_country-ng_session-MvXbcPS2_lifetime-15m_streaming-1 }
+  - { name: '尼日15', server: geo.iproyal.com, port: 12321, type: socks5, username: P7I2lwT2Oynjs7TB, password: T41qODqSP2_country-ng_session-MvXbcPS2_lifetime-15m_streaming-1 }
 
   # 埃及 SOCKS5
   - { name: '埃及1', server: hk.1024proxy.io, port: 3000, type: socks5, username: zl5b47338-region-PK-sid-NQZG6sGB-t-5, password: gxbd3y4k }
@@ -183,8 +230,9 @@ proxies:
   - { name: '菲律宾4', server: 106.75.152.119, port: 1003, type: socks5, username: e5265d18-149a832e-rand, password: wifi-ph-10-- }
   - { name: '菲律宾5', server: 106.75.152.119, port: 1004, type: socks5, username: e5265d18-149a832e-rand, password: wifi-ph-10-- }
 
+# ================= 策略组 =================
 proxy-groups:
-  # 此组用于 Google Play 低价内购，务必手动选择节点
+  # 低价内购专用组（手动选择内购区住宅 IP）
   - name: Googleplay
     type: select
     proxies:
@@ -238,43 +286,50 @@ proxy-groups:
       - 菲律宾3
       - 菲律宾4
       - 菲律宾5
-      - Proxies # 如果不想走低价区也可以跳回普通代理
+      - Proxies # 允许跳回普通高速节点
 
+  # 普通网页、日常代理组（已修正为真实的节点名称）
   - name: Proxies
     type: select
     proxies:
-      - 香港 01丨1x HK
-      - 香港 02丨1x HK
-      - 香港 03丨1x HK
-      - 香港家宽 01丨1x HK
-      - 香港家宽 02丨1x HK
-      - 香港家宽 03丨1x HK
+      - "🇭🇰 HK Gomami 04 (1.5x)"
+      - "🇭🇰 HK Gomami 06 (1.5x)"
+      - "🇭🇰 HK Gomami 07"
+      - "🇭🇰 HK ISIF 03"
+      - "🇯🇵 JP Gomami 05"
+      - "🇯🇵 JP Neburst 04"
+      - "🇸🇬 SG Gomami 02"
+      - "🇸🇬 SG Gomami 04"
+      - "🇸🇬 SG Gomami 05"
+      - "🇺🇸 US DMIT 02 (0.8x)"
+      - "🇺🇸 US DMIT 04 (0.8x)"
       - DIRECT
 
+# ================= 分流规则 =================
 rules:
-  # 强制 Google Play 相关域名走 Googleplay 代理组
+  # Google Play 核心服务及内购切区域名
   - DOMAIN-SUFFIX,play.google.com,Googleplay
   - DOMAIN,play-fe.googleapis.com,Googleplay
   - DOMAIN-SUFFIX,googleapis.com,Googleplay
   - DOMAIN-SUFFIX,googleusercontent.com,Googleplay
   - DOMAIN-SUFFIX,gstatic.com,Googleplay
-  
-  # IP 检测工具，方便确认当前 IP 归属地
+
+  # IP 归属地检测工具（用低价区节点看 IP 确定是否切区成功）
   - DOMAIN-SUFFIX,ipapi.co,Googleplay
   - DOMAIN-SUFFIX,ip-api.com,Googleplay
   - DOMAIN-SUFFIX,api.ip.sb,Googleplay
   - DOMAIN-SUFFIX,ipinfo.io,Googleplay
 
-  # 普通代理分流
+  # 日常普通代理分流
   - DOMAIN-KEYWORD,game,Proxies
   - DOMAIN-KEYWORD,googlevideo,Proxies
   - DOMAIN-KEYWORD,github,Proxies
   - DOMAIN-SUFFIX,github.com,Proxies
-  
-  # 直连规则
+
+  # 中国大陆直连规则
   - DOMAIN-KEYWORD,cn,DIRECT
   - DOMAIN-SUFFIX,baidu.com,DIRECT
   - GEOIP,CN,DIRECT
-  
-  # 兜底规则
+
+  # 兜底规则（未匹配的默认走 Proxies 组）
   - MATCH,Proxies
