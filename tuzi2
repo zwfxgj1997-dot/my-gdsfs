@@ -84,9 +84,9 @@ proxies:
   - { name: '头像5', server: 106.75.152.119, port: 881, type: socks5, username: e5265d18-149a832e-d3c838, password: mobile-eg--- }
   - { name: '头像6', server: 106.75.152.119, port: 882, type: socks5, username: e5265d18-149a832e-5561df, password: mobile-eg--- }
   - { name: '头像7', server: gate.helodata.io, port: 7777, type: socks5, username: helo_ggf9aq_b34l4fuaxn-type-res-region-EG, password: eaaikp9vzu4ucumr }
-  - { name: '头像8', server: gate.helodata.io, port: 11201, type: socks5, username: helo_ggf9aq_b34l4fuaxn-type-res-region-EG-session-dwaap9md-sesstime-10-session-9hk4gefk, password: eaaikp9vzu4ucumr }
-  - { name: '头像9', server: gate.helodata.io, port: 11201, type: socks5, username: helo_ggf9aq_b34l4fuaxn-type-res-region-EG-session-dwaap9md-sesstime-10-session-hknf2kua, password: eaaikp9vzu4ucumr }
-  - { name: '头像10', server: gate.helodata.io, port: 11201, type: socks5, username: helo_ggf9aq_b34l4fuaxn-type-res-region-EG-session-dwaap9md-sesstime-10-session-s2pvadqd, password: eaaikp9vzu4ucumr }
+  - { name: '头像8', server: gate.helodata.io, port: 7777, type: socks5, username: helo_ggf9aq_b34l4fuaxn-type-res-region-EG-session-dwaap9md-sesstime-10-session-9hk4gefk, password: eaaikp9vzu4ucumr }
+  - { name: '头像9', server: gate.helodata.io, port: 7777, type: socks5, username: helo_ggf9aq_b34l4fuaxn-type-res-region-EG-session-dwaap9md-sesstime-10-session-hknf2kua, password: eaaikp9vzu4ucumr }
+  - { name: '头像10', server: gate.helodata.io, port: 7777, type: socks5, username: helo_ggf9aq_b34l4fuaxn-type-res-region-EG-session-dwaap9md-sesstime-10-session-s2pvadqd, password: eaaikp9vzu4ucumr }
 
   # 土耳其 SOCKS5
   - { name: '土耳其1', server: hk.1024proxy.io, port: 3000, type: socks5, username: zl5b47338-region-PK-sid-RDb42Wbu-t-5, password: gxbd3y4k }
