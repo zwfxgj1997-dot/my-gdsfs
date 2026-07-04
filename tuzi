@@ -199,6 +199,19 @@ proxies:
   - { name: '埃及9', server: 106.75.152.119, port: 1002, type: socks5, username: e5265d18-149a832e-rand, password: wifi-pk--- }
   - { name: '埃及10', server: 106.75.152.119, port: 1003, type: socks5, username: e5265d18-149a832e-rand, password: wifi-pk--- }
 
+# 头像 SOCKS5
+  - { name: '头像1', server: 106.75.152.119, port: 1000, type: socks5, username: e5265d18-149a832e-7bd4d3, password: wifi-eg-10-- }
+  - { name: '头像2', server: 106.75.152.119, port: 1001, type: socks5, username: e5265d18-149a832e-0bc27c, password: wifi-eg-10-- }
+  - { name: '头像3', server: 106.75.152.119, port: 1002, type: socks5, username: e5265d18-149a832e-3787c2, password: wifi-eg-10-- }
+  - { name: '头像4', server: 106.75.152.119, port: 880, type: socks5, username: e5265d18-149a832e-0da391, password: mobile-eg--- }
+  - { name: '头像5', server: 106.75.152.119, port: 881, type: socks5, username: e5265d18-149a832e-d3c838, password: mobile-eg--- }
+  - { name: '头像6', server: 106.75.152.119, port: 882, type: socks5, username: e5265d18-149a832e-5561df, password: mobile-eg--- }
+  - { name: '头像7', server: hk.1024proxy.io, port: 3000, type: socks5, username: zl5b47338-region-EG-sid-T7RU3X8j-t-10, password: gxbd3y4k }
+  - { name: '头像8', server: hk.1024proxy.io, port: 3000, type: socks5, username: zl5b47338-region-EG-sid-4NUkfLfF-t-10, password: gxbd3y4k }
+  - { name: '头像9', server: hk.1024proxy.io, port: 3000, type: socks5, username: zl5b47338-region-EG-sid-yFQPrgVm-t-10, password: gxbd3y4k }
+  - { name: '头像10', server: hk.1024proxy.io, port: 3000, type: socks5, username: zl5b47338-region-EG-sid-vktgMb2J-t-10, password: gxbd3y4k }
+
+
   # 缅甸 SOCKS5
   - { name: '缅甸1', server: sg-iepl.com, port: 28656, type: socks5, username: 47353961-zone-custom-region-MM-sessid-kmszjXc0-sessTime-15, password: dJIA8BM3 }
   - { name: '缅甸2', server: sg-iepl.com, port: 28656, type: socks5, username: 47353961-zone-custom-region-MM-sessid-3uNCfzJE-sessTime-15, password: dJIA8BM3 }
@@ -261,6 +274,16 @@ proxy-groups:
       - 埃及8
       - 埃及9
       - 埃及10
+      - 头像1
+      - 头像2
+      - 头像3
+      - 头像4
+      - 头像5
+      - 头像6
+      - 头像7
+      - 头像8
+      - 头像9
+      - 头像10
       - 缅甸1
       - 缅甸2
       - 缅甸3
