@@ -83,7 +83,7 @@ proxies:
   - { name: '头像4', server: 106.75.152.119, port: 880, type: socks5, username: e5265d18-149a832e-0da391, password: mobile-eg--- }
   - { name: '头像5', server: 106.75.152.119, port: 881, type: socks5, username: e5265d18-149a832e-d3c838, password: mobile-eg--- }
   - { name: '头像6', server: 106.75.152.119, port: 882, type: socks5, username: e5265d18-149a832e-5561df, password: mobile-eg--- }
-  - { name: '头像7', server: hk.1024proxy.io, port: 3000, type: socks5, username: zl5b47338-region-EG-sid-T7RU3X8j-t-10, password: gxbd3y4k }
+  - { name: '头像7', server: prem.country.iprocket.io, port: 9595, type: socks5, username: om14049369-res-EG-Lsid-914910151, password: Htp9xuwt28o95A5 }
   - { name: '头像8', server: hk.1024proxy.io, port: 3000, type: socks5, username: zl5b47338-region-EG-sid-4NUkfLfF-t-10, password: gxbd3y4k }
   - { name: '头像9', server: hk.1024proxy.io, port: 3000, type: socks5, username: zl5b47338-region-EG-sid-yFQPrgVm-t-10, password: gxbd3y4k }
   - { name: '头像10', server: hk.1024proxy.io, port: 3000, type: socks5, username: zl5b47338-region-EG-sid-vktgMb2J-t-10, password: gxbd3y4k }
