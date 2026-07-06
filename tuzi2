@@ -18,7 +18,7 @@ hosts:
     tagxx.vip: 103.135.249.37
 dns:
     enable: true
-    listen: '127.0.0.1:5334'0000000
+    listen: '127.0.0.1:5334'
     default-nameserver: [180.184.1.1, 119.29.29.29, 223.5.5.5]
     enhanced-mode: fake-ip
     fake-ip-range: 198.18.0.1/16
