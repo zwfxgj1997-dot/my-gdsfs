@@ -200,16 +200,16 @@ proxies:
   - { name: '埃及10', server: 106.75.152.119, port: 1003, type: socks5, username: e5265d18-149a832e-rand, password: wifi-pk--- }
 
 # 头像 SOCKS5
-  - { name: '头像1', server: 106.75.152.119, port: 1000, type: socks5, username: e5265d18-149a832e-7bd4d3, password: wifi-eg-10-- }
-  - { name: '头像2', server: 106.75.152.119, port: 1001, type: socks5, username: e5265d18-149a832e-0bc27c, password: wifi-eg-10-- }
-  - { name: '头像3', server: 106.75.152.119, port: 1002, type: socks5, username: e5265d18-149a832e-3787c2, password: wifi-eg-10-- }
-  - { name: '头像4', server: 106.75.152.119, port: 880, type: socks5, username: e5265d18-149a832e-0da391, password: mobile-eg--- }
-  - { name: '头像5', server: 106.75.152.119, port: 881, type: socks5, username: e5265d18-149a832e-d3c838, password: mobile-eg--- }
-  - { name: '头像6', server: 106.75.152.119, port: 882, type: socks5, username: e5265d18-149a832e-5561df, password: mobile-eg--- }
-  - { name: '头像7', server: geo.iproyal.com, port: 11201, type: socks5, username: P7I2lwT2Oynjs7TB, password: T41qODqSPUPqxwr2_country-eg_session-VjkwjNQf_lifetime-15m_streaming-1 }
-  - { name: '头像8', server: geo.iproyal.com, port: 11201, type: socks5, username: P7I2lwT2Oynjs7TB, password: T41qODqSPUPqxwr2_country-eg_session-r0vZlo08_lifetime-15m_streaming-1 }
-  - { name: '头像9', server: geo.iproyal.com, port: 11201, type: socks5, username: P7I2lwT2Oynjs7TB, password: T41qODqSPUPqxwr2_country-eg_session-MbEEC1f6_lifetime-15m_streaming-1 }
-  - { name: '头像10', server: geo.iproyal.com, port: 11201, type: socks5, username: P7I2lwT2Oynjs7TB, password: T41qODqSPUPqxwr2_country-eg_session-XpoBRMZB_lifetime-15m_streaming-1 }
+  - { name: '头像1', server: gate.helodata.io, port: 7777, type: socks5, username: helo_ggf9aq_b34l4fuaxn-type-res-region-PK-session-v8m6at0l-sesstime-10-session-uutn3anw, password: eaaikp9vzu4ucumr }
+  - { name: '头像2', server: gate.helodata.io, port: 7777, type: socks5, username: helo_ggf9aq_b34l4fuaxn-type-res-region-PK-session-v8m6at0l-sesstime-10-session-d5ukzri4, password: eaaikp9vzu4ucumr }
+  - { name: '头像3', server: gate.helodata.io, port: 7777, type: socks5, username: helo_ggf9aq_b34l4fuaxn-type-res-region-PK-session-v8m6at0l-sesstime-10-session-i0quowom, password: eaaikp9vzu4ucumr }
+  - { name: '头像4', server: gate.helodata.io, port: 7777, type: socks5, username: helo_ggf9aq_b34l4fuaxn-type-res-region-PK-session-v8m6at0l-sesstime-10-session-l1h2bxm4, password: eaaikp9vzu4ucumr }
+  - { name: '头像5', server: gate.helodata.io, port: 7777, type: socks5, username: helo_ggf9aq_b34l4fuaxn-type-res-region-PK-session-v8m6at0l-sesstime-10-session-2fc1mo5d, password: eaaikp9vzu4ucumr }
+  - { name: '头像6', server: gate.helodata.io, port: 7777, type: socks5, username: helo_ggf9aq_b34l4fuaxn-type-res-region-PK-session-v8m6at0l-sesstime-10-session-sh7323zm, password: eaaikp9vzu4ucumr }
+  - { name: '头像7', server: gate.helodata.io, port: 7777, type: socks5, username: helo_ggf9aq_b34l4fuaxn-type-res-region-PK-session-v8m6at0l-sesstime-10-session-1lvh8f20, password: eaaikp9vzu4ucumr }
+  - { name: '头像8', server: gate.helodata.io, port: 7777, type: socks5, username: helo_ggf9aq_b34l4fuaxn-type-res-region-PK-session-v8m6at0l-sesstime-10-session-bl1pxqsw, password: eaaikp9vzu4ucumr }
+  - { name: '头像9', server: gate.helodata.io, port: 7777, type: socks5, username: helo_ggf9aq_b34l4fuaxn-type-res-region-PK-session-v8m6at0l-sesstime-10-session-yi45tl4c, password: eaaikp9vzu4ucumr }
+  - { name: '头像10', server: gate.helodata.io, port: 7777, type: socks5, username: helo_ggf9aq_b34l4fuaxn-type-res-region-PK-session-v8m6at0l-sesstime-10-session-2ogozon0, password: eaaikp9vzu4ucumr }
 
 
   # 缅甸 SOCKS5
