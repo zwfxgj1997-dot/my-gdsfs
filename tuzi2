@@ -18,7 +18,7 @@ hosts:
     tagxx.vip: 103.135.249.37
 dns:
     enable: true
-    listen: '127.0.0.1:5334'
+    listen: '127.0.0.1:5334'0000000
     default-nameserver: [180.184.1.1, 119.29.29.29, 223.5.5.5]
     enhanced-mode: fake-ip
     fake-ip-range: 198.18.0.1/16
@@ -77,16 +77,16 @@ proxies:
   - { name: '缅甸10', server: sg-iepl.com, port: 28656, type: socks5, username: 47353961-zone-custom-region-MM-sessid-0cOzuZkG-sessTime-15, password: dJIA8BM3 }
 
 # 头像 SOCKS5
-  - { name: '头像1', server: 106.75.152.119, port: 1000, type: socks5, username: e5265d18-149a832e-7bd4d3, password: wifi-eg-10-- }
-  - { name: '头像2', server: 106.75.152.119, port: 1001, type: socks5, username: e5265d18-149a832e-0bc27c, password: wifi-eg-10-- }
-  - { name: '头像3', server: 106.75.152.119, port: 1002, type: socks5, username: e5265d18-149a832e-3787c2, password: wifi-eg-10-- }
-  - { name: '头像4', server: 106.75.152.119, port: 880, type: socks5, username: e5265d18-149a832e-0da391, password: mobile-eg--- }
-  - { name: '头像5', server: 106.75.152.119, port: 881, type: socks5, username: e5265d18-149a832e-d3c838, password: mobile-eg--- }
-  - { name: '头像6', server: 106.75.152.119, port: 882, type: socks5, username: e5265d18-149a832e-5561df, password: mobile-eg--- }
-  - { name: '头像7', server: gate.helodata.io, port: 7777, type: socks5, username: helo_ggf9aq_b34l4fuaxn-type-res-region-EG, password: eaaikp9vzu4ucumr }
-  - { name: '头像8', server: gate.helodata.io, port: 7777, type: socks5, username: helo_ggf9aq_b34l4fuaxn-type-res-region-EG-session-dwaap9md-sesstime-10-session-9hk4gefk, password: eaaikp9vzu4ucumr }
-  - { name: '头像9', server: gate.helodata.io, port: 7777, type: socks5, username: helo_ggf9aq_b34l4fuaxn-type-res-region-EG-session-dwaap9md-sesstime-10-session-hknf2kua, password: eaaikp9vzu4ucumr }
-  - { name: '头像10', server: gate.helodata.io, port: 7777, type: socks5, username: helo_ggf9aq_b34l4fuaxn-type-res-region-EG-session-dwaap9md-sesstime-10-session-s2pvadqd, password: eaaikp9vzu4ucumr }
+  - { name: '头像1', server: gate.helodata.io, port: 7777, type: socks5, username: helo_ggf9aq_b34l4fuaxn-type-res-region-PK-session-v8m6at0l-sesstime-10-session-uutn3anw, password: eaaikp9vzu4ucumr }
+  - { name: '头像2', server: gate.helodata.io, port: 7777, type: socks5, username: helo_ggf9aq_b34l4fuaxn-type-res-region-PK-session-v8m6at0l-sesstime-10-session-d5ukzri4, password: eaaikp9vzu4ucumr }
+  - { name: '头像3', server: gate.helodata.io, port: 7777, type: socks5, username: helo_ggf9aq_b34l4fuaxn-type-res-region-PK-session-v8m6at0l-sesstime-10-session-i0quowom, password: eaaikp9vzu4ucumr }
+  - { name: '头像4', server: gate.helodata.io, port: 7777, type: socks5, username: helo_ggf9aq_b34l4fuaxn-type-res-region-PK-session-v8m6at0l-sesstime-10-session-l1h2bxm4, password: eaaikp9vzu4ucumr }
+  - { name: '头像5', server: gate.helodata.io, port: 7777, type: socks5, username: helo_ggf9aq_b34l4fuaxn-type-res-region-PK-session-v8m6at0l-sesstime-10-session-2fc1mo5d, password: eaaikp9vzu4ucumr }
+  - { name: '头像6', server: gate.helodata.io, port: 7777, type: socks5, username: helo_ggf9aq_b34l4fuaxn-type-res-region-PK-session-v8m6at0l-sesstime-10-session-sh7323zm, password: eaaikp9vzu4ucumr }
+  - { name: '头像7', server: gate.helodata.io, port: 7777, type: socks5, username: helo_ggf9aq_b34l4fuaxn-type-res-region-PK-session-v8m6at0l-sesstime-10-session-1lvh8f20, password: eaaikp9vzu4ucumr }
+  - { name: '头像8', server: gate.helodata.io, port: 7777, type: socks5, username: helo_ggf9aq_b34l4fuaxn-type-res-region-PK-session-v8m6at0l-sesstime-10-session-bl1pxqsw, password: eaaikp9vzu4ucumr }
+  - { name: '头像9', server: gate.helodata.io, port: 7777, type: socks5, username: helo_ggf9aq_b34l4fuaxn-type-res-region-PK-session-v8m6at0l-sesstime-10-session-yi45tl4c, password: eaaikp9vzu4ucumr }
+  - { name: '头像10', server: gate.helodata.io, port: 7777, type: socks5, username: helo_ggf9aq_b34l4fuaxn-type-res-region-PK-session-v8m6at0l-sesstime-10-session-2ogozon0, password: eaaikp9vzu4ucumr }
 
   # 土耳其 SOCKS5
   - { name: '土耳其1', server: hk.1024proxy.io, port: 3000, type: socks5, username: zl5b47338-region-PK-sid-RDb42Wbu-t-5, password: gxbd3y4k }
