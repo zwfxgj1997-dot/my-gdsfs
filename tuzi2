@@ -35,7 +35,7 @@ proxies:
   - { name: 香港家宽 02丨1x HK, type: ss, server: 2fc4443b-87c4-4b1d-ba6c-67ab211b0ded.aixifan7498.com, port: 12011, cipher: aes-128-gcm, password: haMLMXirByn6rGVh, plugin: obfs, plugin-opts: { mode: http, host: bcf67d6f37c2.microsoft.com }, udp: true }
   - { name: 香港家宽 03丨1x HK, type: ss, server: b19aeaf6-23d1-4f30-bddb-6720038b40b4.sankuaei.com, port: 12000, cipher: aes-128-gcm, password: haMLMXirByn6rGVh, plugin: obfs, plugin-opts: { mode: http, host: bcf67d6f37c2.microsoft.com }, udp: true }
   - { name: 巴基斯坦 03丨1x HK, type: ss, server: b19aeaf6-23d1-4f30-bddb-6720038b40b4.sankuaei.com, port: 12605, cipher: aes-128-gcm, password: haMLMXirByn6rGVh, plugin: obfs, plugin-opts: { mode: http, host: bcf67d6f37c2.microsoft.com }, udp: true }
-
+  - { name: 美国 03丨1x HK, type: ss, server: 2fc4443b-87c4-4b1d-ba6c-67ab211b0ded.aixifan7498.com, port: 13110, cipher: aes-128-gcm, password: haMLMXirByn6rGVh, plugin: obfs, plugin-opts: { mode: http, host: bcf67d6f37c2.microsoft.com }, udp: true }
   # 尼日利亚 SOCKS5
   - { name: '尼日1', server: 34.141.138.189, port: 9000, type: socks5, username: e5265d18-149a832e-1924a5, password: mobile-ng--- }
   - { name: '尼日2', server: 34.141.138.189, port: 9001, type: socks5, username: e5265d18-149a832e-ce2cce, password: mobile-ng--- }
@@ -185,6 +185,7 @@ proxy-groups:
       - 香港家宽 02丨1x HK
       - 香港家宽 03丨1x HK
       - 巴基斯坦 03丨1x HK
+      - 美国 03丨1x HK
       - DIRECT
 
 rules:
