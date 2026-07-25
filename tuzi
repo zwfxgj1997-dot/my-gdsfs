@@ -253,7 +253,7 @@ proxies:
   - { name: '玻利维亚7', server: 106.75.152.119, port: 881, type: socks5, username: e5265d18-149a832e-8f63f6, password: mobile-bo--- }
   - { name: '玻利维亚8', server: 106.75.152.119, port: 882, type: socks5, username: e5265d18-149a832e-ffbef5, password: mobile-bo--- }
   - { name: '玻利维亚9', server: 106.75.152.119, port: 883, type: socks5, username: e5265d18-149a832e-616bdb, password: mobile-bo--- }
-  - { name: '玻利维亚10', server: gate.helodata.io, port: 7777, type: socks5, username:helo_ggf9aq_b34l4fuaxn-type-res-region-bo-session-khw5xyxe-sesstime-5, password: eaaikp9vzu4ucumr }
+   - { name: '玻利维亚10', server: us.1024proxy.io, port: 3000, type: socks5, username:zl5b47338-region-BO-sid-dwxfkxm9-t-5, password: gxbd3y4k }
 
 # ================= 策略组 =================
 proxy-groups:
