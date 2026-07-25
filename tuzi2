@@ -108,6 +108,18 @@ proxies:
   - { name: '菲律宾4', server: 34.141.219.7, port: 9003, type: socks5, username: e5265d18-149a832e-89d0e7, password: mobile-ph--- }
   - { name: '菲律宾5', server: 34.141.219.7, port: 9004, type: socks5, username: e5265d18-149a832e-a4ded7, password: mobile-ph--- }
 
+  # 玻利维亚 SOCKS5
+  - { name: '玻利维亚1', server: 106.75.152.119, port: 1000, type: socks5, username: e5265d18-149a832e-afbdc9, password: wifi-bo-10-- }
+  - { name: '玻利维亚2', server: 106.75.152.119, port: 1001, type: socks5, username: e5265d18-149a832e-b73da8, password: wifi-bo-10-- }
+  - { name: '玻利维亚3', server: 106.75.152.119, port: 1002, type: socks5, username: e5265d18-149a832e-8a95f2, password: wifi-bo-10-- }
+  - { name: '玻利维亚4', server: 106.75.152.119, port: 1003, type: socks5, username: e5265d18-149a832e-fef364, password: wifi-bo-10-- }
+  - { name: '玻利维亚5', server: 106.75.152.119, port: 1004, type: socks5, username: e5265d18-149a832e-995b12, password: wifi-bo-10-- }
+  - { name: '玻利维亚6', server: 106.75.152.119, port: 880, type: socks5, username: e5265d18-149a832e-f590a1, password: mobile-bo--- }
+  - { name: '玻利维亚7', server: 106.75.152.119, port: 881, type: socks5, username: e5265d18-149a832e-8f63f6, password: mobile-bo--- }
+  - { name: '玻利维亚8', server: 106.75.152.119, port: 882, type: socks5, username: e5265d18-149a832e-ffbef5, password: mobile-bo--- }
+  - { name: '玻利维亚9', server: 106.75.152.119, port: 883, type: socks5, username: e5265d18-149a832e-616bdb, password: mobile-bo--- }
+  - { name: '玻利维亚10', server: 106.75.152.119, port: 884, type: socks5, username: e5265d18-149a832e-92419c, password: mobile-bo--- }
+
 proxy-groups:
   # 此组用于 Google Play 低价内购，务必手动选择节点
   - name: Googleplay
@@ -173,6 +185,16 @@ proxy-groups:
       - 菲律宾3
       - 菲律宾4
       - 菲律宾5
+      - 玻利维亚1
+      - 玻利维亚2
+      - 玻利维亚3
+      - 玻利维亚4
+      - 玻利维亚5
+      - 玻利维亚6
+      - 玻利维亚7
+      - 玻利维亚8
+      - 玻利维亚9
+      - 玻利维亚10
       - Proxies # 如果不想走低价区也可以跳回普通代理
 
   - name: Proxies
