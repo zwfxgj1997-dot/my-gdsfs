@@ -217,6 +217,8 @@ rules:
   - DOMAIN-SUFFIX,googleapis.com,Googleplay
   - DOMAIN-SUFFIX,googleusercontent.com,Googleplay
   - DOMAIN-SUFFIX,gstatic.com,Googleplay
+  - DOMAIN-SUFFIX,dequgames.com,Proxies
+  - DOMAIN-SUFFIX,ook.dequgames.com,Proxies
   
   # IP 检测工具，方便确认当前 IP 归属地
   - DOMAIN-SUFFIX,ipapi.co,Googleplay
