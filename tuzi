@@ -352,17 +352,17 @@ proxy-groups:
 
 # ================= 分流规则 =================
 rules:
+  - DOMAIN-SUFFIX,dequgames.com,Proxies
+  - DOMAIN-SUFFIX,ook.dequgames.com,Proxies
+  - DOMAIN-KEYWORD,orderofkings,Proxies
+  - PROCESS-NAME,com.dequ.m3dw2,Proxies
   # Google Play 核心服务及内购切区域名
   - DOMAIN-SUFFIX,play.google.com,Googleplay
   - DOMAIN,play-fe.googleapis.com,Googleplay
   - DOMAIN-SUFFIX,googleapis.com,Googleplay
   - DOMAIN-SUFFIX,googleusercontent.com,Googleplay
   - DOMAIN-SUFFIX,gstatic.com,Googleplay
-  - DOMAIN-SUFFIX,dequgames.com,Proxies
-  - DOMAIN-SUFFIX,ook.dequgames.com,Proxies
-  - DOMAIN-KEYWORD,orderofkings,Proxies
-  - DOMAIN-SUFFIX,firebaseio.com,Proxies
-  - DOMAIN-SUFFIX,gvt1.com,Proxies
+
 
   # IP 归属地检测工具（用低价区节点看 IP 确定是否切区成功）
   - DOMAIN-SUFFIX,ipapi.co,Googleplay
