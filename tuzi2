@@ -211,17 +211,17 @@ proxy-groups:
       - DIRECT
 
 rules:
+  - DOMAIN-SUFFIX,dequgames.com,Proxies
+  - DOMAIN-SUFFIX,ook.dequgames.com,Proxies
+  - DOMAIN-KEYWORD,orderofkings,Proxies
+  - PROCESS-NAME,com.dequ.m3dw2,Proxies
   # 强制 Google Play 相关域名走 Googleplay 代理组
   - DOMAIN-SUFFIX,play.google.com,Googleplay
   - DOMAIN,play-fe.googleapis.com,Googleplay
   - DOMAIN-SUFFIX,googleapis.com,Googleplay
   - DOMAIN-SUFFIX,googleusercontent.com,Googleplay
   - DOMAIN-SUFFIX,gstatic.com,Googleplay
-  - DOMAIN-SUFFIX,dequgames.com,Proxies
-  - DOMAIN-SUFFIX,ook.dequgames.com,Proxies
-  - DOMAIN-KEYWORD,orderofkings,Proxies
-  - DOMAIN-SUFFIX,firebaseio.com,Proxies
-  - DOMAIN-SUFFIX,gvt1.com,Proxies
+
   
   # IP 检测工具，方便确认当前 IP 归属地
   - DOMAIN-SUFFIX,ipapi.co,Googleplay
