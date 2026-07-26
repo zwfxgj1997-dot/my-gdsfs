@@ -358,6 +358,8 @@ rules:
   - DOMAIN-SUFFIX,googleapis.com,Googleplay
   - DOMAIN-SUFFIX,googleusercontent.com,Googleplay
   - DOMAIN-SUFFIX,gstatic.com,Googleplay
+  - DOMAIN-SUFFIX,dequgames.com,Proxies
+  - DOMAIN-SUFFIX,ook.dequgames.com,Proxies
 
   # IP 归属地检测工具（用低价区节点看 IP 确定是否切区成功）
   - DOMAIN-SUFFIX,ipapi.co,Googleplay
