@@ -102,11 +102,11 @@ proxies:
   - { name: '土耳其10', server: prem.country.iprocket.io, port: 9595, type: socks5, username: P7I2lwT2Oynjs7TB, password: T41qODqSPUPqxwr2_country-eg_session-eJa4ZR4x_lifetime-15m_streaming-1 }
 
   # 菲律宾 SOCKS5
-  - { name: '菲律宾1', server: 34.141.219.7, port: 9000, type: socks5, username: e5265d18-149a832e-b81902, password: mobile-ph--- }
-  - { name: '菲律宾2', server: 34.141.219.7, port: 9001, type: socks5, username: e5265d18-149a832e-6ee181, password: mobile-ph--- }
-  - { name: '菲律宾3', server: 34.141.219.7, port: 9002, type: socks5, username: e5265d18-149a832e-5ed028, password: mobile-ph--- }
-  - { name: '菲律宾4', server: 34.141.219.7, port: 9003, type: socks5, username: e5265d18-149a832e-89d0e7, password: mobile-ph--- }
-  - { name: '菲律宾5', server: 34.141.219.7, port: 9004, type: socks5, username: e5265d18-149a832e-a4ded7, password: mobile-ph--- }
+  - { name: '菲律宾1', server: 106.75.152.119, port: 880, type: socks5, username: e5265d18-149a832e-706ae9, password: mobile-ph--- }
+  - { name: '菲律宾2', server: 106.75.152.119, port: 881, type: socks5, username: e5265d18-149a832e-9a2c3f, password: mobile-ph--- }
+  - { name: '菲律宾3', server: 106.75.152.119, port: 882, type: socks5, username: e5265d18-149a832e-2f7838, password: mobile-ph--- }
+  - { name: '菲律宾4', server: 106.75.152.119, port: 883, type: socks5, username: e5265d18-149a832e-143b71, password: mobile-ph--- }
+  - { name: '菲律宾5', server: 106.75.152.119, port: 884, type: socks5, username: e5265d18-149a832e-d4f84d, password: mobile-ph--- }
 
   # 玻利维亚 SOCKS5
   - { name: '玻利维亚1', server: 106.75.152.119, port: 1000, type: socks5, username: e5265d18-149a832e-67f39a, password: wifi-bo-10-- }
