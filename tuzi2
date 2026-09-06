@@ -49,9 +49,9 @@ proxies:
   - { name: '尼日10', server: 35.240.134.48, port: 901, type: socks5, username: e5265d18-149a832e-0c75ec, password: wifi-ng-10-- }
   - { name: '尼日11', server: 35.240.134.48, port: 902, type: socks5, username: e5265d18-149a832e-724d22, password: wifi-ng-10-- }
   - { name: '尼日12', server: 35.240.134.48, port: 903, type: socks5, username: e5265d18-149a832e-c82ca1, password: wifi-ng-10-- }
-  - { name: '尼日13', server: geo.iproyal.com, port: 11200, type: socks5, username: P7I2lwT2Oynjs7TB, password: T41qODqSPUPqxwr2_country-ng_session-B17x9bYz_lifetime-15m_streaming-1 }
-  - { name: '尼日14', server: geo.iproyal.com, port: 11200, type: socks5, username: P7I2lwT2Oynjs7TB, password: T41qODqSPUPqxwr2_country-ng_session-JwixSphJ_lifetime-15m_streaming-1 }
-  - { name: '尼日15', server: geo.iproyal.com, port: 11200, type: socks5, username: P7I2lwT2Oynjs7TB, password: T41qODqSPUPqxwr2_country-ng_session-TNxwnjMw_lifetime-15m_streaming-1 }
+  - { name: '尼日13', server: us.1024proxy.io, port: 3000, type: socks5, username: zl5b47338-region-NG-sid-Pn93x9fm-t-5, password: gxbd3y4k }
+  - { name: '尼日14', server: us.1024proxy.io, port: 3000, type: socks5, username: zl5b47338-region-NG-sid-XJ6ScLDB-t-5, password: gxbd3y4k }
+  - { name: '尼日15', server: us.1024proxy.io, port: 3000, type: socks5, username: zl5b47338-region-NG-sid-peLSFgZH-t-5, password: gxbd3y4k }
 
   # 埃及 SOCKS5
   - { name: '埃及1', server: 106.75.152.119, port: 880, type: socks5, username: e5265d18-149a832e-16f296, password: mobile-pk--islamabad- }
