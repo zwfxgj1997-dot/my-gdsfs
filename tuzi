@@ -171,18 +171,18 @@ proxies:
     client-fingerprint: safari
 
   # 尼日利亚 SOCKS5
-  - { name: '尼日1', server: 106.75.152.119, port: 880, type: socks5, username: e5265d18-149a832e-8b5640, password: mobile-ng--- }
-  - { name: '尼日2', server: 106.75.152.119, port: 881, type: socks5, username: e5265d18-149a832e-cbbf4b, password: mobile-ng--- }
-  - { name: '尼日3', server: 106.75.152.119, port: 882, type: socks5, username: e5265d18-149a832e-a2b867, password: mobile-ng--- }
-  - { name: '尼日4', server: 106.75.152.119, port: 883, type: socks5, username: e5265d18-149a832e-16f907, password: mobile-ng--- }
-  - { name: '尼日5', server: 106.75.152.119, port: 884, type: socks5, username: e5265d18-149a832e-343aab, password: mobile-ng--- }
-  - { name: '尼日6', server: 106.75.152.119, port: 885, type: socks5, username: e5265d18-149a832e-fa7329, password: mobile-ng--- }
-  - { name: '尼日7', server: 106.75.152.119, port: 886, type: socks5, username: e5265d18-149a832e-bf2d84, password: mobile-ng--- }
-  - { name: '尼日8', server: 106.75.152.119, port: 887, type: socks5, username: e5265d18-149a832e-96bca7, password: mobile-ng--- }
-  - { name: '尼日9', server: 106.75.152.119, port: 1000, type: socks5, username: e5265d18-149a832e-e7e8e5, password: wifi-ng-10-- }
-  - { name: '尼日10', server: 106.75.152.119, port: 1001, type: socks5, username: e5265d18-149a832e-a8dbe9, password: wifi-ng-10-- }
-  - { name: '尼日11', server: 106.75.152.119, port: 1002, type: socks5, username: e5265d18-149a832e-844779, password: wifi-ng-10-- }
-  - { name: '尼日12', server: 106.75.152.119, port: 1003, type: socks5, username: e5265d18-149a832e-448c73, password: wifi-ng-10-- }
+  - { name: '尼日1', server: 34.141.138.189, port: 9000, type: socks5, username: e5265d18-149a832e-df0518, password: mobile-ng--- }
+  - { name: '尼日2', server: 34.141.138.189, port: 9001, type: socks5, username: e5265d18-149a832e-36421b, password: mobile-ng--- }
+  - { name: '尼日3', server: 34.141.138.189, port: 9002, type: socks5, username: e5265d18-149a832e-fceb3f, password: mobile-ng--- }
+  - { name: '尼日4', server: 34.141.138.189, port: 9003, type: socks5, username: e5265d18-149a832e-ec2382, password: mobile-ng--- }
+  - { name: '尼日5', server: 34.141.138.189, port: 9004, type: socks5, username: e5265d18-149a832e-d160ff, password: mobile-ng--- }
+  - { name: '尼日6', server: 34.141.138.189, port: 9005, type: socks5, username: e5265d18-149a832e-838ccc, password: mobile-ng--- }
+  - { name: '尼日7', server: 34.141.138.189, port: 9006, type: socks5, username: e5265d18-149a832e-601a1b, password: mobile-ng--- }
+  - { name: '尼日8', server: 34.141.138.189, port: 9007, type: socks5, username: e5265d18-149a832e-96bca7, password: mobile-ng--- }
+  - { name: '尼日9', server: 35.240.134.48, port: 900, type: socks5, username: e5265d18-149a832e-52cb07, password: wifi-ng-10-- }
+  - { name: '尼日10', server: 35.240.134.48, port: 901, type: socks5, username: e5265d18-149a832e-0c75ec, password: wifi-ng-10-- }
+  - { name: '尼日11', server: 35.240.134.48, port: 902, type: socks5, username: e5265d18-149a832e-724d22, password: wifi-ng-10-- }
+  - { name: '尼日12', server: 35.240.134.48, port: 903, type: socks5, username: e5265d18-149a832e-c82ca1, password: wifi-ng-10-- }
   - { name: '尼日13', server: geo.iproyal.com, port: 11200, type: socks5, username: P7I2lwT2Oynjs7TB, password: T41qODqSPUPqxwr2_country-ng_session-B17x9bYz_lifetime-15m_streaming-1 }
   - { name: '尼日14', server: geo.iproyal.com, port: 11200, type: socks5, username: P7I2lwT2Oynjs7TB, password: T41qODqSPUPqxwr2_country-ng_session-JwixSphJ_lifetime-15m_streaming-1 }
   - { name: '尼日15', server: geo.iproyal.com, port: 11200, type: socks5, username: P7I2lwT2Oynjs7TB, password: T41qODqSPUPqxwr2_country-ng_session-TNxwnjMw_lifetime-15m_streaming-1 }
