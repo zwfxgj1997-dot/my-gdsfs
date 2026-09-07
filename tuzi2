@@ -37,14 +37,14 @@ proxies:
   - { name: 巴基斯坦 03丨1x HK, type: ss, server: b19aeaf6-23d1-4f30-bddb-6720038b40b4.sankuaei.com, port: 12605, cipher: aes-128-gcm, password: haMLMXirByn6rGVh, plugin: obfs, plugin-opts: { mode: http, host: bcf67d6f37c2.microsoft.com }, udp: true }
   - { name: 美国 03丨1x HK, type: ss, server: 2fc4443b-87c4-4b1d-ba6c-67ab211b0ded.aixifan7498.com, port: 13110, cipher: aes-128-gcm, password: haMLMXirByn6rGVh, plugin: obfs, plugin-opts: { mode: http, host: bcf67d6f37c2.microsoft.com }, udp: true }
   # 尼日利亚 SOCKS5
-  - { name: '尼日1', server: 106.75.152.119, port: 800, type: socks5, username: e5265d18-149a832e-a29b3b, password: mobile-ng--- }
-  - { name: '尼日2', server: 106.75.152.119, port: 801, type: socks5, username: e5265d18-149a832e-644fc9, password: mobile-ng--- }
-  - { name: '尼日3', server: 106.75.152.119, port: 802, type: socks5, username: e5265d18-149a832e-aa25fd, password: mobile-ng--- }
-  - { name: '尼日4', server: 106.75.152.119, port: 803, type: socks5, username: e5265d18-149a832e-7bd729, password: mobile-ng--- }
-  - { name: '尼日5', server: 106.75.152.119, port: 9804, type: socks5, username: e5265d18-149a832e-bd7bd5, password: mobile-ng--- }
-  - { name: '尼日6', server: 106.75.152.119, port: 805, type: socks5, username: e5265d18-149a832e-7af9f0, password: mobile-ng--- }
-  - { name: '尼日7', server: 106.75.152.119, port: 806, type: socks5, username: e5265d18-149a832e-a0bda8, password: mobile-ng--- }
-  - { name: '尼日8', server: 106.75.152.119, port: 807, type: socks5, username: e5265d18-149a832e-84c8b1, password: mobile-ng--- }
+  - { name: '尼日1', server: 106.75.152.119, port: 880, type: socks5, username: e5265d18-149a832e-a29b3b, password: mobile-ng--- }
+  - { name: '尼日2', server: 106.75.152.119, port: 881, type: socks5, username: e5265d18-149a832e-644fc9, password: mobile-ng--- }
+  - { name: '尼日3', server: 106.75.152.119, port: 882, type: socks5, username: e5265d18-149a832e-aa25fd, password: mobile-ng--- }
+  - { name: '尼日4', server: 106.75.152.119, port: 883, type: socks5, username: e5265d18-149a832e-7bd729, password: mobile-ng--- }
+  - { name: '尼日5', server: 106.75.152.119, port: 884, type: socks5, username: e5265d18-149a832e-bd7bd5, password: mobile-ng--- }
+  - { name: '尼日6', server: 106.75.152.119, port: 885, type: socks5, username: e5265d18-149a832e-7af9f0, password: mobile-ng--- }
+  - { name: '尼日7', server: 106.75.152.119, port: 886, type: socks5, username: e5265d18-149a832e-a0bda8, password: mobile-ng--- }
+  - { name: '尼日8', server: 106.75.152.119, port: 887, type: socks5, username: e5265d18-149a832e-84c8b1, password: mobile-ng--- }
   - { name: '尼日9', server: 106.75.152.119, port: 1000, type: socks5, username: e5265d18-149a832e-974fa3, password: wifi-ng-10-- }
   - { name: '尼日10', server: 106.75.152.119, port: 1001, type: socks5, username: e5265d18-149a832e-bad862, password: wifi-ng-10-- }
   - { name: '尼日11', server: 106.75.152.119, port: 1002, type: socks5, username: e5265d18-149a832e-0310d8, password: wifi-ng-10-- }
