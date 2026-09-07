@@ -37,18 +37,18 @@ proxies:
   - { name: 巴基斯坦 03丨1x HK, type: ss, server: b19aeaf6-23d1-4f30-bddb-6720038b40b4.sankuaei.com, port: 12605, cipher: aes-128-gcm, password: haMLMXirByn6rGVh, plugin: obfs, plugin-opts: { mode: http, host: bcf67d6f37c2.microsoft.com }, udp: true }
   - { name: 美国 03丨1x HK, type: ss, server: 2fc4443b-87c4-4b1d-ba6c-67ab211b0ded.aixifan7498.com, port: 13110, cipher: aes-128-gcm, password: haMLMXirByn6rGVh, plugin: obfs, plugin-opts: { mode: http, host: bcf67d6f37c2.microsoft.com }, udp: true }
   # 尼日利亚 SOCKS5
-  - { name: '尼日1', server: 34.141.138.189, port: 9000, type: socks5, username: e5265d18-149a832e-df0518, password: mobile-ng--- }
-  - { name: '尼日2', server: 34.141.138.189, port: 9001, type: socks5, username: e5265d18-149a832e-36421b, password: mobile-ng--- }
-  - { name: '尼日3', server: 34.141.138.189, port: 9002, type: socks5, username: e5265d18-149a832e-fceb3f, password: mobile-ng--- }
-  - { name: '尼日4', server: 34.141.138.189, port: 9003, type: socks5, username: e5265d18-149a832e-ec2382, password: mobile-ng--- }
-  - { name: '尼日5', server: 34.141.138.189, port: 9004, type: socks5, username: e5265d18-149a832e-d160ff, password: mobile-ng--- }
-  - { name: '尼日6', server: 34.141.138.189, port: 9005, type: socks5, username: e5265d18-149a832e-838ccc, password: mobile-ng--- }
-  - { name: '尼日7', server: 34.141.138.189, port: 9006, type: socks5, username: e5265d18-149a832e-601a1b, password: mobile-ng--- }
-  - { name: '尼日8', server: 34.141.138.189, port: 9007, type: socks5, username: e5265d18-149a832e-96bca7, password: mobile-ng--- }
-  - { name: '尼日9', server: 35.240.134.48, port: 900, type: socks5, username: e5265d18-149a832e-52cb07, password: wifi-ng-10-- }
-  - { name: '尼日10', server: 35.240.134.48, port: 901, type: socks5, username: e5265d18-149a832e-0c75ec, password: wifi-ng-10-- }
-  - { name: '尼日11', server: 35.240.134.48, port: 902, type: socks5, username: e5265d18-149a832e-724d22, password: wifi-ng-10-- }
-  - { name: '尼日12', server: 35.240.134.48, port: 903, type: socks5, username: e5265d18-149a832e-c82ca1, password: wifi-ng-10-- }
+  - { name: '尼日1', server: 106.75.152.119, port: 800, type: socks5, username: e5265d18-149a832e-a29b3b, password: mobile-ng--- }
+  - { name: '尼日2', server: 106.75.152.119, port: 801, type: socks5, username: e5265d18-149a832e-644fc9, password: mobile-ng--- }
+  - { name: '尼日3', server: 106.75.152.119, port: 802, type: socks5, username: e5265d18-149a832e-aa25fd, password: mobile-ng--- }
+  - { name: '尼日4', server: 106.75.152.119, port: 803, type: socks5, username: e5265d18-149a832e-7bd729, password: mobile-ng--- }
+  - { name: '尼日5', server: 106.75.152.119, port: 9804, type: socks5, username: e5265d18-149a832e-bd7bd5, password: mobile-ng--- }
+  - { name: '尼日6', server: 106.75.152.119, port: 805, type: socks5, username: e5265d18-149a832e-7af9f0, password: mobile-ng--- }
+  - { name: '尼日7', server: 106.75.152.119, port: 806, type: socks5, username: e5265d18-149a832e-a0bda8, password: mobile-ng--- }
+  - { name: '尼日8', server: 106.75.152.119, port: 807, type: socks5, username: e5265d18-149a832e-84c8b1, password: mobile-ng--- }
+  - { name: '尼日9', server: 106.75.152.119, port: 1000, type: socks5, username: e5265d18-149a832e-974fa3, password: wifi-ng-10-- }
+  - { name: '尼日10', server: 106.75.152.119, port: 1001, type: socks5, username: e5265d18-149a832e-bad862, password: wifi-ng-10-- }
+  - { name: '尼日11', server: 106.75.152.119, port: 1002, type: socks5, username: e5265d18-149a832e-0310d8, password: wifi-ng-10-- }
+  - { name: '尼日12', server: 106.75.152.119, port: 1003, type: socks5, username: e5265d18-149a832e-8f0aef, password: wifi-ng-10-- }
   - { name: '尼日13', server: hk.1024proxy.io, port: 3000, type: socks5, username: zl5b47338-region-NG-sid-KUUumcJP-t-5, password: gxbd3y4k }
   - { name: '尼日14', server: hk.1024proxy.io, port: 3000, type: socks5, username: zl5b47338-region-NG-sid-486X7L15-t-5, password: gxbd3y4k }
   - { name: '尼日15', server: hk.1024proxy.io, port: 3000, type: socks5, username: zl5b47338-region-NG-sid-qUimTp93-t-5, password: gxbd3y4k }
