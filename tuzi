@@ -183,9 +183,9 @@ proxies:
   - { name: '尼日10', server: 106.75.152.119, port: 1001, type: socks5, username: e5265d18-149a832e-bad862, password: wifi-ng-10-- }
   - { name: '尼日11', server: 106.75.152.119, port: 1002, type: socks5, username: e5265d18-149a832e-0310d8, password: wifi-ng-10-- }
   - { name: '尼日12', server: 106.75.152.119, port: 1003, type: socks5, username: e5265d18-149a832e-8f0aef, password: wifi-ng-10-- }
-  - { name: '尼日13', server: hk.1024proxy.io, port: 3000, type: socks5, username: zl5b47338-region-NG-sid-KUUumcJP-t-5, password: gxbd3y4k }
-  - { name: '尼日14', server: hk.1024proxy.io, port: 3000, type: socks5, username: zl5b47338-region-NG-sid-486X7L15-t-5, password: gxbd3y4k }
-  - { name: '尼日15', server: hk.1024proxy.io, port: 3000, type: socks5, username: zl5b47338-region-NG-sid-qUimTp93-t-5, password: gxbd3y4k }
+  - { name: '尼日13', server: hk.1024proxy.io, port: 3000, type: socks5, username: zl5b47338-region-NG-asn-AS29465-sid-ZGuWQANP-t-5, password: gxbd3y4k }
+  - { name: '尼日14', server: hk.1024proxy.io, port: 3000, type: socks5, username: zl5b47338-region-NG-asn-AS29465-sid-9e7XQF56-t-5, password: gxbd3y4k }
+  - { name: '尼日15', server: hk.1024proxy.io, port: 3000, type: socks5, username: zl5b47338-region-NG-asn-AS36920-sid-AExus59a-t-5, password: gxbd3y4k }
 
   # 埃及 SOCKS5
   - { name: '埃及1', server: hk.1024proxy.io, port: 3000, type: socks5, username: zl5b47338-region-PK-sid-NQZG6sGB-t-5, password: gxbd3y4k }
