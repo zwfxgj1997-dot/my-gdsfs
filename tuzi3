@@ -6,36 +6,73 @@ external-controller: '127.0.0.1:9090'
 unified-delay: true
 global-client-fingerprint: chrome
 keep-alive-interval: 360
+
 cfw-bypass:
-    - localhost
-    - '127.*'
-    - '10.*'
-    - '192.168.*'
-    - '<local>'
+  - localhost
+  - '127.*'
+  - '10.*'
+  - '192.168.*'
+  - '<local>'
+
 hosts:
-    mtalk.google.com: 108.177.125.188
-    tagss13.pro: 104.26.5.84
-    tagxx.vip: 103.135.249.37
+  mtalk.google.com: 108.177.125.188
+  tagss13.pro: 104.26.5.84
+  tagxx.vip: 103.135.249.37
+
 dns:
-    enable: true
-    listen: '127.0.0.1:5334'
-    default-nameserver: [180.184.1.1, 119.29.29.29, 223.5.5.5]
-    enhanced-mode: fake-ip
-    fake-ip-range: 198.18.0.1/16
-    use-hosts: true
-    use-system-hosts: true
-    nameserver: ['https://223.6.6.6/dns-query', 'https://doh.pub/dns-query']
-    nameserver-policy: { '*.1024proxy.io': ['8.8.8.8', '1.1.1.1', 'https://dns.google/dns-query'],'*.sankuaei.com': ['https://anycast.bytecdns.com/913b04c3', 'https://anycast.soufunimgs.com/5428ab28', 'https://anycast.jllyzx.com/8c28d4s7', 'https://anycast.pzwzs.com/3b04c545', 'https://anycast.qccnb.com/a192b791', 'https://anycast.xhspic.com/8c28d4s7', 'https://91c7e35b.qluomcd.com:4443/5428ab28'], '*.aixifan7498.com': ['https://anycast.bytecdns.com/913b04c3', 'https://anycast.soufunimgs.com/5428ab28', 'https://anycast.jllyzx.com/8c28d4s7', 'https://anycast.pzwzs.com/3b04c545', 'https://anycast.qccnb.com/a192b791', 'https://anycast.xhspic.com/8c28d4s7', 'https://91c7e35b.qluomcd.com:4443/5428ab28'], '*.afdiancdn.org': ['https://anycast.bytecdns.com/913b04c3', 'https://anycast.soufunimgs.com/5428ab28', 'https://anycast.jllyzx.com/8c28d4s7', 'https://anycast.pzwzs.com/3b04c545', 'https://anycast.qccnb.com/a192b791', 'https://anycast.xhspic.com/8c28d4s7', 'https://91c7e35b.qluomcd.com:4443/5428ab28'] }
+  enable: true
+  listen: '127.0.0.1:5334'
+  default-nameserver:
+    - 180.184.1.1
+    - 119.29.29.29
+    - 223.5.5.5
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  use-hosts: true
+  use-system-hosts: true
+  nameserver:
+    - 'https://223.6.6.6/dns-query'
+    - 'https://doh.pub/dns-query'
+  nameserver-policy:
+    '*.1024proxy.io':
+      - '8.8.8.8'
+      - '1.1.1.1'
+      - 'https://dns.google/dns-query'
+    '*.sankuaei.com':
+      - 'https://anycast.bytecdns.com/913b04c3'
+      - 'https://anycast.soufunimgs.com/5428ab28'
+      - 'https://anycast.jllyzx.com/8c28d4s7'
+      - 'https://anycast.pzwzs.com/3b04c545'
+      - 'https://anycast.qccnb.com/a192b791'
+      - 'https://anycast.xhspic.com/8c28d4s7'
+      - 'https://91c7e35b.qluomcd.com:4443/5428ab28'
+    '*.aixifan7498.com':
+      - 'https://anycast.bytecdns.com/913b04c3'
+      - 'https://anycast.soufunimgs.com/5428ab28'
+      - 'https://anycast.jllyzx.com/8c28d4s7'
+      - 'https://anycast.pzwzs.com/3b04c545'
+      - 'https://anycast.qccnb.com/a192b791'
+      - 'https://anycast.xhspic.com/8c28d4s7'
+      - 'https://91c7e35b.qluomcd.com:4443/5428ab28'
+    '*.afdiancdn.org':
+      - 'https://anycast.bytecdns.com/913b04c3'
+      - 'https://anycast.soufunimgs.com/5428ab28'
+      - 'https://anycast.jllyzx.com/8c28d4s7'
+      - 'https://anycast.pzwzs.com/3b04c545'
+      - 'https://anycast.qccnb.com/a192b791'
+      - 'https://anycast.xhspic.com/8c28d4s7'
+      - 'https://91c7e35b.qluomcd.com:4443/5428ab28'
+
 proxies:
   # 香港 VLESS 节点
-  - { name: 香港 01丨1x HK, type: ss, server: b19aeaf6-23d1-4f30-bddb-6720038b40b4.sankuaei.com, port: 12022, cipher: aes-128-gcm, password: haMLMXirByn6rGVh, plugin: obfs, plugin-opts: { mode: http, host: bcf67d6f37c2.microsoft.com }, udp: true }
-  - { name: 香港 02丨1x HK, type: ss, server: b19aeaf6-23d1-4f30-bddb-6720038b40b4.sankuaei.com, port: 12023, cipher: aes-128-gcm, password: haMLMXirByn6rGVh, plugin: obfs, plugin-opts: { mode: http, host: bcf67d6f37c2.microsoft.com }, udp: true }
-  - { name: 香港 03丨1x HK, type: ss, server: b19aeaf6-23d1-4f30-bddb-6720038b40b4.sankuaei.com, port: 12024, cipher: aes-128-gcm, password: haMLMXirByn6rGVh, plugin: obfs, plugin-opts: { mode: http, host: bcf67d6f37c2.microsoft.com }, udp: true }
-  - { name: 香港家宽 01丨1x HK, type: ss, server: b19aeaf6-23d1-4f30-bddb-6720038b40b4.sankuaei.com, port: 12304, cipher: aes-128-gcm, password: haMLMXirByn6rGVh, plugin: obfs, plugin-opts: { mode: http, host: bcf67d6f37c2.microsoft.com }, udp: true }
-  - { name: 香港家宽 02丨1x HK, type: ss, server: 2fc4443b-87c4-4b1d-ba6c-67ab211b0ded.aixifan7498.com, port: 12011, cipher: aes-128-gcm, password: haMLMXirByn6rGVh, plugin: obfs, plugin-opts: { mode: http, host: bcf67d6f37c2.microsoft.com }, udp: true }
-  - { name: 香港家宽 03丨1x HK, type: ss, server: b19aeaf6-23d1-4f30-bddb-6720038b40b4.sankuaei.com, port: 12000, cipher: aes-128-gcm, password: haMLMXirByn6rGVh, plugin: obfs, plugin-opts: { mode: http, host: bcf67d6f37c2.microsoft.com }, udp: true }
-  - { name: 巴基斯坦 03丨1x HK, type: ss, server: b19aeaf6-23d1-4f30-bddb-6720038b40b4.sankuaei.com, port: 12605, cipher: aes-128-gcm, password: haMLMXirByn6rGVh, plugin: obfs, plugin-opts: { mode: http, host: bcf67d6f37c2.microsoft.com }, udp: true }
-  - { name: 美国 03丨1x HK, type: ss, server: 2fc4443b-87c4-4b1d-ba6c-67ab211b0ded.aixifan7498.com, port: 13110, cipher: aes-128-gcm, password: haMLMXirByn6rGVh, plugin: obfs, plugin-opts: { mode: http, host: bcf67d6f37c2.microsoft.com }, udp: true }
+  - { name: "香港 01丨1x HK", type: ss, server: b19aeaf6-23d1-4f30-bddb-6720038b40b4.sankuaei.com, port: 12022, cipher: aes-128-gcm, password: haMLMXirByn6rGVh, plugin: obfs, plugin-opts: { mode: http, host: bcf67d6f37c2.microsoft.com }, udp: true }
+  - { name: "香港 02丨1x HK", type: ss, server: b19aeaf6-23d1-4f30-bddb-6720038b40b4.sankuaei.com, port: 12023, cipher: aes-128-gcm, password: haMLMXirByn6rGVh, plugin: obfs, plugin-opts: { mode: http, host: bcf67d6f37c2.microsoft.com }, udp: true }
+  - { name: "香港 03丨1x HK", type: ss, server: b19aeaf6-23d1-4f30-bddb-6720038b40b4.sankuaei.com, port: 12024, cipher: aes-128-gcm, password: haMLMXirByn6rGVh, plugin: obfs, plugin-opts: { mode: http, host: bcf67d6f37c2.microsoft.com }, udp: true }
+  - { name: "香港家宽 01丨1x HK", type: ss, server: b19aeaf6-23d1-4f30-bddb-6720038b40b4.sankuaei.com, port: 12304, cipher: aes-128-gcm, password: haMLMXirByn6rGVh, plugin: obfs, plugin-opts: { mode: http, host: bcf67d6f37c2.microsoft.com }, udp: true }
+  - { name: "香港家宽 02丨1x HK", type: ss, server: 2fc4443b-87c4-4b1d-ba6c-67ab211b0ded.aixifan7498.com, port: 12011, cipher: aes-128-gcm, password: haMLMXirByn6rGVh, plugin: obfs, plugin-opts: { mode: http, host: bcf67d6f37c2.microsoft.com }, udp: true }
+  - { name: "香港家宽 03丨1x HK", type: ss, server: b19aeaf6-23d1-4f30-bddb-6720038b40b4.sankuaei.com, port: 12000, cipher: aes-128-gcm, password: haMLMXirByn6rGVh, plugin: obfs, plugin-opts: { mode: http, host: bcf67d6f37c2.microsoft.com }, udp: true }
+  - { name: "巴基斯坦 03丨1x HK", type: ss, server: b19aeaf6-23d1-4f30-bddb-6720038b40b4.sankuaei.com, port: 12605, cipher: aes-128-gcm, password: haMLMXirByn6rGVh, plugin: obfs, plugin-opts: { mode: http, host: bcf67d6f37c2.microsoft.com }, udp: true }
+  - { name: "美国 03丨1x HK", type: ss, server: 2fc4443b-87c4-4b1d-ba6c-67ab211b0ded.aixifan7498.com, port: 13110, cipher: aes-128-gcm, password: haMLMXirByn6rGVh, plugin: obfs, plugin-opts: { mode: http, host: bcf67d6f37c2.microsoft.com }, udp: true }
 
   # 尼日利亚 SOCKS5
   - { name: '尼日1', server: geo.iproyal.com, port: 11201, type: socks5, username: P7I2lwT2Oynjs7TB, password: T41qODqSPUPqxwr2_country-ng_session-ZB0VrB6i_lifetime-15m_streaming-1 }
@@ -50,9 +87,9 @@ proxies:
   - { name: '尼日10', server: 106.75.152.119, port: 1001, type: socks5, username: e5265d18-149a832e-bad862, password: wifi-ng-10-- }
   - { name: '尼日11', server: 106.75.152.119, port: 1002, type: socks5, username: e5265d18-149a832e-0310d8, password: wifi-ng-10-- }
   - { name: '尼日12', server: 106.75.152.119, port: 1003, type: socks5, username: e5265d18-149a832e-8f0aef, password: wifi-ng-10-- }
-  - { name: '尼日13', server: hk.1024proxy.io, port: 3000, type: socks5, username: zl5b47338-region-NG-sid-KUUumcJP-t-5, password: gxbd3y4k, dialer-proxy: 香港 01丨1x HK }
-  - { name: '尼日14', server: hk.1024proxy.io, port: 3000, type: socks5, username: zl5b47338-region-NG-sid-486X7L15-t-5, password: gxbd3y4k, dialer-proxy: 香港 01丨1x HK }
-  - { name: '尼日15', server: hk.1024proxy.io, port: 3000, type: socks5, username: zl5b47338-region-NG-sid-qUimTp93-t-5, password: gxbd3y4k, dialer-proxy: 香港 01丨1x HK }
+  - { name: '尼日13', server: hk.1024proxy.io, port: 3000, type: socks5, username: zl5b47338-region-NG-sid-KUUumcJP-t-5, password: gxbd3y4k, dialer-proxy: "香港 01丨1x HK" }
+  - { name: '尼日14', server: hk.1024proxy.io, port: 3000, type: socks5, username: zl5b47338-region-NG-sid-486X7L15-t-5, password: gxbd3y4k, dialer-proxy: "香港 01丨1x HK" }
+  - { name: '尼日15', server: hk.1024proxy.io, port: 3000, type: socks5, username: zl5b47338-region-NG-sid-qUimTp93-t-5, password: gxbd3y4k, dialer-proxy: "香港 01丨1x HK" }
 
   # 埃及 SOCKS5
   - { name: '埃及1', server: 106.75.152.119, port: 880, type: socks5, username: e5265d18-149a832e-16f296, password: mobile-pk--islamabad- }
@@ -79,16 +116,16 @@ proxies:
   - { name: '缅甸10', server: sg-iepl.com, port: 28656, type: socks5, username: 47353961-zone-custom-region-MM-sessid-0cOzuZkG-sessTime-15, password: dJIA8BM3 }
 
   # 头像 SOCKS5
-  - { name: '头像1', server: us.1024proxy.io, port: 3000, type: socks5, username: zl5b47338-region-PK-sid-A1npzVJe-t-5, password: gxbd3y4k, dialer-proxy: 香港 01丨1x HK }
-  - { name: '头像2', server: us.1024proxy.io, port: 3000, type: socks5, username: zl5b47338-region-PK-sid-MrFEpT56-t-5, password: gxbd3y4k, dialer-proxy: 香港 01丨1x HK }
-  - { name: '头像3', server: us.1024proxy.io, port: 3000, type: socks5, username: zl5b47338-region-PK-sid-Cc6vhCnn-t-5, password: gxbd3y4k, dialer-proxy: 香港 01丨1x HK }
-  - { name: '头像4', server: us.1024proxy.io, port: 3000, type: socks5, username: zl5b47338-region-PK-sid-hYSnvenY-t-5, password: gxbd3y4k, dialer-proxy: 香港 01丨1x HK }
-  - { name: '头像5', server: us.1024proxy.io, port: 3000, type: socks5, username: zl5b47338-region-PK-sid-Mt33EgSw-t-5, password: gxbd3y4k, dialer-proxy: 香港 01丨1x HK }
-  - { name: '头像6', server: us.1024proxy.io, port: 3000, type: socks5, username: zl5b47338-region-PK-sid-M43egCiM-t-5, password: gxbd3y4k, dialer-proxy: 香港 01丨1x HK }
-  - { name: '头像7', server: us.1024proxy.io, port: 3000, type: socks5, username: zl5b47338-region-PK-sid-wGMtLJ4U-t-5, password: gxbd3y4k, dialer-proxy: 香港 01丨1x HK }
-  - { name: '头像8', server: us.1024proxy.io, port: 3000, type: socks5, username: zl5b47338-region-PK-sid-8fcNFiXK-t-5, password: gxbd3y4k, dialer-proxy: 香港 01丨1x HK }
-  - { name: '头像9', server: us.1024proxy.io, port: 3000, type: socks5, username: zl5b47338-region-PK-sid-6UTPBe5V-t-5, password: gxbd3y4k, dialer-proxy: 香港 01丨1x HK }
-  - { name: '头像10', server: us.1024proxy.io, port: 3000, type: socks5, username: zl5b47338-region-PK-sid-Z2Cjtn3m-t-5, password: gxbd3y4k, dialer-proxy: 香港 01丨1x HK }
+  - { name: '头像1', server: us.1024proxy.io, port: 3000, type: socks5, username: zl5b47338-region-PK-sid-A1npzVJe-t-5, password: gxbd3y4k, dialer-proxy: "香港 01丨1x HK" }
+  - { name: '头像2', server: us.1024proxy.io, port: 3000, type: socks5, username: zl5b47338-region-PK-sid-MrFEpT56-t-5, password: gxbd3y4k, dialer-proxy: "香港 01丨1x HK" }
+  - { name: '头像3', server: us.1024proxy.io, port: 3000, type: socks5, username: zl5b47338-region-PK-sid-Cc6vhCnn-t-5, password: gxbd3y4k, dialer-proxy: "香港 01丨1x HK" }
+  - { name: '头像4', server: us.1024proxy.io, port: 3000, type: socks5, username: zl5b47338-region-PK-sid-hYSnvenY-t-5, password: gxbd3y4k, dialer-proxy: "香港 01丨1x HK" }
+  - { name: '头像5', server: us.1024proxy.io, port: 3000, type: socks5, username: zl5b47338-region-PK-sid-Mt33EgSw-t-5, password: gxbd3y4k, dialer-proxy: "香港 01丨1x HK" }
+  - { name: '头像6', server: us.1024proxy.io, port: 3000, type: socks5, username: zl5b47338-region-PK-sid-M43egCiM-t-5, password: gxbd3y4k, dialer-proxy: "香港 01丨1x HK" }
+  - { name: '头像7', server: us.1024proxy.io, port: 3000, type: socks5, username: zl5b47338-region-PK-sid-wGMtLJ4U-t-5, password: gxbd3y4k, dialer-proxy: "香港 01丨1x HK" }
+  - { name: '头像8', server: us.1024proxy.io, port: 3000, type: socks5, username: zl5b47338-region-PK-sid-8fcNFiXK-t-5, password: gxbd3y4k, dialer-proxy: "香港 01丨1x HK" }
+  - { name: '头像9', server: us.1024proxy.io, port: 3000, type: socks5, username: zl5b47338-region-PK-sid-6UTPBe5V-t-5, password: gxbd3y4k, dialer-proxy: "香港 01丨1x HK" }
+  - { name: '头像10', server: us.1024proxy.io, port: 3000, type: socks5, username: zl5b47338-region-PK-sid-Z2Cjtn3m-t-5, password: gxbd3y4k, dialer-proxy: "香港 01丨1x HK" }
 
   # 土耳其 SOCKS5
   - { name: '土耳其1', server: hk.1024proxy.io, port: 3000, type: socks5, username: zl5b47338-region-PK-sid-RDb42Wbu-t-5, password: gxbd3y4k }
@@ -122,7 +159,6 @@ proxies:
   - { name: '玻利维亚10', server: 106.75.152.119, port: 884, type: socks5, username: e5265d18-149a832e-6db0dc, password: mobile-bo--- }
 
 proxy-groups:
-  # 此组用于 Google Play 低价内购，务必手动选择节点
   - name: Googleplay
     type: select
     proxies:
@@ -196,19 +232,19 @@ proxy-groups:
       - 玻利维亚8
       - 玻利维亚9
       - 玻利维亚10
-      - Proxies # 如果不想走低价区也可以跳回普通代理
+      - Proxies
 
   - name: Proxies
     type: select
     proxies:
-      - 香港 01丨1x HK
-      - 香港 02丨1x HK
-      - 香港 03丨1x HK
-      - 香港家宽 01丨1x HK
-      - 香港家宽 02丨1x HK
-      - 香港家宽 03丨1x HK
-      - 巴基斯坦 03丨1x HK
-      - 美国 03丨1x HK
+      - "香港 01丨1x HK"
+      - "香港 02丨1x HK"
+      - "香港 03丨1x HK"
+      - "香港家宽 01丨1x HK"
+      - "香港家宽 02丨1x HK"
+      - "香港家宽 03丨1x HK"
+      - "巴基斯坦 03丨1x HK"
+      - "美国 03丨1x HK"
       - DIRECT
 
 rules:
@@ -216,29 +252,20 @@ rules:
   - DOMAIN-SUFFIX,ook.dequgames.com,Proxies
   - DOMAIN-KEYWORD,orderofkings,Proxies
   - PROCESS-NAME,com.dequ.m3dw2,Proxies
-  # 强制 Google Play 相关域名走 Googleplay 代理组
   - DOMAIN-SUFFIX,play.google.com,Googleplay
   - DOMAIN,play-fe.googleapis.com,Googleplay
   - DOMAIN-SUFFIX,googleapis.com,Googleplay
   - DOMAIN-SUFFIX,googleusercontent.com,Googleplay
   - DOMAIN-SUFFIX,gstatic.com,Googleplay
-
-  # IP 检测工具，方便确认当前 IP 归属地
   - DOMAIN-SUFFIX,ipapi.co,Googleplay
   - DOMAIN-SUFFIX,ip-api.com,Googleplay
   - DOMAIN-SUFFIX,api.ip.sb,Googleplay
   - DOMAIN-SUFFIX,ipinfo.io,Googleplay
-
-  # 普通代理分流
   - DOMAIN-KEYWORD,game,Proxies
   - DOMAIN-KEYWORD,googlevideo,Proxies
   - DOMAIN-KEYWORD,github,Proxies
   - DOMAIN-SUFFIX,github.com,Proxies
-
-  # 直连规则
   - DOMAIN-KEYWORD,cn,DIRECT
   - DOMAIN-SUFFIX,baidu.com,DIRECT
   - GEOIP,CN,DIRECT
-
-  # 兜底规则
   - MATCH,Proxies
