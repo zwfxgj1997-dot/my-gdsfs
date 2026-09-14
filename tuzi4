@@ -118,13 +118,13 @@ proxies:
   # 头像 SOCKS5
   - { name: '头像1', server: us.1024proxy.io, port: 3000, type: socks5, username: zl5b47338-region-PK-sid-A1npzVJe-t-5, password: gxbd3y4k, dialer-proxy: "香港 01丨1x HK" }
   - { name: '头像2', server: us.1024proxy.io, port: 3000, type: socks5, username: zl5b47338-region-PK-sid-MrFEpT56-t-5, password: gxbd3y4k, dialer-proxy: "香港 01丨1x HK" }
-  - { name: '头像3', server: us.1024proxy.io, port: 3000, type: socks5, username: zl5b47338-region-PK-sid-Cc6vhCnn-t-5, password: gxbd3y4k, dialer-proxy: "香港 01丨1x HK" }
-  - { name: '头像4', server: us.1024proxy.io, port: 3000, type: socks5, username: zl5b47338-region-PK-sid-hYSnvenY-t-5, password: gxbd3y4k, dialer-proxy: "香港 01丨1x HK" }
-  - { name: '头像5', server: us.1024proxy.io, port: 3000, type: socks5, username: zl5b47338-region-PK-sid-Mt33EgSw-t-5, password: gxbd3y4k, dialer-proxy: "香港 01丨1x HK" }
-  - { name: '头像6', server: us.1024proxy.io, port: 3000, type: socks5, username: zl5b47338-region-PK-sid-M43egCiM-t-5, password: gxbd3y4k, dialer-proxy: "香港 01丨1x HK" }
+  - { name: '头像3', server: us.1024proxy.io, port: 3000, type: socks5, username: zl5b47338-region-PK-sid-Cc6vhCnn-t-5, password: gxbd3y4k, dialer-proxy: "香港 02丨1x HK" }
+  - { name: '头像4', server: us.1024proxy.io, port: 3000, type: socks5, username: zl5b47338-region-PK-sid-hYSnvenY-t-5, password: gxbd3y4k, dialer-proxy: "香港 02丨1x HK" }
+  - { name: '头像5', server: us.1024proxy.io, port: 3000, type: socks5, username: zl5b47338-region-PK-sid-Mt33EgSw-t-5, password: gxbd3y4k, dialer-proxy: "香港 03丨1x HK" }
+  - { name: '头像6', server: us.1024proxy.io, port: 3000, type: socks5, username: zl5b47338-region-PK-sid-M43egCiM-t-5, password: gxbd3y4k, dialer-proxy: "香港 03丨1x HK" }
   - { name: '头像7', server: us.1024proxy.io, port: 3000, type: socks5, username: zl5b47338-region-PK-sid-wGMtLJ4U-t-5, password: gxbd3y4k, dialer-proxy: "香港 01丨1x HK" }
-  - { name: '头像8', server: us.1024proxy.io, port: 3000, type: socks5, username: zl5b47338-region-PK-sid-8fcNFiXK-t-5, password: gxbd3y4k, dialer-proxy: "香港 01丨1x HK" }
-  - { name: '头像9', server: us.1024proxy.io, port: 3000, type: socks5, username: zl5b47338-region-PK-sid-6UTPBe5V-t-5, password: gxbd3y4k, dialer-proxy: "香港 01丨1x HK" }
+  - { name: '头像8', server: us.1024proxy.io, port: 3000, type: socks5, username: zl5b47338-region-PK-sid-8fcNFiXK-t-5, password: gxbd3y4k, dialer-proxy: "香港 02丨1x HK" }
+  - { name: '头像9', server: us.1024proxy.io, port: 3000, type: socks5, username: zl5b47338-region-PK-sid-6UTPBe5V-t-5, password: gxbd3y4k, dialer-proxy: "香港 03丨1x HK" }
   - { name: '头像10', server: us.1024proxy.io, port: 3000, type: socks5, username: zl5b47338-region-PK-sid-Z2Cjtn3m-t-5, password: gxbd3y4k, dialer-proxy: "香港 01丨1x HK" }
 
   # 土耳其 SOCKS5
