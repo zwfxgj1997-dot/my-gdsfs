@@ -54,12 +54,12 @@ proxies:
   - { name: '尼日15', server: hk.1024proxy.io, port: 3000, type: socks5, username: zl5b47338-region-NG-sid-qUimTp93-t-5, password: gxbd3y4k }
 
   # 埃及 SOCKS5
-  - { name: '埃及1', server: 106.75.152.119, port: 880, type: socks5, username: e5265d18-149a832e-16f296, password: mobile-pk--islamabad- }
-  - { name: '埃及2', server: 106.75.152.119, port: 881, type: socks5, username: e5265d18-149a832e-973aeb, password: mobile-pk--- }
-  - { name: '埃及3', server: 106.75.152.119, port: 882, type: socks5, username: e5265d18-149a832e-2457fc, password: mobile-pk--- }
-  - { name: '埃及4', server: 106.75.152.119, port: 883, type: socks5, username: e5265d18-149a832e-61b8b3, password: mobile-pk--- }
-  - { name: '埃及5', server: 106.75.152.119, port: 884, type: socks5, username: e5265d18-149a832e-00c699, password: mobile-pk--- }
-  - { name: '埃及6', server: 106.75.152.119, port: 885, type: socks5, username: e5265d18-149a832e-423168, password: mobile-pk--- }
+  - { name: '埃及1', server: 106.75.152.119, port: 800, type: socks5, username: e5265d18-149a832e-bfee51, password: mobile-pk--- }
+  - { name: '埃及2', server: 106.75.152.119, port: 801, type: socks5, username: e5265d18-149a832e-e2e68e, password: mobile-pk--- }
+  - { name: '埃及3', server: 106.75.152.119, port: 802, type: socks5, username: e5265d18-149a832e-17265b, password: mobile-pk--- }
+  - { name: '埃及4', server: 106.75.152.119, port: 803, type: socks5, username: e5265d18-149a832e-cd79b9, password: mobile-pk--- }
+  - { name: '埃及5', server: 106.75.152.119, port: 804, type: socks5, username: e5265d18-149a832e-7002b1, password: mobile-pk--- }
+  - { name: '埃及6', server: 106.75.152.119, port: 805, type: socks5, username: e5265d18-149a832e-9da9b9, password: mobile-pk--- }
   - { name: '埃及7', server: 106.75.152.119, port: 1000, type: socks5, username: e5265d18-149a832e-rand, password: wifi-pk--- }
   - { name: '埃及8', server: 106.75.152.119, port: 1001, type: socks5, username: e5265d18-149a832e-rand, password: wifi-pk--- }
   - { name: '埃及9', server: 106.75.152.119, port: 1002, type: socks5, username: e5265d18-149a832e-rand, password: wifi-pk--- }
