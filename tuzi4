@@ -79,10 +79,10 @@ proxies:
   - { name: '尼日2', server: geo.iproyal.com, port: 11201, type: socks5, username: P7I2lwT2Oynjs7TB, password: T41qODqSPUPqxwr2_country-ng_session-g7NXbkWw_lifetime-15m_streaming-1 }
   - { name: '尼日3', server: geo.iproyal.com, port: 11201, type: socks5, username: P7I2lwT2Oynjs7TB, password: T41qODqSPUPqxwr2_country-ng_session-UmHepoqI_lifetime-15m_streaming-1 }
   - { name: '尼日4', server: geo.iproyal.com, port: 11201, type: socks5, username: P7I2lwT2Oynjs7TB, password: T41qODqSPUPqxwr2_country-ng_session-6Ly5wONi_lifetime-15m_streaming-1 }
-  - { name: '尼日5', server: 106.75.152.119, port: 884, type: socks5, username: e5265d18-149a832e-bd7bd5, password: mobile-ng--- }
-  - { name: '尼日6', server: 106.75.152.119, port: 885, type: socks5, username: e5265d18-149a832e-7af9f0, password: mobile-ng--- }
-  - { name: '尼日7', server: 106.75.152.119, port: 886, type: socks5, username: e5265d18-149a832e-a0bda8, password: mobile-ng--- }
-  - { name: '尼日8', server: 106.75.152.119, port: 887, type: socks5, username: e5265d18-149a832e-84c8b1, password: mobile-ng--- }
+  - { name: '尼日5', server: 106.75.152.119, port: 804, type: socks5, username: e5265d18-149a832e-bd7bd5, password: mobile-ng--- }
+  - { name: '尼日6', server: 106.75.152.119, port: 805, type: socks5, username: e5265d18-149a832e-7af9f0, password: mobile-ng--- }
+  - { name: '尼日7', server: 106.75.152.119, port: 806, type: socks5, username: e5265d18-149a832e-a0bda8, password: mobile-ng--- }
+  - { name: '尼日8', server: 106.75.152.119, port: 807, type: socks5, username: e5265d18-149a832e-84c8b1, password: mobile-ng--- }
   - { name: '尼日9', server: 106.75.152.119, port: 1000, type: socks5, username: e5265d18-149a832e-974fa3, password: wifi-ng-10-- }
   - { name: '尼日10', server: 106.75.152.119, port: 1001, type: socks5, username: e5265d18-149a832e-bad862, password: wifi-ng-10-- }
   - { name: '尼日11', server: 106.75.152.119, port: 1002, type: socks5, username: e5265d18-149a832e-0310d8, password: wifi-ng-10-- }
