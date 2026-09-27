@@ -247,32 +247,24 @@ proxy-groups:
       - 玻利维亚10
 
 rules:
-  # 1. 游戏专属流量走稳定代理 (Proxies)
+  # 游戏本体：走香港/美国几百兆高速节点（保证游戏极速不卡）
   - DOMAIN-SUFFIX,dequgames.com,Proxies
   - DOMAIN-SUFFIX,ook.dequgames.com,Proxies
   - DOMAIN-KEYWORD,orderofkings,Proxies
   - PROCESS-NAME,com.dequ.m3dw2,Proxies
 
-  # 2. Google 地区识别与付款核心 API（全量强制走低价区）
+  # 谷歌内购及支付全量 API（强制走低价区 SOCKS5）
   - DOMAIN-SUFFIX,play.google.com,Googleplay
   - DOMAIN,play-fe.googleapis.com,Googleplay
   - DOMAIN-SUFFIX,pay.google.com,Googleplay
+  - DOMAIN-SUFFIX,payments.google.com,Googleplay
   - DOMAIN-SUFFIX,payments.googleapis.com,Googleplay
+  - DOMAIN-SUFFIX,checkout.google.com,Googleplay
+  - DOMAIN-SUFFIX,android.clients.google.com,Googleplay
+  - DOMAIN-SUFFIX,play.googleapis.com,Googleplay
   - DOMAIN,pay.internal.google.com,Googleplay
+  - DOMAIN,s.youtube.com,Googleplay
 
-  # 3. IP 检查网站（强制走低价区，方便测试 IP）
-  - DOMAIN-SUFFIX,ipapi.co,Googleplay
-  - DOMAIN-SUFFIX,ip-api.com,Googleplay
-  - DOMAIN-SUFFIX,api.ip.sb,Googleplay
-  - DOMAIN-SUFFIX,ipinfo.io,Googleplay
-
-  # 4. 其他常规分流规则
-  - DOMAIN-KEYWORD,googlevideo,Proxies
-  - DOMAIN-KEYWORD,github,Proxies
-  - DOMAIN-SUFFIX,github.com,Proxies
-  - DOMAIN-KEYWORD,cn,DIRECT
-  - DOMAIN-SUFFIX,baidu.com,DIRECT
+  # 其他流量走主代理
   - GEOIP,CN,DIRECT
-
-  # 兜底分流
   - MATCH,Proxies
