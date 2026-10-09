@@ -54,16 +54,16 @@ proxies:
   - { name: '尼日15', server: hk.1024proxy.io, port: 3000, type: socks5, username: zl5b47338-region-NG-asn-AS36920-sid-AExus59a-t-5, password: gxbd3y4k }
 
   # 埃及 SOCKS5
-  - { name: '埃及1', server: 106.75.152.119, port: 800, type: socks5, username: e5265d18-149a832e-bfee51, password: mobile-pk--- }
-  - { name: '埃及2', server: 106.75.152.119, port: 801, type: socks5, username: e5265d18-149a832e-e2e68e, password: mobile-pk--- }
-  - { name: '埃及3', server: 106.75.152.119, port: 802, type: socks5, username: e5265d18-149a832e-17265b, password: mobile-pk--- }
-  - { name: '埃及4', server: 106.75.152.119, port: 803, type: socks5, username: e5265d18-149a832e-cd79b9, password: mobile-pk--- }
-  - { name: '埃及5', server: 106.75.152.119, port: 804, type: socks5, username: e5265d18-149a832e-7002b1, password: mobile-pk--- }
-  - { name: '埃及6', server: 106.75.152.119, port: 805, type: socks5, username: e5265d18-149a832e-9da9b9, password: mobile-pk--- }
-  - { name: '埃及7', server: 106.75.152.119, port: 1000, type: socks5, username: e5265d18-149a832e-rand, password: wifi-pk--- }
-  - { name: '埃及8', server: 106.75.152.119, port: 1001, type: socks5, username: e5265d18-149a832e-rand, password: wifi-pk--- }
-  - { name: '埃及9', server: 106.75.152.119, port: 1002, type: socks5, username: e5265d18-149a832e-rand, password: wifi-pk--- }
-  - { name: '埃及10', server: 106.75.152.119, port: 1003, type: socks5, username: e5265d18-149a832e-rand, password: wifi-pk--- }
+  - { name: '埃及1', server: 106.75.134.163, port: 800, type: socks5, username: e5265d18-149a832e-bfee51, password: mobile-pk--- }
+  - { name: '埃及2', server: 106.75.134.163, port: 801, type: socks5, username: e5265d18-149a832e-e2e68e, password: mobile-pk--- }
+  - { name: '埃及3', server: 106.75.134.163, port: 802, type: socks5, username: e5265d18-149a832e-17265b, password: mobile-pk--- }
+  - { name: '埃及4', server: 106.75.134.163, port: 803, type: socks5, username: e5265d18-149a832e-cd79b9, password: mobile-pk--- }
+  - { name: '埃及5', server: 106.75.134.163, port: 804, type: socks5, username: e5265d18-149a832e-7002b1, password: mobile-pk--- }
+  - { name: '埃及6', server: 106.75.134.163, port: 805, type: socks5, username: e5265d18-149a832e-9da9b9, password: mobile-pk--- }
+  - { name: '埃及7', server: 106.75.134.163, port: 1000, type: socks5, username: e5265d18-149a832e-rand, password: wifi-pk--- }
+  - { name: '埃及8', server: 106.75.134.163, port: 1001, type: socks5, username: e5265d18-149a832e-rand, password: wifi-pk--- }
+  - { name: '埃及9', server: 106.75.134.163, port: 1002, type: socks5, username: e5265d18-149a832e-rand, password: wifi-pk--- }
+  - { name: '埃及10', server: 106.75.134.163, port: 1003, type: socks5, username: e5265d18-149a832e-rand, password: wifi-pk--- }
 
   # 缅甸 SOCKS5
   - { name: '缅甸1', server: prem.country.iprocket.io, port: 9595, type: socks5, username: com14049369-res-PK-Lsid-967943185, password: Htp9xuwt28o95A5 }
