@@ -97,22 +97,20 @@ proxies:
   - { name: '尼日11', server: 106.75.134.163, port: 1002, type: socks5, username: e5265d18-149a832e-4f3be5, password: wifi-ng-10--, udp: false }
   - { name: '尼日12', server: 106.75.134.163, port: 1003, type: socks5, username: e5265d18-149a832e-1b3401, password: wifi-ng-10--, udp: false }
   
-  # 修正格式：加了双引号和关闭 udp 的旧尼日节点
-  - { name: '尼日13', server: hk.1024proxy.io, port: 3000, type: socks5, username: "zl5b47338-region-NG-sid-TyVKUSZN-t-5", password: "gxbd3y4k", udp: false }
-  - { name: '尼日14', server: hk.1024proxy.io, port: 3000, type: socks5, username: "zl5b47338-region-NG-sid-jfdgM9hk-t-5", password: "gxbd3y4k", udp: false }
-  - { name: '尼日15', server: hk.1024proxy.io, port: 3000, type: socks5, username: "zl5b47338-region-NG-sid-NNkJ6NAu-t-5", password: "gxbd3y4k", udp: false }
-
-  # 新增加的 10 个尼日利亚节点（已修正格式）
-  - { name: '尼日16', server: hk.1024proxy.io, port: 3000, type: socks5, username: "zl5b47338-region-NG-sid-dACpZvWJ-t-5", password: "gxbd3y4k", udp: false }
-  - { name: '尼日17', server: hk.1024proxy.io, port: 3000, type: socks5, username: "zl5b47338-region-NG-sid-ZwR7YX5P-t-5", password: "gxbd3y4k", udp: false }
-  - { name: '尼日18', server: hk.1024proxy.io, port: 3000, type: socks5, username: "zl5b47338-region-NG-sid-6HQ9tpLM-t-5", password: "gxbd3y4k", udp: false }
-  - { name: '尼日19', server: hk.1024proxy.io, port: 3000, type: socks5, username: "zl5b47338-region-NG-sid-VAZVM7aq-t-5", password: "gxbd3y4k", udp: false }
-  - { name: '尼日20', server: hk.1024proxy.io, port: 3000, type: socks5, username: "zl5b47338-region-NG-sid-ZA6gawTi-t-5", password: "gxbd3y4k", udp: false }
-  - { name: '尼日21', server: hk.1024proxy.io, port: 3000, type: socks5, username: "zl5b47338-region-NG-sid-1v5XAQ8c-t-5", password: "gxbd3y4k", udp: false }
-  - { name: '尼日22', server: hk.1024proxy.io, port: 3000, type: socks5, username: "zl5b47338-region-NG-sid-7a3FrD9X-t-5", password: "gxbd3y4k", udp: false }
-  - { name: '尼日23', server: hk.1024proxy.io, port: 3000, type: socks5, username: "zl5b47338-region-NG-sid-97sX7T1L-t-5", password: "gxbd3y4k", udp: false }
-  - { name: '尼日24', server: hk.1024proxy.io, port: 3000, type: socks5, username: "zl5b47338-region-NG-sid-AVj7VZrD-t-5", password: "gxbd3y4k", udp: false }
-  - { name: '尼日25', server: hk.1024proxy.io, port: 3000, type: socks5, username: "zl5b47338-region-NG-sid-nQVvD7h4-t-5", password: "gxbd3y4k", udp: false }
+# 修正格式：加了前置代理(dialer-proxy)、双引号和关闭 udp 的尼日节点
+  - { name: '尼日13', server: hk.1024proxy.io, port: 3000, type: socks5, username: "zl5b47338-region-NG-sid-TyVKUSZN-t-5", password: "gxbd3y4k", udp: false, dialer-proxy: "香港 01丨1x HK" }
+  - { name: '尼日14', server: hk.1024proxy.io, port: 3000, type: socks5, username: "zl5b47338-region-NG-sid-jfdgM9hk-t-5", password: "gxbd3y4k", udp: false, dialer-proxy: "香港 01丨1x HK" }
+  - { name: '尼日15', server: hk.1024proxy.io, port: 3000, type: socks5, username: "zl5b47338-region-NG-sid-NNkJ6NAu-t-5", password: "gxbd3y4k", udp: false, dialer-proxy: "香港 01丨1x HK" }
+  - { name: '尼日16', server: hk.1024proxy.io, port: 3000, type: socks5, username: "zl5b47338-region-NG-sid-dACpZvWJ-t-5", password: "gxbd3y4k", udp: false, dialer-proxy: "香港 01丨1x HK" }
+  - { name: '尼日17', server: hk.1024proxy.io, port: 3000, type: socks5, username: "zl5b47338-region-NG-sid-ZwR7YX5P-t-5", password: "gxbd3y4k", udp: false, dialer-proxy: "香港 01丨1x HK" }
+  - { name: '尼日18', server: hk.1024proxy.io, port: 3000, type: socks5, username: "zl5b47338-region-NG-sid-6HQ9tpLM-t-5", password: "gxbd3y4k", udp: false, dialer-proxy: "香港 01丨1x HK" }
+  - { name: '尼日19', server: hk.1024proxy.io, port: 3000, type: socks5, username: "zl5b47338-region-NG-sid-VAZVM7aq-t-5", password: "gxbd3y4k", udp: false, dialer-proxy: "香港 01丨1x HK" }
+  - { name: '尼日20', server: hk.1024proxy.io, port: 3000, type: socks5, username: "zl5b47338-region-NG-sid-ZA6gawTi-t-5", password: "gxbd3y4k", udp: false, dialer-proxy: "香港 01丨1x HK" }
+  - { name: '尼日21', server: hk.1024proxy.io, port: 3000, type: socks5, username: "zl5b47338-region-NG-sid-1v5XAQ8c-t-5", password: "gxbd3y4k", udp: false, dialer-proxy: "香港 01丨1x HK" }
+  - { name: '尼日22', server: hk.1024proxy.io, port: 3000, type: socks5, username: "zl5b47338-region-NG-sid-7a3FrD9X-t-5", password: "gxbd3y4k", udp: false, dialer-proxy: "香港 01丨1x HK" }
+  - { name: '尼日23', server: hk.1024proxy.io, port: 3000, type: socks5, username: "zl5b47338-region-NG-sid-97sX7T1L-t-5", password: "gxbd3y4k", udp: false, dialer-proxy: "香港 01丨1x HK" }
+  - { name: '尼日24', server: hk.1024proxy.io, port: 3000, type: socks5, username: "zl5b47338-region-NG-sid-AVj7VZrD-t-5", password: "gxbd3y4k", udp: false, dialer-proxy: "香港 01丨1x HK" }
+  - { name: '尼日25', server: hk.1024proxy.io, port: 3000, type: socks5, username: "zl5b47338-region-NG-sid-nQVvD7h4-t-5", password: "gxbd3y4k", udp: false, dialer-proxy: "香港 01丨1x HK" }
 
   # 埃及 SOCKS5
   - { name: '埃及1', server: 106.75.152.119, port: 880, type: socks5, username: e5265d18-149a832e-16f296, password: mobile-pk--islamabad- }
