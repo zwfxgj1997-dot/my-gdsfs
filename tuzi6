@@ -1,0 +1,204 @@
+mixed-port: 7890
+allow-lan: false
+mode: rule
+log-level: warning
+external-controller: '127.0.0.1:9090'
+unified-delay: true
+global-client-fingerprint: chrome
+keep-alive-interval: 360
+
+cfw-bypass:
+  - localhost
+  - '127.*'
+  - '10.*'
+  - '192.168.*'
+  - '<local>'
+
+hosts:
+  mtalk.google.com: 108.177.125.188
+  tagss13.pro: 104.26.5.84
+  tagxx.vip: 103.135.249.37
+
+dns:
+  enable: true
+  listen: '127.0.0.1:5334'
+  default-nameserver:
+    - 180.184.1.1
+    - 119.29.29.29
+    - 223.5.5.5
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  use-hosts: true
+  use-system-hosts: true
+  nameserver:
+    - 'https://223.6.6.6/dns-query'
+    - 'https://doh.pub/dns-query'
+  nameserver-policy:
+    '*.helodata.io':
+      - '8.8.8.8'
+      - '1.1.1.1'
+      - 'https://dns.google/dns-query'
+    '*.sankuaei.com':
+      - 'https://anycast.bytecdns.com/913b04c3'
+      - 'https://anycast.soufunimgs.com/5428ab28'
+      - 'https://anycast.jllyzx.com/8c28d4s7'
+      - 'https://anycast.pzwzs.com/3b04c545'
+      - 'https://anycast.qccnb.com/a192b791'
+      - 'https://anycast.xhspic.com/8c28d4s7'
+      - 'https://91c7e35b.qluomcd.com:4443/5428ab28'
+    '*.aixifan7498.com':
+      - 'https://anycast.bytecdns.com/913b04c3'
+      - 'https://anycast.soufunimgs.com/5428ab28'
+      - 'https://anycast.jllyzx.com/8c28d4s7'
+      - 'https://anycast.pzwzs.com/3b04c545'
+      - 'https://anycast.qccnb.com/a192b791'
+      - 'https://anycast.xhspic.com/8c28d4s7'
+      - 'https://91c7e35b.qluomcd.com:4443/5428ab28'
+    '*.afdiancdn.org':
+      - 'https://anycast.bytecdns.com/913b04c3'
+      - 'https://anycast.soufunimgs.com/5428ab28'
+      - 'https://anycast.jllyzx.com/8c28d4s7'
+      - 'https://anycast.pzwzs.com/3b04c545'
+      - 'https://anycast.qccnb.com/a192b791'
+      - 'https://anycast.xhspic.com/8c28d4s7'
+      - 'https://91c7e35b.qluomcd.com:4443/5428ab28'
+
+proxies:
+  # 香港 / 专线 SS 节点
+  - { name: "香港 01丨1x HK", type: ss, server: b19aeaf6-23d1-4f30-bddb-6720038b40b4.sankuaei.com, port: 12022, cipher: aes-128-gcm, password: haMLMXirByn6rGVh, plugin: obfs, plugin-opts: { mode: http, host: bcf67d6f37c2.microsoft.com }, udp: true }
+  - { name: "香港 02丨1x HK", type: ss, server: b19aeaf6-23d1-4f30-bddb-6720038b40b4.sankuaei.com, port: 12023, cipher: aes-128-gcm, password: haMLMXirByn6rGVh, plugin: obfs, plugin-opts: { mode: http, host: bcf67d6f37c2.microsoft.com }, udp: true }
+  - { name: "香港 03丨1x HK", type: ss, server: b19aeaf6-23d1-4f30-bddb-6720038b40b4.sankuaei.com, port: 12024, cipher: aes-128-gcm, password: haMLMXirByn6rGVh, plugin: obfs, plugin-opts: { mode: http, host: bcf67d6f37c2.microsoft.com }, udp: true }
+  - { name: "香港家宽 01丨1x HK", type: ss, server: b19aeaf6-23d1-4f30-bddb-6720038b40b4.sankuaei.com, port: 12304, cipher: aes-128-gcm, password: haMLMXirByn6rGVh, plugin: obfs, plugin-opts: { mode: http, host: bcf67d6f37c2.microsoft.com }, udp: true }
+  - { name: "香港家宽 02丨1x HK", type: ss, server: 2fc4443b-87c4-4b1d-ba6c-67ab211b0ded.aixifan7498.com, port: 12011, cipher: aes-128-gcm, password: haMLMXirByn6rGVh, plugin: obfs, plugin-opts: { mode: http, host: bcf67d6f37c2.microsoft.com }, udp: true }
+  - { name: "香港家宽 03丨1x HK", type: ss, server: b19aeaf6-23d1-4f30-bddb-6720038b40b4.sankuaei.com, port: 12000, cipher: aes-128-gcm, password: haMLMXirByn6rGVh, plugin: obfs, plugin-opts: { mode: http, host: bcf67d6f37c2.microsoft.com }, udp: true }
+  - { name: "巴基斯坦 03丨1x HK", type: ss, server: b19aeaf6-23d1-4f30-bddb-6720038b40b4.sankuaei.com, port: 12605, cipher: aes-128-gcm, password: haMLMXirByn6rGVh, plugin: obfs, plugin-opts: { mode: http, host: bcf67d6f37c2.microsoft.com }, udp: true }
+  - { name: "美国 03丨1x HK", type: ss, server: 2fc4443b-87c4-4b1d-ba6c-67ab211b0ded.aixifan7498.com, port: 13110, cipher: aes-128-gcm, password: haMLMXirByn6rGVh, plugin: obfs, plugin-opts: { mode: http, host: bcf67d6f37c2.microsoft.com }, udp: true }
+
+  # 尼日利亚 SOCKS5 (NG)
+  - { name: '尼日利亚1', server: eu.helodata.io, port: 7777, type: socks5, username: helo_ggf9aq_b34l4fuaxn-type-res-region-ng-session-tpfqjajy-sesstime-20, password: eaaikp9vzu4ucumr, dialer-proxy: "香港 01丨1x HK" }
+  - { name: '尼日利亚2', server: eu.helodata.io, port: 7777, type: socks5, username: helo_ggf9aq_b34l4fuaxn-type-res-region-ng-session-qwonqq6a-sesstime-20, password: eaaikp9vzu4ucumr, dialer-proxy: "香港 01丨1x HK" }
+  - { name: '尼日利亚3', server: eu.helodata.io, port: 7777, type: socks5, username: helo_ggf9aq_b34l4fuaxn-type-res-region-ng-session-di59orm6-sesstime-20, password: eaaikp9vzu4ucumr, dialer-proxy: "香港 01丨1x HK" }
+  - { name: '尼日利亚4', server: eu.helodata.io, port: 7777, type: socks5, username: helo_ggf9aq_b34l4fuaxn-type-res-region-ng-session-fqjtk48p-sesstime-20, password: eaaikp9vzu4ucumr, dialer-proxy: "香港 01丨1x HK" }
+  - { name: '尼日利亚5', server: eu.helodata.io, port: 7777, type: socks5, username: helo_ggf9aq_b34l4fuaxn-type-res-region-ng-session-ox0hn275-sesstime-20, password: eaaikp9vzu4ucumr, dialer-proxy: "香港 01丨1x HK" }
+  - { name: '尼日利亚6', server: eu.helodata.io, port: 7777, type: socks5, username: helo_ggf9aq_b34l4fuaxn-type-res-region-ng-session-l0sxrhea-sesstime-20, password: eaaikp9vzu4ucumr, dialer-proxy: "香港 01丨1x HK" }
+  - { name: '尼日利亚7', server: eu.helodata.io, port: 7777, type: socks5, username: helo_ggf9aq_b34l4fuaxn-type-res-region-ng-session-n5u0lnxx-sesstime-20, password: eaaikp9vzu4ucumr, dialer-proxy: "香港 01丨1x HK" }
+  - { name: '尼日利亚8', server: eu.helodata.io, port: 7777, type: socks5, username: helo_ggf9aq_b34l4fuaxn-type-res-region-ng-session-o3ohqpk2-sesstime-20, password: eaaikp9vzu4ucumr, dialer-proxy: "香港 01丨1x HK" }
+  - { name: '尼日利亚9', server: eu.helodata.io, port: 7777, type: socks5, username: helo_ggf9aq_b34l4fuaxn-type-res-region-ng-session-dgn33ho1-sesstime-20, password: eaaikp9vzu4ucumr, dialer-proxy: "香港 01丨1x HK" }
+  - { name: '尼日利亚10', server: eu.helodata.io, port: 7777, type: socks5, username: helo_ggf9aq_b34l4fuaxn-type-res-region-ng-session-t5s0q8hx-sesstime-20, password: eaaikp9vzu4ucumr, dialer-proxy: "香港 01丨1x HK" }
+
+  # 巴基斯坦 SOCKS5 (PK)
+  - { name: '巴基斯坦1', server: as.helodata.io, port: 7777, type: socks5, username: helo_ggf9aq_b34l4fuaxn-type-res-region-pk-session-ruttvxzr-sesstime-20, password: eaaikp9vzu4ucumr, dialer-proxy: "香港 01丨1x HK" }
+  - { name: '巴基斯坦2', server: as.helodata.io, port: 7777, type: socks5, username: helo_ggf9aq_b34l4fuaxn-type-res-region-pk-session-5e7vork7-sesstime-20, password: eaaikp9vzu4ucumr, dialer-proxy: "香港 01丨1x HK" }
+  - { name: '巴基斯坦3', server: as.helodata.io, port: 7777, type: socks5, username: helo_ggf9aq_b34l4fuaxn-type-res-region-pk-session-r6tpf9au-sesstime-20, password: eaaikp9vzu4ucumr, dialer-proxy: "香港 01丨1x HK" }
+  - { name: '巴基斯坦4', server: as.helodata.io, port: 7777, type: socks5, username: helo_ggf9aq_b34l4fuaxn-type-res-region-pk-session-mv9q3ops-sesstime-20, password: eaaikp9vzu4ucumr, dialer-proxy: "香港 01丨1x HK" }
+  - { name: '巴基斯坦5', server: as.helodata.io, port: 7777, type: socks5, username: helo_ggf9aq_b34l4fuaxn-type-res-region-pk-session-mgnx8ef6-sesstime-20, password: eaaikp9vzu4ucumr, dialer-proxy: "香港 01丨1x HK" }
+  - { name: '巴基斯坦6', server: as.helodata.io, port: 7777, type: socks5, username: helo_ggf9aq_b34l4fuaxn-type-res-region-pk-session-pofde3pt-sesstime-20, password: eaaikp9vzu4ucumr, dialer-proxy: "香港 01丨1x HK" }
+  - { name: '巴基斯坦7', server: as.helodata.io, port: 7777, type: socks5, username: helo_ggf9aq_b34l4fuaxn-type-res-region-pk-session-0qllwia8-sesstime-20, password: eaaikp9vzu4ucumr, dialer-proxy: "香港 01丨1x HK" }
+  - { name: '巴基斯坦8', server: as.helodata.io, port: 7777, type: socks5, username: helo_ggf9aq_b34l4fuaxn-type-res-region-pk-session-q3cofs6g-sesstime-20, password: eaaikp9vzu4ucumr, dialer-proxy: "香港 01丨1x HK" }
+  - { name: '巴基斯坦9', server: as.helodata.io, port: 7777, type: socks5, username: helo_ggf9aq_b34l4fuaxn-type-res-region-pk-session-siicbu0o-sesstime-20, password: eaaikp9vzu4ucumr, dialer-proxy: "香港 01丨1x HK" }
+  - { name: '巴基斯坦10', server: as.helodata.io, port: 7777, type: socks5, username: helo_ggf9aq_b34l4fuaxn-type-res-region-pk-session-qvg16lco-sesstime-20, password: eaaikp9vzu4ucumr, dialer-proxy: "香港 01丨1x HK" }
+
+  # 土耳其 SOCKS5 (TR)
+  - { name: '土耳其1', server: as.helodata.io, port: 7777, type: socks5, username: helo_ggf9aq_b34l4fuaxn-type-res-region-tr-session-xn4mjjgc-sesstime-20, password: eaaikp9vzu4ucumr, dialer-proxy: "香港 01丨1x HK" }
+  - { name: '土耳其2', server: as.helodata.io, port: 7777, type: socks5, username: helo_ggf9aq_b34l4fuaxn-type-res-region-tr-session-lal1cz3b-sesstime-20, password: eaaikp9vzu4ucumr, dialer-proxy: "香港 01丨1x HK" }
+  - { name: '土耳其3', server: as.helodata.io, port: 7777, type: socks5, username: helo_ggf9aq_b34l4fuaxn-type-res-region-tr-session-n527ptsb-sesstime-20, password: eaaikp9vzu4ucumr, dialer-proxy: "香港 01丨1x HK" }
+  - { name: '土耳其4', server: as.helodata.io, port: 7777, type: socks5, username: helo_ggf9aq_b34l4fuaxn-type-res-region-tr-session-0soi3eb8-sesstime-20, password: eaaikp9vzu4ucumr, dialer-proxy: "香港 01丨1x HK" }
+  - { name: '土耳其5', server: as.helodata.io, port: 7777, type: socks5, username: helo_ggf9aq_b34l4fuaxn-type-res-region-tr-session-f2kec445-sesstime-20, password: eaaikp9vzu4ucumr, dialer-proxy: "香港 01丨1x HK" }
+  - { name: '土耳其6', server: as.helodata.io, port: 7777, type: socks5, username: helo_ggf9aq_b34l4fuaxn-type-res-region-tr-session-v0a1k5xs-sesstime-20, password: eaaikp9vzu4ucumr, dialer-proxy: "香港 01丨1x HK" }
+  - { name: '土耳其7', server: as.helodata.io, port: 7777, type: socks5, username: helo_ggf9aq_b34l4fuaxn-type-res-region-tr-session-oo4rel2c-sesstime-20, password: eaaikp9vzu4ucumr, dialer-proxy: "香港 01丨1x HK" }
+  - { name: '土耳其8', server: as.helodata.io, port: 7777, type: socks5, username: helo_ggf9aq_b34l4fuaxn-type-res-region-tr-session-n5v2axmq-sesstime-20, password: eaaikp9vzu4ucumr, dialer-proxy: "香港 01丨1x HK" }
+  - { name: '土耳其9', server: as.helodata.io, port: 7777, type: socks5, username: helo_ggf9aq_b34l4fuaxn-type-res-region-tr-session-fy58dqc7-sesstime-20, password: eaaikp9vzu4ucumr, dialer-proxy: "香港 01丨1x HK" }
+  - { name: '土耳其10', server: as.helodata.io, port: 7777, type: socks5, username: helo_ggf9aq_b34l4fuaxn-type-res-region-tr-session-thp3qdtv-sesstime-20, password: eaaikp9vzu4ucumr, dialer-proxy: "香港 01丨1x HK" }
+
+  # 菲律宾 SOCKS5 (PH)
+  - { name: '菲律宾1', server: as.helodata.io, port: 7777, type: socks5, username: helo_ggf9aq_b34l4fuaxn-type-res-region-ph-session-bus4eoek-sesstime-20, password: eaaikp9vzu4ucumr, dialer-proxy: "香港 01丨1x HK" }
+  - { name: '菲律宾2', server: as.helodata.io, port: 7777, type: socks5, username: helo_ggf9aq_b34l4fuaxn-type-res-region-ph-session-uhgycmn0-sesstime-20, password: eaaikp9vzu4ucumr, dialer-proxy: "香港 01丨1x HK" }
+  - { name: '菲律宾3', server: as.helodata.io, port: 7777, type: socks5, username: helo_ggf9aq_b34l4fuaxn-type-res-region-ph-session-d5ehtz6d-sesstime-20, password: eaaikp9vzu4ucumr, dialer-proxy: "香港 01丨1x HK" }
+  - { name: '菲律宾4', server: as.helodata.io, port: 7777, type: socks5, username: helo_ggf9aq_b34l4fuaxn-type-res-region-ph-session-92agn82e-sesstime-20, password: eaaikp9vzu4ucumr, dialer-proxy: "香港 01丨1x HK" }
+  - { name: '菲律宾5', server: as.helodata.io, port: 7777, type: socks5, username: helo_ggf9aq_b34l4fuaxn-type-res-region-ph-session-5e47rrx8-sesstime-20, password: eaaikp9vzu4ucumr, dialer-proxy: "香港 01丨1x HK" }
+  - { name: '菲律宾6', server: as.helodata.io, port: 7777, type: socks5, username: helo_ggf9aq_b34l4fuaxn-type-res-region-ph-session-evmlk8xk-sesstime-20, password: eaaikp9vzu4ucumr, dialer-proxy: "香港 01丨1x HK" }
+  - { name: '菲律宾7', server: as.helodata.io, port: 7777, type: socks5, username: helo_ggf9aq_b34l4fuaxn-type-res-region-ph-session-4xbebmx9-sesstime-20, password: eaaikp9vzu4ucumr, dialer-proxy: "香港 01丨1x HK" }
+  - { name: '菲律宾8', server: as.helodata.io, port: 7777, type: socks5, username: helo_ggf9aq_b34l4fuaxn-type-res-region-ph-session-md55lfse-sesstime-20, password: eaaikp9vzu4ucumr, dialer-proxy: "香港 01丨1x HK" }
+  - { name: '菲律宾9', server: as.helodata.io, port: 7777, type: socks5, username: helo_ggf9aq_b34l4fuaxn-type-res-region-ph-session-29ysyab3-sesstime-20, password: eaaikp9vzu4ucumr, dialer-proxy: "香港 01丨1x HK" }
+  - { name: '菲律宾10', server: as.helodata.io, port: 7777, type: socks5, username: helo_ggf9aq_b34l4fuaxn-type-res-region-ph-session-ywxhds6o-sesstime-20, password: eaaikp9vzu4ucumr, dialer-proxy: "香港 01丨1x HK" }
+
+proxy-groups:
+  - name: Proxies
+    type: select
+    proxies:
+      - "香港 01丨1x HK"
+      - "香港 02丨1x HK"
+      - "香港 03丨1x HK"
+      - "香港家宽 01丨1x HK"
+      - "香港家宽 02丨1x HK"
+      - "香港家宽 03丨1x HK"
+      - "巴基斯坦 03丨1x HK"
+      - "美国 03丨1x HK"
+      - DIRECT
+
+  - name: Googleplay
+    type: select
+    proxies:
+      - 尼日利亚1
+      - 尼日利亚2
+      - 尼日利亚3
+      - 尼日利亚4
+      - 尼日利亚5
+      - 尼日利亚6
+      - 尼日利亚7
+      - 尼日利亚8
+      - 尼日利亚9
+      - 尼日利亚10
+      - 巴基斯坦1
+      - 巴基斯坦2
+      - 巴基斯坦3
+      - 巴基斯坦4
+      - 巴基斯坦5
+      - 巴基斯坦6
+      - 巴基斯坦7
+      - 巴基斯坦8
+      - 巴基斯坦9
+      - 巴基斯坦10
+      - 土耳其1
+      - 土耳其2
+      - 土耳其3
+      - 土耳其4
+      - 土耳其5
+      - 土耳其6
+      - 土耳其7
+      - 土耳其8
+      - 土耳其9
+      - 土耳其10
+      - 菲律宾1
+      - 菲律宾2
+      - 菲律宾3
+      - 菲律宾4
+      - 菲律宾5
+      - 菲律宾6
+      - 菲律宾7
+      - 菲律宾8
+      - 菲律宾9
+      - 菲律宾10
+
+rules:
+  # 游戏本体：走香港/美国几百兆高速节点（保证游戏极速不卡）
+  - DOMAIN-SUFFIX,dequgames.com,Proxies
+  - DOMAIN-SUFFIX,ook.dequgames.com,Proxies
+  - DOMAIN-KEYWORD,orderofkings,Proxies
+  - PROCESS-NAME,com.dequ.m3dw2,Proxies
+
+  # 谷歌内购及支付全量 API（强制走低价区 SOCKS5）
+  - DOMAIN-SUFFIX,play.google.com,Googleplay
+  - DOMAIN,play-fe.googleapis.com,Googleplay
+  - DOMAIN-SUFFIX,pay.google.com,Googleplay
+  - DOMAIN-SUFFIX,payments.google.com,Googleplay
+  - DOMAIN-SUFFIX,payments.googleapis.com,Googleplay
+  - DOMAIN-SUFFIX,checkout.google.com,Googleplay
+  - DOMAIN-SUFFIX,android.clients.google.com,Googleplay
+  - DOMAIN-SUFFIX,play.googleapis.com,Googleplay
+  - DOMAIN,pay.internal.google.com,Googleplay
+  - DOMAIN,s.youtube.com,Googleplay
+
+  # 其他流量走主代理
+  - GEOIP,CN,DIRECT
+  - MATCH,Proxies
