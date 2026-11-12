@@ -4,27 +4,16 @@ bind-address: 0.0.0.0
 mode: rule
 log-level: warning
 external-controller: '127.0.0.1:9090'
-unified-delay: true
-global-client-fingerprint: chrome
-keep-alive-interval: 360
-
-hosts:
-  mtalk.google.com: 108.177.125.188
-  tagss13.pro: 104.26.5.84
-  tagxx.vip: 103.135.249.37
+tcp-concurrent: true
 
 dns:
   enable: true
   listen: '0.0.0.0:1053'
   default-nameserver:
-    - 180.184.1.1
     - 119.29.29.29
     - 223.5.5.5
   enhanced-mode: fake-ip
   fake-ip-range: 198.18.0.1/16
-  use-hosts: true
-  use-system-hosts: true
-  # 放行 MuMu 模拟器与局域网通信，防止 DNS 劫持导致模拟器断网
   fake-ip-filter:
     - '*.lan'
     - '*.local'
@@ -34,15 +23,14 @@ dns:
   nameserver:
     - 'https://223.6.6.6/dns-query'
     - 'https://doh.pub/dns-query'
+  # 对齐清单第 6 条：网关域名全部交由加密 DoH 解析，避免国内直连 8.8.8.8 超时导致节点解析失败
   nameserver-policy:
     '*.helodata.io':
-      - '8.8.8.8'
-      - '1.1.1.1'
-      - 'https://dns.google/dns-query'
+      - 'https://223.6.6.6/dns-query'
+      - 'https://doh.pub/dns-query'
     '*.1024proxy.io':
-      - '8.8.8.8'
-      - '1.1.1.1'
-      - 'https://dns.google/dns-query'
+      - 'https://223.6.6.6/dns-query'
+      - 'https://doh.pub/dns-query'
     '*.sankuaei.com':
       - 'https://anycast.bytecdns.com/913b04c3'
       - 'https://anycast.soufunimgs.com/5428ab28'
@@ -69,7 +57,7 @@ dns:
       - 'https://91c7e35b.qluomcd.com:4443/5428ab28'
 
 proxies:
-  # ================= 1. 高速专线 SS 节点 (主流量 / 链式前置跳板) =================
+  # ================= 1. 高速专线 SS 节点 =================
   - { name: "香港 01丨1x HK", type: ss, server: b19aeaf6-23d1-4f30-bddb-6720038b40b4.sankuaei.com, port: 12022, cipher: aes-128-gcm, password: haMLMXirByn6rGVh, plugin: obfs, plugin-opts: { mode: http, host: bcf67d6f37c2.microsoft.com }, udp: true }
   - { name: "香港 02丨1x HK", type: ss, server: b19aeaf6-23d1-4f30-bddb-6720038b40b4.sankuaei.com, port: 12023, cipher: aes-128-gcm, password: haMLMXirByn6rGVh, plugin: obfs, plugin-opts: { mode: http, host: bcf67d6f37c2.microsoft.com }, udp: true }
   - { name: "香港 03丨1x HK", type: ss, server: b19aeaf6-23d1-4f30-bddb-6720038b40b4.sankuaei.com, port: 12024, cipher: aes-128-gcm, password: haMLMXirByn6rGVh, plugin: obfs, plugin-opts: { mode: http, host: bcf67d6f37c2.microsoft.com }, udp: true }
@@ -138,7 +126,7 @@ proxies:
   - { name: '菲律宾10', server: as.helodata.io, port: 7777, type: socks5, username: helo_ggf9aq_b34l4fuaxn-type-res-region-ph-session-ywxhds6o-sesstime-20, password: eaaikp9vzu4ucumr, dialer-proxy: "香港 01丨1x HK" }
 
 proxy-groups:
-  # 主代理组：游戏本体与常规流量
+  # 主代理组：游戏本体与常规流量（可手动点选）
   - name: Proxies
     type: select
     proxies:
@@ -152,20 +140,18 @@ proxy-groups:
       - "美国 03丨1x HK"
       - DIRECT
 
-  # 业务总控组：手动点选当前需要使用的地区组（防串区）
+  # 业务总控组：点选当前要使用的地区组（防串区）
   - name: Target_Region
     type: select
     proxies:
-      - "Auto-NG"
-      - "Auto-PK"
-      - "Auto-TR"
-      - "Auto-PH"
+      - "NG-尼日利亚"
+      - "PK-巴基斯坦"
+      - "TR-土耳其"
+      - "PH-菲律宾"
 
-  # 各地区自动故障切换组 (单点失效自动切换下一个)
-  - name: Auto-NG
-    type: fallback
-    url: 'http://www.gstatic.com/generate_204'
-    interval: 180
+  # 四个独立地区组均为 select，允许随时在面板手动点选任意单个节点
+  - name: NG-尼日利亚
+    type: select
     proxies:
       - 尼日利亚1
       - 尼日利亚2
@@ -188,10 +174,8 @@ proxy-groups:
       - 尼日利亚19
       - 尼日利亚20
 
-  - name: Auto-PK
-    type: fallback
-    url: 'http://www.gstatic.com/generate_204'
-    interval: 180
+  - name: PK-巴基斯坦
+    type: select
     proxies:
       - 巴基斯坦1
       - 巴基斯坦2
@@ -204,10 +188,8 @@ proxy-groups:
       - 巴基斯坦9
       - 巴基斯坦10
 
-  - name: Auto-TR
-    type: fallback
-    url: 'http://www.gstatic.com/generate_204'
-    interval: 180
+  - name: TR-土耳其
+    type: select
     proxies:
       - 土耳其1
       - 土耳其2
@@ -220,10 +202,8 @@ proxy-groups:
       - 土耳其9
       - 土耳其10
 
-  - name: Auto-PH
-    type: fallback
-    url: 'http://www.gstatic.com/generate_204'
-    interval: 180
+  - name: PH-菲律宾
+    type: select
     proxies:
       - 菲律宾1
       - 菲律宾2
