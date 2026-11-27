@@ -1,0 +1,445 @@
+mixed-port: 7890
+allow-lan: true
+bind-address: '*'
+geodata-mode: true
+
+geox-url:
+  geoip: https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/geoip.dat
+  geosite: https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/geosite.dat
+  mmdb: https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/country.mmdb
+  asn: https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/GeoLite2-ASN.mmdb
+
+mode: rule
+log-level: info
+external-controller: 127.0.0.1:9090
+
+# ================= 节点列表 =================
+proxies:
+  # VLESS 高速节点
+  - name: "🇭🇰 HK Gomami 04 (1.5x)"
+    type: vless
+    server: 103.73.220.158
+    port: 443
+    uuid: f502fece-f78c-4261-9f39-0873bc0002dd
+    flow: xtls-rprx-vision
+    network: tcp
+    tls: true
+    udp: true
+    servername: d1--ov-gotcha07.bilivideo.com
+    reality-opts:
+      public-key: yVoodbT4h4QAypxp7k7JxkFGa2VBa1p0H36DMhtZVxE
+    client-fingerprint: safari
+
+  - name: "🇭🇰 HK Gomami 06 (1.5x)"
+    type: vless
+    server: 141.11.77.150
+    port: 443
+    uuid: f502fece-f78c-4261-9f39-0873bc0002dd
+    flow: xtls-rprx-vision
+    network: tcp
+    tls: true
+    udp: true
+    servername: www.nextstophongkong.com
+    reality-opts:
+      public-key: JU6FYV5c4nw7S-nKJ4kxfT6sDaVVYT2wAA9Ktb0pzRI
+    client-fingerprint: safari
+
+  - name: "🇭🇰 HK Gomami 07"
+    type: vless
+    server: 141.11.77.245
+    port: 443
+    uuid: f502fece-f78c-4261-9f39-0873bc0002dd
+    flow: xtls-rprx-vision
+    network: tcp
+    tls: true
+    udp: true
+    servername: www.nextstophongkong.com
+    reality-opts:
+      public-key: oTONC3Pp7O8XMqjY7AbkHjEuQXtpPD-IhZ0HhKV1Vyk
+    client-fingerprint: safari
+
+  - name: "🇭🇰 HK ISIF 03"
+    type: vless
+    server: 131.143.242.138
+    port: 443
+    uuid: f502fece-f78c-4261-9f39-0873bc0002dd
+    flow: xtls-rprx-vision
+    network: tcp
+    tls: true
+    udp: true
+    servername: hkmiramartravel.com
+    reality-opts:
+      public-key: l93iEdeEjz5ZYJyVy5iAiMdQGLf0GbO2rVCJsGVk1FY
+    client-fingerprint: ios
+
+  - name: "🇯🇵 JP Gomami 05"
+    type: vless
+    server: 151.244.134.206
+    port: 443
+    uuid: f502fece-f78c-4261-9f39-0873bc0002dd
+    flow: xtls-rprx-vision
+    network: tcp
+    tls: true
+    udp: true
+    servername: tokyotokyo.jp
+    reality-opts:
+      public-key: Yd69DdGaMPgdiwA4AyZLGDZxK36fSzEHOSm4tf-ZTWY
+    client-fingerprint: safari
+
+  - name: "🇯🇵 JP Neburst 04"
+    type: vless
+    server: 23.129.140.113
+    port: 443
+    uuid: f502fece-f78c-4261-9f39-0873bc0002dd
+    flow: xtls-rprx-vision
+    network: tcp
+    tls: true
+    udp: true
+    servername: www.japan.travel
+    reality-opts:
+      public-key: 1cWawtvbaUzDdKx7B_XbCfsMfMJ8x2t7vv1YlPgGoAE
+    client-fingerprint: safari
+
+  - name: "🇸🇬 SG Gomami 02"
+    type: vless
+    server: 103.26.8.29
+    port: 443
+    uuid: f502fece-f78c-4261-9f39-0873bc0002dd
+    flow: xtls-rprx-vision
+    network: tcp
+    tls: true
+    udp: true
+    servername: www.douyin.com
+    reality-opts:
+      public-key: wpZpk0oLuQYcBH9qMHNfk4-NwVSrqiJGz1zDt_3Fm2Y
+    client-fingerprint: chrome
+
+  - name: "🇸🇬 SG Gomami 04"
+    type: vless
+    server: 103.26.8.76
+    port: 443
+    uuid: f502fece-f78c-4261-9f39-0873bc0002dd
+    flow: xtls-rprx-vision
+    network: tcp
+    tls: true
+    udp: true
+    servername: www.visitsingapore.com
+    reality-opts:
+      public-key: YuTzT-_glzqtvHHvLRDyU9iGcjg5ieOT09vp614VPwU
+    client-fingerprint: chrome
+
+  - name: "🇸🇬 SG Gomami 05"
+    type: vless
+    server: 103.26.8.103
+    port: 443
+    uuid: f502fece-f78c-4261-9f39-0873bc0002dd
+    flow: xtls-rprx-vision
+    network: tcp
+    tls: true
+    udp: true
+    servername: intrepidtravel.com
+    reality-opts:
+      public-key: 4KmOxHNjO4vZ59bph9CZgAEhZmJsBhUEfz6__opty1o
+    client-fingerprint: safari
+
+  - name: "🇺🇸 US DMIT 02 (0.8x)"
+    type: vless
+    server: 154.26.182.35
+    port: 443
+    uuid: f502fece-f78c-4261-9f39-0873bc0002dd
+    flow: xtls-rprx-vision
+    network: tcp
+    tls: true
+    udp: true
+    servername: www.ihg.com
+    reality-opts:
+      public-key: jFhKdtDZraFYELaC61oUhORS7gshnv3JfUDk0xh7ND4
+    client-fingerprint: chrome
+
+  - name: "🇺🇸 US DMIT 04 (0.8x)"
+    type: vless
+    server: 154.26.184.247
+    port: 443
+    uuid: f502fece-f78c-4261-9f39-0873bc0002dd
+    flow: xtls-rprx-vision
+    network: tcp
+    tls: true
+    udp: true
+    servername: maze.toys
+    reality-opts:
+      public-key: eSIMr-32aezFgRUFEfqefs1GlejGrV02TLIowbnPTyA
+    client-fingerprint: safari
+
+  # 尼日利亚 SOCKS5
+  - { name: '尼日1', server: 106.75.134.163, port: 800, type: socks5, username: e5265d18-149a832e-a76514, password: mobile-ng--- }
+  - { name: '尼日2', server: 106.75.134.163, port: 801, type: socks5, username: e5265d18-149a832e-4e06d3, password: mobile-ng--- }
+  - { name: '尼日3', server: 106.75.134.163, port: 802, type: socks5, username: e5265d18-149a832e-039ac7, password: mobile-ng--- }
+  - { name: '尼日4', server: 106.75.134.163, port: 803, type: socks5, username: e5265d18-149a832e-9c1589, password: mobile-ng--- }
+  - { name: '尼日5', server: 106.75.134.163, port: 804, type: socks5, username: e5265d18-149a832e-4bc91b, password: mobile-ng--- }
+  - { name: '尼日6', server: 106.75.134.163, port: 805, type: socks5, username: e5265d18-149a832e-f82480, password: mobile-ng--- }
+  - { name: '尼日7', server: 106.75.134.163, port: 806, type: socks5, username: e5265d18-149a832e-4e8f96, password: mobile-ng--- }
+  - { name: '尼日8', server: 106.75.134.163, port: 807, type: socks5, username: e5265d18-149a832e-62d985, password: mobile-ng--- }
+  - { name: '尼日9', server: 106.75.134.163, port: 1000, type: socks5, username: e5265d18-149a832e-dde261, password: wifi-ng-10-- }
+  - { name: '尼日10', server: 106.75.134.163, port: 1001, type: socks5, username: e5265d18-149a832e-f1a862, password: wifi-ng-10-- }
+  - { name: '尼日11', server: 106.75.134.163, port: 1002, type: socks5, username: e5265d18-149a832e-4f3be5, password: wifi-ng-10-- }
+  - { name: '尼日12', server: 106.75.134.163, port: 1003, type: socks5, username: e5265d18-149a832e-1b3401, password: wifi-ng-10-- }
+  - { name: '尼日13', server: hk.1024proxy.io, port: 3000, type: socks5, username: zl5b47338-region-NG-asn-AS29465-sid-ZGuWQANP-t-5, password: gxbd3y4k }
+  - { name: '尼日14', server: hk.1024proxy.io, port: 3000, type: socks5, username: zl5b47338-region-NG-asn-AS29465-sid-9e7XQF56-t-5, password: gxbd3y4k }
+  - { name: '尼日15', server: hk.1024proxy.io, port: 3000, type: socks5, username: zl5b47338-region-NG-asn-AS36920-sid-AExus59a-t-5, password: gxbd3y4k }
+
+  # 埃及 SOCKS5
+  - { name: '埃及1', server: 106.75.134.163, port: 800, type: socks5, username: e5265d18-149a832e-bfee51, password: mobile-pk--- }
+  - { name: '埃及2', server: 106.75.134.163, port: 801, type: socks5, username: e5265d18-149a832e-e2e68e, password: mobile-pk--- }
+  - { name: '埃及3', server: 106.75.134.163, port: 802, type: socks5, username: e5265d18-149a832e-17265b, password: mobile-pk--- }
+  - { name: '埃及4', server: 106.75.134.163, port: 803, type: socks5, username: e5265d18-149a832e-cd79b9, password: mobile-pk--- }
+  - { name: '埃及5', server: 106.75.134.163, port: 804, type: socks5, username: e5265d18-149a832e-7002b1, password: mobile-pk--- }
+  - { name: '埃及6', server: 106.75.134.163, port: 805, type: socks5, username: e5265d18-149a832e-9da9b9, password: mobile-pk--- }
+  - { name: '埃及7', server: 106.75.134.163, port: 1000, type: socks5, username: e5265d18-149a832e-rand, password: wifi-pk--- }
+  - { name: '埃及8', server: 106.75.134.163, port: 1001, type: socks5, username: e5265d18-149a832e-rand, password: wifi-pk--- }
+  - { name: '埃及9', server: 106.75.134.163, port: 1002, type: socks5, username: e5265d18-149a832e-rand, password: wifi-pk--- }
+  - { name: '埃及10', server: 106.75.134.163, port: 1003, type: socks5, username: e5265d18-149a832e-rand, password: wifi-pk--- }
+
+  # 头像 SOCKS5
+  - { name: '头像1', server: gate.helodata.io, port: 7777, type: socks5, username: helo_ggf9aq_b34l4fuaxn-type-res-region-PK-session-v8m6at0l-sesstime-10-session-uutn3anw, password: eaaikp9vzu4ucumr }
+  - { name: '头像2', server: gate.helodata.io, port: 7777, type: socks5, username: helo_ggf9aq_b34l4fuaxn-type-res-region-PK-session-v8m6at0l-sesstime-10-session-d5ukzri4, password: eaaikp9vzu4ucumr }
+  - { name: '头像3', server: gate.helodata.io, port: 7777, type: socks5, username: helo_ggf9aq_b34l4fuaxn-type-res-region-PK-session-v8m6at0l-sesstime-10-session-i0quowom, password: eaaikp9vzu4ucumr }
+  - { name: '头像4', server: 106.75.134.163, port: 7777, type: socks5, username: helo_ggf9aq_b34l4fuaxn-type-res-region-PK-session-v8m6at0l-sesstime-10-session-l1h2bxm4, password: eaaikp9vzu4ucumr }
+  - { name: '头像5', server: gate.helodata.io, port: 7777, type: socks5, username: helo_ggf9aq_b34l4fuaxn-type-res-region-PK-session-v8m6at0l-sesstime-10-session-2fc1mo5d, password: eaaikp9vzu4ucumr }
+  - { name: '头像6', server: gate.helodata.io, port: 7777, type: socks5, username: helo_ggf9aq_b34l4fuaxn-type-res-region-PK-session-v8m6at0l-sesstime-10-session-sh7323zm, password: eaaikp9vzu4ucumr }
+  - { name: '头像7', server: gate.helodata.io, port: 7777, type: socks5, username: helo_ggf9aq_b34l4fuaxn-type-res-region-PK-session-v8m6at0l-sesstime-10-session-1lvh8f20, password: eaaikp9vzu4ucumr }
+  - { name: '头像8', server: gate.helodata.io, port: 7777, type: socks5, username: helo_ggf9aq_b34l4fuaxn-type-res-region-PK-session-v8m6at0l-sesstime-10-session-bl1pxqsw, password: eaaikp9vzu4ucumr }
+  - { name: '头像9', server: gate.helodata.io, port: 7777, type: socks5, username: helo_ggf9aq_b34l4fuaxn-type-res-region-PK-session-v8m6at0l-sesstime-10-session-yi45tl4c, password: eaaikp9vzu4ucumr }
+  - { name: '头像10', server: gate.helodata.io, port: 7777, type: socks5, username: helo_ggf9aq_b34l4fuaxn-type-res-region-PK-session-v8m6at0l-sesstime-10-session-2ogozon0, password: eaaikp9vzu4ucumr }
+
+  # 缅甸 SOCKS5
+  - { name: '缅甸1', server: sg-iepl.com, port: 28656, type: socks5, username: 47353961-zone-custom-region-MM-sessid-kmszjXc0-sessTime-15, password: dJIA8BM3 }
+  - { name: '缅甸2', server: sg-iepl.com, port: 28656, type: socks5, username: 47353961-zone-custom-region-MM-sessid-3uNCfzJE-sessTime-15, password: dJIA8BM3 }
+  - { name: '缅甸3', server: sg-iepl.com, port: 28656, type: socks5, username: 47353961-zone-custom-region-MM-sessid-lfMahCnS-sessTime-15, password: dJIA8BM3 }
+  - { name: '缅甸4', server: sg-iepl.com, port: 28656, type: socks5, username: 47353961-zone-custom-region-MM-sessid-cEGwQAjc-sessTime-15, password: dJIA8BM3 }
+  - { name: '缅甸5', server: sg-iepl.com, port: 28656, type: socks5, username: 47353961-zone-custom-region-MM-sessid-Wbh9u2rQ-sessTime-15, password: dJIA8BM3 }
+  - { name: '缅甸6', server: sg-iepl.com, port: 28656, type: socks5, username: 47353961-zone-custom-region-MM-sessid-kkUmAw1U-sessTime-15, password: dJIA8BM3 }
+  - { name: '缅甸7', server: sg-iepl.com, port: 28656, type: socks5, username: 47353961-zone-custom-region-MM-sessid-61Eqwe1c-sessTime-15, password: dJIA8BM3 }
+  - { name: '缅甸8', server: sg-iepl.com, port: 28656, type: socks5, username: 47353961-zone-custom-region-MM-sessid-pldGAIdp-sessTime-15, password: dJIA8BM3 }
+  - { name: '缅甸9', server: sg-iepl.com, port: 28656, type: socks5, username: 47353961-zone-custom-region-MM-sessid-86N7SMnE-sessTime-15, password: dJIA8BM3 }
+  - { name: '缅甸10', server: sg-iepl.com, port: 28656, type: socks5, username: 47353961-zone-custom-region-MM-sessid-0cOzuZkG-sessTime-15, password: dJIA8BM3 }
+
+  # 土耳其 SOCKS5
+  - { name: '土耳其1', server: sg-iepl.com, port: 28656, type: socks5, username: 47353961-zone-custom-region-TR-sessid-iGZoZ2y7-sessTime-15, password: dJIA8BM3 }
+  - { name: '土耳其2', server: sg-iepl.com, port: 28656, type: socks5, username: 47353961-zone-custom-region-TR-sessid-BZ4gLZLU-sessTime-15, password: dJIA8BM3 }
+  - { name: '土耳其3', server: sg-iepl.com, port: 28656, type: socks5, username: 47353961-zone-custom-region-TR-sessid-ecz15ucd-sessTime-15, password: dJIA8BM3 }
+  - { name: '土耳其4', server: sg-iepl.com, port: 28656, type: socks5, username: 47353961-zone-custom-region-TR-sessid-706EHOSq-sessTime-15, password: dJIA8BM3 }
+  - { name: '土耳其5', server: sg-iepl.com, port: 28656, type: socks5, username: 47353961-zone-custom-region-TR-sessid-CrAcKL7u-sessTime-15, password: dJIA8BM3 }
+  - { name: '土耳其6', server: sg-iepl.com, port: 33055, type: socks5, username: poiu4717, password: 9gHUDSv8OK_country-tr_session-nbKCLM9k }
+  - { name: '土耳其7', server: sg-iepl.com, port: 33055, type: socks5, username: poiu4717, password: 9gHUDSv8OK_country-tr_session-hpvID9LA }
+  - { name: '土耳其8', server: sg-iepl.com, port: 33055, type: socks5, username: poiu4717, password: 9gHUDSv8OK_country-tr_session-EQq86W7A }
+  - { name: '土耳其9', server: sg-iepl.com, port: 33055, type: socks5, username: poiu4717, password: 9gHUDSv8OK_country-tr_session-BKhJacZV }
+  - { name: '土耳其10', server: sg-iepl.com, port: 33055, type: socks5, username: poiu4717, password: 9gHUDSv8OK_country-tr_session-9WytzQkN }
+
+  # 菲律宾 SOCKS5
+  - { name: '菲律宾1', server: 106.75.152.119, port: 1000, type: socks5, username: e5265d18-149a832e-rand, password: wifi-ph-10-- }
+  - { name: '菲律宾2', server: 106.75.152.119, port: 1001, type: socks5, username: e5265d18-149a832e-rand, password: wifi-ph-10-- }
+  - { name: '菲律宾3', server: 106.75.152.119, port: 1002, type: socks5, username: e5265d18-149a832e-rand, password: wifi-ph-10-- }
+  - { name: '菲律宾4', server: 106.75.152.119, port: 1003, type: socks5, username: e5265d18-149a832e-rand, password: wifi-ph-10-- }
+  - { name: '菲律宾5', server: 106.75.152.119, port: 1004, type: socks5, username: e5265d18-149a832e-rand, password: wifi-ph-10-- }
+
+  # 玻利维亚 SOCKS5
+  - { name: '玻利维亚1', server: 106.75.152.119, port: 1000, type: socks5, username: e5265d18-149a832e-afbdc9, password: wifi-bo-10-- }
+  - { name: '玻利维亚2', server: 106.75.152.119, port: 1001, type: socks5, username: e5265d18-149a832e-b73da8, password: wifi-bo-10-- }
+  - { name: '玻利维亚3', server: 106.75.152.119, port: 1002, type: socks5, username: e5265d18-149a832e-8a95f2, password: wifi-bo-10-- }
+  - { name: '玻利维亚4', server: 106.75.152.119, port: 1003, type: socks5, username: e5265d18-149a832e-fef364, password: wifi-bo-10-- }
+  - { name: '玻利维亚5', server: 106.75.152.119, port: 1004, type: socks5, username: e5265d18-149a832e-995b12, password: wifi-bo-10-- }
+  - { name: '玻利维亚6', server: 106.75.152.119, port: 880, type: socks5, username: e5265d18-149a832e-f590a1, password: mobile-bo--- }
+  - { name: '玻利维亚7', server: 106.75.152.119, port: 881, type: socks5, username: e5265d18-149a832e-8f63f6, password: mobile-bo--- }
+  - { name: '玻利维亚8', server: 106.75.152.119, port: 882, type: socks5, username: e5265d18-149a832e-ffbef5, password: mobile-bo--- }
+  - { name: '玻利维亚9', server: 106.75.152.119, port: 883, type: socks5, username: e5265d18-149a832e-616bdb, password: mobile-bo--- }
+  - { name: '玻利维亚10', server: us.1024proxy.io, port: 3000, type: socks5, username: zl5b47338-region-BO-sid-dwxfkxm9-t-5, password: gxbd3y4k }
+
+  # 巴基斯坦 SOCKS5 (PK) - 30 个
+  - { name: '巴基1', server: 34.92.172.30, port: 800, type: socks5, username: e5265d18-149a832e-db5548, password: mobile-pk--- }
+  - { name: '巴基2', server: 34.92.172.30, port: 801, type: socks5, username: e5265d18-149a832e-0db648, password: mobile-pk--- }
+  - { name: '巴基3', server: 34.92.172.30, port: 802, type: socks5, username: e5265d18-149a832e-912d80, password: mobile-pk--- }
+  - { name: '巴基4', server: 34.92.172.30, port: 803, type: socks5, username: e5265d18-149a832e-536f58, password: mobile-pk--- }
+  - { name: '巴基5', server: 34.92.172.30, port: 804, type: socks5, username: e5265d18-149a832e-6d1e1e, password: mobile-pk--- }
+  - { name: '巴基6', server: 34.92.172.30, port: 805, type: socks5, username: e5265d18-149a832e-f8da5f, password: mobile-pk--- }
+  - { name: '巴基7', server: 34.92.172.30, port: 806, type: socks5, username: e5265d18-149a832e-b9200d, password: mobile-pk--- }
+  - { name: '巴基8', server: 34.92.172.30, port: 807, type: socks5, username: e5265d18-149a832e-3619f7, password: mobile-pk--- }
+  - { name: '巴基9', server: 34.92.172.30, port: 808, type: socks5, username: e5265d18-149a832e-6713a2, password: mobile-pk--- }
+  - { name: '巴基10', server: 34.92.172.30, port: 809, type: socks5, username: e5265d18-149a832e-84a6e5, password: mobile-pk--- }
+  - { name: '巴基11', server: us.1024proxy.io, port: 3000, type: socks5, username: zl5b47338-region-PK-sid-RVR9AH2A-t-5, password: gxbd3y4k }
+  - { name: '巴基12', server: us.1024proxy.io, port: 3000, type: socks5, username: zl5b47338-region-PK-sid-UZyf53p2-t-5, password: gxbd3y4k }
+  - { name: '巴基13', server: us.1024proxy.io, port: 3000, type: socks5, username: zl5b47338-region-PK-sid-Nn7HWH1X-t-5, password: gxbd3y4k }
+  - { name: '巴基14', server: us.1024proxy.io, port: 3000, type: socks5, username: zl5b47338-region-PK-sid-P5ziJ5kX-t-5, password: gxbd3y4k }
+  - { name: '巴基15', server: us.1024proxy.io, port: 3000, type: socks5, username: zl5b47338-region-PK-sid-tXrPEJcL-t-5, password: gxbd3y4k }
+  - { name: '巴基16', server: us.1024proxy.io, port: 3000, type: socks5, username: zl5b47338-region-PK-sid-tbXVj7y5-t-5, password: gxbd3y4k }
+  - { name: '巴基17', server: us.1024proxy.io, port: 3000, type: socks5, username: zl5b47338-region-PK-sid-S9zdZ2sx-t-5, password: gxbd3y4k }
+  - { name: '巴基18', server: us.1024proxy.io, port: 3000, type: socks5, username: zl5b47338-region-PK-sid-PWkLEXCF-t-5, password: gxbd3y4k }
+  - { name: '巴基19', server: us.1024proxy.io, port: 3000, type: socks5, username: zl5b47338-region-PK-sid-3P8tksCe-t-5, password: gxbd3y4k }
+  - { name: '巴基20', server: us.1024proxy.io, port: 3000, type: socks5, username: zl5b47338-region-PK-sid-CycKsCGx-t-5, password: gxbd3y4k }
+  - { name: '巴基21', server: as.ipdunar.com, port: 7777, type: socks5, username: ipdunar_ggf9aq_b34l4fuaxn-type-res-region-pk-session-0gqys6fi-sesstime-20, password: eaaikp9vzu4ucumr }
+  - { name: '巴基22', server: as.ipdunar.com, port: 7777, type: socks5, username: ipdunar_ggf9aq_b34l4fuaxn-type-res-region-pk-session-wrtva97y-sesstime-20, password: eaaikp9vzu4ucumr }
+  - { name: '巴基23', server: as.ipdunar.com, port: 7777, type: socks5, username: ipdunar_ggf9aq_b34l4fuaxn-type-res-region-pk-session-e9wwv6j5-sesstime-20, password: eaaikp9vzu4ucumr }
+  - { name: '巴基24', server: as.ipdunar.com, port: 7777, type: socks5, username: ipdunar_ggf9aq_b34l4fuaxn-type-res-region-pk-session-2ws6xlcg-sesstime-20, password: eaaikp9vzu4ucumr }
+  - { name: '巴基25', server: as.ipdunar.com, port: 7777, type: socks5, username: ipdunar_ggf9aq_b34l4fuaxn-type-res-region-pk-session-94v72eno-sesstime-20, password: eaaikp9vzu4ucumr }
+  - { name: '巴基26', server: as.ipdunar.com, port: 7777, type: socks5, username: ipdunar_ggf9aq_b34l4fuaxn-type-res-region-pk-session-tv4rgzkc-sesstime-20, password: eaaikp9vzu4ucumr }
+  - { name: '巴基27', server: as.ipdunar.com, port: 7777, type: socks5, username: ipdunar_ggf9aq_b34l4fuaxn-type-res-region-pk-session-wju6i7m0-sesstime-20, password: eaaikp9vzu4ucumr }
+  - { name: '巴基28', server: as.ipdunar.com, port: 7777, type: socks5, username: ipdunar_ggf9aq_b34l4fuaxn-type-res-region-pk-session-5rbe6wo8-sesstime-20, password: eaaikp9vzu4ucumr }
+  - { name: '巴基29', server: as.ipdunar.com, port: 7777, type: socks5, username: ipdunar_ggf9aq_b34l4fuaxn-type-res-region-pk-session-ayssjuyj-sesstime-20, password: eaaikp9vzu4ucumr }
+  - { name: '巴基30', server: as.ipdunar.com, port: 7777, type: socks5, username: ipdunar_ggf9aq_b34l4fuaxn-type-res-region-pk-session-vdnl6ax6-sesstime-20, password: eaaikp9vzu4ucumr }
+
+# ================= 策略组 =================
+proxy-groups:
+  # 低价内购专用组（手动选择内购区住宅 IP）
+  - name: Googleplay
+    type: select
+    proxies:
+      - 尼日1
+      - 尼日2
+      - 尼日3
+      - 尼日4
+      - 尼日5
+      - 尼日6
+      - 尼日7
+      - 尼日8
+      - 尼日9
+      - 尼日10
+      - 尼日11
+      - 尼日12
+      - 尼日13
+      - 尼日14
+      - 尼日15
+      - 埃及1
+      - 埃及2
+      - 埃及3
+      - 埃及4
+      - 埃及5
+      - 埃及6
+      - 埃及7
+      - 埃及8
+      - 埃及9
+      - 埃及10
+      - 头像1
+      - 头像2
+      - 头像3
+      - 头像4
+      - 头像5
+      - 头像6
+      - 头像7
+      - 头像8
+      - 头像9
+      - 头像10
+      - 缅甸1
+      - 缅甸2
+      - 缅甸3
+      - 缅甸4
+      - 缅甸5
+      - 缅甸6
+      - 缅甸7
+      - 缅甸8
+      - 缅甸9
+      - 缅甸10
+      - 土耳其1
+      - 土耳其2
+      - 土耳其3
+      - 土耳其4
+      - 土耳其5
+      - 土耳其6
+      - 土耳其7
+      - 土耳其8
+      - 土耳其9
+      - 土耳其10
+      - 菲律宾1
+      - 菲律宾2
+      - 菲律宾3
+      - 菲律宾4
+      - 菲律宾5
+      - 玻利维亚1
+      - 玻利维亚2
+      - 玻利维亚3
+      - 玻利维亚4
+      - 玻利维亚5
+      - 玻利维亚6
+      - 玻利维亚7
+      - 玻利维亚8
+      - 玻利维亚9
+      - 玻利维亚10
+      - 巴基1
+      - 巴基2
+      - 巴基3
+      - 巴基4
+      - 巴基5
+      - 巴基6
+      - 巴基7
+      - 巴基8
+      - 巴基9
+      - 巴基10
+      - 巴基11
+      - 巴基12
+      - 巴基13
+      - 巴基14
+      - 巴基15
+      - 巴基16
+      - 巴基17
+      - 巴基18
+      - 巴基19
+      - 巴基20
+      - 巴基21
+      - 巴基22
+      - 巴基23
+      - 巴基24
+      - 巴基25
+      - 巴基26
+      - 巴基27
+      - 巴基28
+      - 巴基29
+      - 巴基30
+      - Proxies
+
+  # 普通网页、日常代理组
+  - name: Proxies
+    type: select
+    proxies:
+      - "🇭🇰 HK Gomami 04 (1.5x)"
+      - "🇭🇰 HK Gomami 06 (1.5x)"
+      - "🇭🇰 HK Gomami 07"
+      - "🇭🇰 HK ISIF 03"
+      - "🇯🇵 JP Gomami 05"
+      - "🇯🇵 JP Neburst 04"
+      - "🇸🇬 SG Gomami 02"
+      - "🇸🇬 SG Gomami 04"
+      - "🇸🇬 SG Gomami 05"
+      - "🇺🇸 US DMIT 02 (0.8x)"
+      - "🇺🇸 US DMIT 04 (0.8x)"
+      - DIRECT
+
+# ================= 分流规则 =================
+rules:
+  - DOMAIN-SUFFIX,dequgames.com,Proxies
+  - DOMAIN-SUFFIX,ook.dequgames.com,Proxies
+  - DOMAIN-KEYWORD,orderofkings,Proxies
+  - PROCESS-NAME,com.dequ.m3dw2,Proxies
+  # Google Play 核心服务及内购切区域名
+  - DOMAIN-SUFFIX,play.google.com,Googleplay
+  - DOMAIN,play-fe.googleapis.com,Googleplay
+  - DOMAIN-SUFFIX,googleapis.com,Googleplay
+  - DOMAIN-SUFFIX,googleusercontent.com,Googleplay
+  - DOMAIN-SUFFIX,gstatic.com,Googleplay
+
+  # IP 归属地检测工具（用低价区节点看 IP 确定是否切区成功）
+  - DOMAIN-SUFFIX,ipapi.co,Googleplay
+  - DOMAIN-SUFFIX,ip-api.com,Googleplay
+  - DOMAIN-SUFFIX,api.ip.sb,Googleplay
+  - DOMAIN-SUFFIX,ipinfo.io,Googleplay
+
+  # 日常普通代理分流
+  - DOMAIN-KEYWORD,game,Proxies
+  - DOMAIN-KEYWORD,googlevideo,Proxies
+  - DOMAIN-KEYWORD,github,Proxies
+  - DOMAIN-SUFFIX,github.com,Proxies
+
+  # 中国大陆直连规则
+  - DOMAIN-KEYWORD,cn,DIRECT
+  - DOMAIN-SUFFIX,baidu.com,DIRECT
+  - GEOIP,CN,DIRECT
+
+  # 兜底规则（未匹配的默认走 Proxies 组）
+  - MATCH,Proxies
